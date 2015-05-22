@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>CurveDirectionsMatch</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\ncurve\ncurvedirectionsmatch");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > <a href=\"curve_module.htm\">curve<\/a> > curvedirectionsmatch<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>CurveDirectionsMatch</h1>
+<p>Tests if two curve objects are generally in the same direction or if they would be more in the same direction if one of them were flipped. When testing curve directions, both curves must be either open or closed - you cannot test one open curve and one closed curve. Also, test curves need to fairly close together, or stacked, like when lofting or sweeping curves into a surface.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.CurveDirectionsMatch (curve_a, curve_b)</p>
+<p class="Code">rhinoscript.curve.CurveDirectionsMatch (curve_a, curve_b)</p>
+<h3>Parameters</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.632%;" />
+<col style="width: 90.368%;" />
+<tr style="vertical-align: top;">
+<td style="width: 9.632%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">curve_a</p>
+</td>
+<td style="width: 90.368%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. String or Guid. The identifier of the first curve to compare.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 9.632%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">curve_b</p>
+</td>
+<td style="width: 90.368%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. String or Guid. The identifier of the second curve to compare.</p>
+</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.618%;" />
+<col style="width: 90.382%;" />
+<tr style="vertical-align: top;">
+<td style="width: 9.618%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Boolean</p>
+</td>
+<td style="width: 90.382%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">True if the curve directions match, otherwise False.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 9.618%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">None</p>
+</td>
+<td style="width: 90.382%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">On error.</p>
+</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as rs</p>
+<p class="Code" style="margin-left: 12px;">curve1 = rs.GetObject("Select first curve to compare", rs.filter.curve)</p>
+<p class="Code" style="margin-left: 12px;">curve2 = rs.GetObject("Select second curve to compare", rs.filter.curve)</p>
+<p class="Code" style="margin-left: 12px;">if rs.CurveDirectionsMatch(curve1, curve2):</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;print "Curves are in the same direction"</p>
+<p class="Code" style="margin-left: 12px;">else:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;print "Curve are not in the same direction"</p>
+<h3 class="Code">Also See</h3>
+<p><a href="reversecurve.htm">ReverseCurve</a></p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

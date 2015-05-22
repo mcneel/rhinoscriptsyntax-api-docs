@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="topic-check-list" content="Ran Smart Index" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>LayerId</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+</head>
+
+<body>
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+<h1>LayerId</h1>
+<p>Returns the identifier of a layer given the layer's name.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.LayerId (layer)</p>
+<h3>Parameters</h3>
+<table cellspacing="0" width="100%">
+	<col style="width: 9.679%;" />
+	<col style="width: 90.321%;" />
+	<tr style="vertical-align: top; height: 24px;">
+		<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body" style="font-style: italic;">layer</p></td>
+		<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Required. &#160;String. &#160;The name 
+		 of an existing layer.</p></td>
+	</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+	<col style="width: 9.832%;" />
+	<col style="width: 90.168%;" />
+	<tr style="vertical-align: top;">
+		<td style="padding-right: 10px; padding-left: 10px;"><p class="Table-Body">String</p></td>
+		<td style="padding-right: 10px; padding-left: 10px;"><p class="Table-Body">The 
+		 layer's identifier if successful.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-right: 10px; padding-left: 10px;"><p class="Table-Body">None</p></td>
+		<td style="padding-right: 10px; padding-left: 10px;"><p class="Table-Body">If 
+		 not successful, or on error.</p></td>
+	</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as 
+ rs</p>
+<p class="Code" style="margin-left: 12px;">id = rs.LayerId('Layer 01')</p>
+<h3>Also See</h3>
+<p><a href="layername.htm">LayerName</a></p>
+</body>
+</html>

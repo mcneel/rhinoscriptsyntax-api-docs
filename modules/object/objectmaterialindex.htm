@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>ObjectMaterialIndex</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\nobject\nobjectmaterialindex");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > <a href=\"object_module.htm\">object<\/a> > objectmaterialindex<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>ObjectMaterialIndex</h1>
+<p>Returns or modifies the material index of an object.</p>
+<p>Rendering materials are stored in Rhino's rendering material table. &#160;This table is conceptually an array. &#160;Render materials associated with objects and layers are specified by zero based indices into this array.</p>
+<p>If the return value of <a href="objectmaterialsource.htm">ObjectMaterialSource</a> is "material by object", then the return value of this function is the index of the object's rendering material. &#160;A material index of -1 indicates no material has been assigned, and that Rhino's internal default material has been assigned to the object.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.ObjectMaterialIndex (object_id, index=None)</p>
+<p class="Code">rhinoscript.object.ObjectMaterialIndex (object_id, index=None)</p>
+<h3>Parameters</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.679%;" />
+<col style="width: 90.321%;" />
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">object_id</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. &#160;String, Guid. &#160;The identifier(s) of the object(s).</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">index</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;String. &#160;The index of an existing material. &#160;If omitted, the current object material index is returned.</p>
+</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.756%;" />
+<col style="width: 90.244%;" />
+<tr style="vertical-align: top;">
+<td style="width: 9.756%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Number</p>
+</td>
+<td style="width: 90.244%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">The rendering material index if successful.</p>
+</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as rs</p>
+<p class="Code" style="margin-left: 12px;">obj = rs.GetObject("Select object")</p>
+<p class="Code" style="margin-left: 12px;">if obj:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;source = rs.ObjectMaterialSource(obj)</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;if source==0:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;print "The material source is by layer"</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;else:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;print "The material source is by object"</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;index = rs.ObjectMaterialIndex(obj)</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if index==-1: p<span style="margin-left: 12px;">rint "The material is default."</span></p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;else: <span>print "The material is custom."</span></p>
+<h3>Also See</h3>
+<p><a href="objectmaterialsource.htm">ObjectMaterialSource</a></p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

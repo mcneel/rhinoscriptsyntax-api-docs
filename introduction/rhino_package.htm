@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>rhinoscriptsyntax package</title>
+<link rel="StyleSheet" href="../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../whd_show0.gif","../whd_show2.gif","../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../whd_hide0.gif","../whd_hide2.gif","../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../whd_prev0.gif","../whd_prev2.gif","../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../whd_next0.gif","../whd_next2.gif","../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../index.html", "", ">", "Home", "../title.htm");
+document.write("Modules<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>The rhinoscriptsyntax reference</h1>
+<p>Importing the rhinoscriptsyntax package will import all modules. &#160;For 
+ example, adding:</p>
+<p class="Code">import rhinoscriptsyntax as rs</p>
+<p>at the top of your script gives you access to all functions in all modules. 
+ &#160;For example to call the AddCircle(center, radius) function from 
+ the curve module just type:</p>
+<p class="Code">rs.AddCircle((0,0,0), 25.0)</p>
+<p>The following table describes each module and the link will bring you 
+ to a description of all the available functions.</p>
+<p>&#160;</p>
+<table cellspacing="0" width="100%">
+	<col style="width: 22.912%;" />
+	<col style="width: 77.088%;" />
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Head">Module</p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Head">Description</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/application/application_module.htm">application</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to the Rhino application.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/block/block_module.htm">block</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to block instances and 
+		 their definitions.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/curve/curve_module.htm">curve</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to curve objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/dimension/dimension_module.htm">dimension</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to dimension and annotations. 
+		 </p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/document/document_module.htm">document</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to the currently open 
+		 3DM file.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/geometry/geometry_module.htm">geometry</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to geometric objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/grips/grips_module.htm">grips</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions for manipulating object grips. 
+		 </p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/group/group_module.htm">group</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions used to manipulate groups of 
+		 objects. </p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/hatch/hatch_module.htm">hatch</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions used to manipulate hatch objects. 
+		 </p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/layer/layer_module.htm">layer</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions used to manipulate layers.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/light/light_module.htm">light</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to light objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/line/line_module.htm">line</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to line objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/linetype/linetype_module.htm">linetype</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to linetype objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/material/material_module.htm">material</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to object rendering materials. 
+		 </p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/mesh/mesh_module.htm">mesh</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to mesh objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/object/object_module.htm">object</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions to manipulate general object 
+		 properties.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/plane/plane_module.htm">plane</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to manipulating 3-D lines 
+		 and planes.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../Modules/pointvector/Pointvertor_Module.htm">pointvector</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to creating and manipulating 
+		 3-D points and 3-D vectors. </p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/selection/selection_module.htm">selection</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions for selecting objects or obtaining 
+		 object identifiers.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/surface/surface_module.htm">surface</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to surface and polysurface 
+		 objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/toolbar/toolbar_module.htm">toolbar</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to toolbar collections.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/transformation/transformation_module.htm">transformation</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to creating transformation.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/userdata/userdata_module.htm">userdata</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to userdata.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/userinterface/userinterface_module.htm">userinterface</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions used to interact with the user.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/utility/utility_module.htm">utility</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Any function that does not fall into any 
+		 of the above categories. </p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 22.912%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="../modules/view/view_module.htm">view</a></p></td>
+		<td style="width: 77.088%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Functions related to manipulate views and 
+		 construction planes.</p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

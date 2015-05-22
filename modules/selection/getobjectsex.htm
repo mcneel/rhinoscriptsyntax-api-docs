@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>GetObjectsEx</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\nselection\ngetobjectsex");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > <a href=\"selection_module.htm\">selection<\/a> > getobjectsex<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>GetObjectsEx</h1>
+<p>Prompts the user to pick or select one or more objects.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.GetObjectsEx (message=None, filter=0, group=True, preselect=False, select=False, objects=None)</p>
+<p class="Code">rhinoscript.selection.GetObjectsEx (message=None, filter=0, group=True, preselect=False, select=False, objects=None)</p>
+<h3>Parameters</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.679%;" />
+<col style="width: 90.321%;" />
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">message</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;String. &#160;A prompt or message.</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">filter</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Number. &#160;The type(s) of geometry objects (points, curves, surfaces, meshes, etc.) that can be selected. &#160;Object types can be added together to filter several different kinds of geometry.</p>
+<table cellspacing="0" width="100%">
+<col style="width: 6.594%;" />
+<col style="width: 93.406%;" />
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right; font-weight: bold;">Value</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Description</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">0</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">All objects (default)</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">1</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Point</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">2</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Point cloud</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">4</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Curve</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">8</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Surface or single-face brep</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">16</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Polysurface or multiple-face</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">32</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Mesh</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">256</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Light</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">512</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Annotation</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">4096</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Instance or block reference</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">8192</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Text dot object</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">16384</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Grip object</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">32768</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Detail</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">65536</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Hatch</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">131072</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Morph control</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">134217728</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Cage</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">268435456</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Phantom</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.594%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="text-align: right;">536870912</p>
+</td>
+<td style="width: 93.406%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Clipping plane</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">group</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Boolean. &#160;Honor object grouping. &#160;If omitted and the user picks a group, the entire group will be picked (True). Note, if <span style="font-style: italic;"><i>filter</i></span> is set to a value other than 0 (All objects), then group selection will be disabled.</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">preselect</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Boolean. &#160;Allow for the selection of pre-selected objects. &#160;If omitted, pre-selected objects are not accepted (False).</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">select</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Boolean. &#160;Specifies whether or not the picked objects will remain selected when the function ends. &#160;If omitted, objects that were pre-picked will remain selected and the objects that were post-picked will not be selected.</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">objects</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;List. &#160;A list of strings or Guids identifying the objects that are allowed to be selected.</p>
+</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.756%;" />
+<col style="width: 90.244%;" />
+<tr style="vertical-align: top;">
+<td style="width: 9.756%; padding-right: 10px; padding-left: 10px;">
+<p>List</p>
+</td>
+<td style="width: 90.244%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">A list that contains tuples of selection information if successful. The tuple of selection information will contain the following:</p>
+<table cellspacing="0" width="100%">
+<col style="width: 7.117%;" />
+<col style="width: 92.883%;" />
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Element</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Description</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">0</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Guid. The identifier of the object.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">1</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Boolean. True if the object was pre-selected, otherwise False.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">2</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Number. The selection method: &#160;&#160;&#160;&#160;</p>
+<p class="Table-Body">0: selected by non-mouse method (SelAll, etc.).</p>
+<p class="Table-Body">1: selected by mouse click on the object.</p>
+<p class="Table-Body">2: selected by being inside of a mouse window.</p>
+<p class="Table-Body">3: selected by intersecting a mouse crossing window.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">3</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Point3d. The selection point. This value is valid only if the object was not pre-selected and it was selected by clicking the mouse on the curve.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">4</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">String. The name of the view in which the selection was made.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as rs</p>
+<p class="Code" style="margin-left: 12px;">objects = rs.GetObjectsEx("Select objects", 0, True)</p>
+<p class="Code" style="margin-left: 12px;">for obj in objects:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;print "Object id = ", obj[0]</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;print "Object was preselected = ", obj[1]</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;if obj[2]==0:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;print "Selection method = 0 (non-mouse)"</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;elif obj[2]==1:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;print "Selection method = 1 (mouse)"</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;print "Pick point = ", obj[3]</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;elif obj[2]==2:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;print "Selection method = 2 (window)"</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;elif obj[2]==3:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;print "Selection method = 3 (crossing)"</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;print "Active view = ", obj[4]</p>
+<h3>Also See</h3>
+<p><a href="getcurveobject.htm">GetCurveObject</a></p>
+<p><a href="getobject.htm">GetObject</a></p>
+<p><a href="getobjectex.htm">GetObjectEx</a></p>
+<p><a href="getobjects.htm">GetObjects</a></p>
+<p><a href="getsurfaceobject.htm">GetSurfaceObject</a></p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

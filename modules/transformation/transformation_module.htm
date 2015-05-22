@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Transformation Module</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\ntransformation");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > transformation<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>Transformation Methods</h1>
+<p>The following methods are available for creating 4x4 transformation matrices. Rhino matrices act on the left.</p>
+<p>&#160;</p>
+<table cellspacing="0" width="100%">
+<col style="width: 17.305%;" />
+<col style="width: 82.695%;" />
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Head">Method</p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Head">Description</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="isxformidentity.htm">IsXformIdentity</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Verifies that a matrix is the identity transformation.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="isxformsimilarity.htm">IsXformSimilarity</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Verifies that a matrix is the similarity transformation.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="isxformzero.htm">IsXformZero</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Verifies that a matrix is the zero transformation.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformchangebasis.htm">XformChangeBasis</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Creates a change of basis transformation matrix.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformcompare.htm">XformCompare</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Compares two transformation matrices.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformcplanetoworld.htm">XformCPlaneToWorld</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Transforms a point from CPlane coordinates to world coordinates.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformdeterminant.htm">XformDeterminant</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Returns the determinant of a transformation matrix.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformdiagonal.htm">XformDiagonal</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Creates a diagonal transformation matrix.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformidentity.htm">XformIdentity</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Creates an identity transformation matrix.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xforminverse.htm">XformInverse</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Returns the inverse of a transformation matrix.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformmirror.htm">XformMirror</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Creates a mirror transformation matrix.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformmultiply.htm">XformMultiply</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Multiples two transformation matrices.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformplanarprojection.htm">XformPlanarProjection</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Creates a planar projection transformation matrix.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformrotation.htm">XformRotation</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Creates a rotation transformation matrix.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformscale.htm">XformScale</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Creates a scale transformation matrix.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformscreentoworld.htm">XformScreenToWorld</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Transforms a point from screen coordinates to world coordinates.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformshear.htm">XformShear</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Creates a shear transformation matrix..</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformtranslation.htm">XformTranslation</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Creates a translation transformation matrix.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformworldtocplane.htm">XformWorldToCPlane</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Transforms a point from world coordinates to CPlane coordinates.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformworldtoscreen.htm">XformWorldToScreen</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Transforms a point from world coordinates to screen coordinates.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 17.305%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><a href="xformzero.htm">XformZero</a></p>
+</td>
+<td style="width: 82.695%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Creates a zero transformation matrix.</p>
+</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

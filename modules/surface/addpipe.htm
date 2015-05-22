@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>AddPipe</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\nsurface\naddpipe");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > <a href=\"surface_module.htm\">surface<\/a> > addpipe<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>AddPipe</h1>
+<p>Creates a singled-walled surface with a circular profile around a curve.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.AddPipe (curve_id, parameters, radii, blend_type=0, cap=0, fit=False)</p>
+<p class="Code">rhinoscript.surface.AddPipe (curve_id, parameters, radii, blend_type=0, cap=0, fit=False)</p>
+<h3>Parameters</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 12.563%;" />
+<col style="width: 87.437%;" />
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">curve_id</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. &#160;String or Guid. &#160;The identifier of the path curve object.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">parameters</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. &#160;List or number. &#160;A list of one or more curve parameters where changes in radius occur.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">radii</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. &#160;List or number. &#160;A list of radii; one at each curve parameter in <span style="font-style: italic;"><i>parameters</i></span>.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">blend_type</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Number. &#160;The type of shape blending, where:</p>
+<table cellspacing="0" width="100%">
+<col style="width: 11.543%;" />
+<col style="width: 88.457%;" />
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Value</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Description</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">0 (Default)</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Local. &#160;The pipe radius stays constant at the ends and changes more rapidly in the middle.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">1</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Global. &#160;The radius is linearly blended from one end to the other, creating pipes that taper from one radius to the other.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body"><span style="font-style: italic;"><i>cap</i></span></p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Number. &#160;The end cap mode, where:</p>
+<table cellspacing="0" width="100%">
+<col style="width: 11.543%;" />
+<col style="width: 88.457%;" />
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Value</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Description</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">0 (Default)</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">None.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">1</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Flat. &#160;Capped with a planar surface.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">2</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Round. &#160;Capped with hemispherical surface.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">fit</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Boolean. &#160;If the curve is a polycurve of lines and arcs, the curve is fit and a single surface is created; otherwise the result is a polysurface with joined surfaces created from the polycurve segments. &#160;The default is not to fit (False).</p>
+</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 12.508%;" />
+<col style="width: 87.492%;" />
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">List</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">The identifier of the new objects if successful. &#160;If <span style="font-style: italic;"><i>curve_id</i></span> is a line segment, <span style="font-style: italic;"><i>parameters</i></span> contains the value 0, <span style="font-style: italic;"><i>radii</i></span> contains one value, and <span style="font-style: italic;"><i>cap</i></span> &#160;is either 0 (None) or 1 (Flat), then an extrusion object will be returned. Otherwise, a polysurface object will be returned. &#160;Note, it is possible for more than one object to be returned (when it is not possible to miter sharp corners, for example).</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">None</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">If not successful, or on error.</p>
+</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as rs</p>
+<p class="Code" style="margin-left: 12px;">curve = rs.GetObject("Select curve to create pipe around", rs.filter.curve, True)</p>
+<p class="Code" style="margin-left: 12px;">if curve:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;domain = rs.CurveDomain(curve)</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;rs.AddPipe(curve, 0, 4)</p>
+<h3>Also See</h3>
+
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

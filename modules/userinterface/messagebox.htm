@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="date" content="06 3, 2002 4:40:56 PM" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>MessageBox</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\nuserinterface\nmessagebox");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > <a href=\"userinterface_module.htm\">userinterface<\/a> > messagebox<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>MessageBox</h1>
+<p>Displays a Windows message box. A message box contains an application-defined message and title, plus any combination of predefined icons and push buttons.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.MessageBox (message, buttons=0, title=None)</p>
+<p class="Code">rhinoscript.userinterface.MessageBox (message, buttons=0, title=None)</p>
+<h3>Parameters</h3>
+<table style="left: 0px; top: 152px;" cellspacing="0">
+<col />
+<col />
+<tr style="vertical-align: top; height: 20px;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">message</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. &#160;String. &#160;A prompt or message.</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 20px;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">buttons</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Number. &#160;The buttons and icon to display. &#160;This parameter can be a combination of the following flags. &#160;If omitted, an OK button and no icon is displayed.</p>
+<table style="left: 0px; top: 18px;" cellspacing="0" width="100%">
+<col style="width: 7.744%;" />
+<col style="width: 92.256%;" />
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Value</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Description</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">0</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Display OK button only.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">1</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Display OK and Cancel buttons.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">2</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Display Abort, Retry, and Ignore buttons.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">3</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Display Yes, No, and Cancel buttons.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">4</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Display Yes and No buttons.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">5</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Display Retry and Cancel buttons.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">16</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Display Critical Message icon.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">32</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Display Warning Query icon.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">48</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Display Warning Message icon.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">64</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Display Information Message icon.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">0</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">First button is the default.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">256</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Second button is the default.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">512</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Third button is the default.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">768</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Fourth button is the default.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">0</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Application modal. The user must respond to the message box before continuing work in the current application.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.744%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">4096</p>
+</td>
+<td style="width: 92.256%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">System modal. The user must respond to the message box before continuing work in any application.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 20px;">
+<td style="padding-right: 10px; padding-left: 10px;">
+<p style="font-style: italic;">title</p>
+</td>
+<td style="padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;String. &#160;A dialog box title.</p>
+</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.756%;" />
+<col style="width: 90.244%;" />
+<tr style="vertical-align: top;">
+<td style="width: 9.756%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Number</p>
+</td>
+<td style="width: 90.244%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">A number indicating which button was clicked:</p>
+<table cellspacing="0" width="100%">
+<col style="width: 7.495%;" />
+<col style="width: 92.505%;" />
+<tr style="vertical-align: top;">
+<td style="width: 7.495%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Value</p>
+</td>
+<td style="width: 92.505%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Description</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.495%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">1</p>
+</td>
+<td style="width: 92.505%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">OK button was clicked.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.495%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">2</p>
+</td>
+<td style="width: 92.505%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Cancel button was clicked.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.495%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">3</p>
+</td>
+<td style="width: 92.505%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Abort button was clicked.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.495%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">4</p>
+</td>
+<td style="width: 92.505%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Retry button was clicked.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.495%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">5</p>
+</td>
+<td style="width: 92.505%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Ignore button was clicked.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.495%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">6</p>
+</td>
+<td style="width: 92.505%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Yes button was clicked.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.495%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">7</p>
+</td>
+<td style="width: 92.505%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">No button was clicked.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as rs</p>
+<p class="Code" style="margin-left: 12px;">rs.MessageBox("Hello Rhino!")</p>
+<p class="Code" style="margin-left: 12px;">rs.MessageBox("Hello Rhino!", 4 | 32)</p>
+<p class="Code" style="margin-left: 12px;">rs.MessageBox("Hello Rhino!", 2 | 48)</p>
+<h3 class="Code">Also See</h3>
+
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

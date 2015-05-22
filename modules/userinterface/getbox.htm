@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>GetBox</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\nuserinterface\ngetbox");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > <a href=\"userinterface_module.htm\">userinterface<\/a> > getbox<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>GetBox</h1>
+<p>Pauses for user input of a box.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.GetBox (mode=0, base_point=None, prompt1=None, prompt2=None, prompt3=None)</p>
+<p class="Code">rhinoscript.userinterface.GetBox (mode=0, base_point=None, prompt1=None, prompt2=None, prompt3=None)</p>
+<h3>Parameters</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 10.453%;" />
+<col style="width: 89.547%;" />
+<tr style="vertical-align: top; height: 20px;">
+<td style="width: 10.453%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">mode</p>
+</td>
+<td style="width: 89.547%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Number. &#160;The box selection mode. &#160;If not specified, all modes (0) are available. &#160;The box selection modes are as follows:</p>
+<table cellspacing="0" width="100%">
+<col style="width: 6.978%;" />
+<col style="width: 93.022%;" />
+<tr style="vertical-align: top;">
+<td style="width: 6.978%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Value</p>
+</td>
+<td style="width: 93.022%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Description</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.978%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">0</p>
+</td>
+<td style="width: 93.022%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">All modes.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.978%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">1</p>
+</td>
+<td style="width: 93.022%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Corner. &#160;The base rectangle is created by picking two corner points.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.978%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">2</p>
+</td>
+<td style="width: 93.022%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">3-Point. &#160;The base rectangle is created by picking three points</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.978%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">3</p>
+</td>
+<td style="width: 93.022%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Vertical. &#160;The base vertical rectangle is created by picking three points.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 6.978%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">4</p>
+</td>
+<td style="width: 93.022%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Center. &#160;The base rectangle is created by picking a center point and a corner point.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 20px;">
+<td style="width: 10.453%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">base_point</p>
+</td>
+<td style="width: 89.547%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;List of 3 numbers or Point3d. &#160;A 3-D base point.</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 20px;">
+<td style="width: 10.453%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">prompt1</p>
+</td>
+<td style="width: 89.547%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;String. &#160;The first prompt or message.</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 20px;">
+<td style="width: 10.453%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">prompt2</p>
+</td>
+<td style="width: 89.547%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;String. &#160;The second prompt or message.</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 20px;">
+<td style="width: 10.453%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">prompt3</p>
+</td>
+<td style="width: 89.547%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;String. &#160;The third prompt or message. &#160;The third prompt used only with 3Point and Vertical modes.</p>
+</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 10.453%;" />
+<col style="width: 89.547%;" />
+<tr style="vertical-align: top;">
+<td style="width: 10.453%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">List</p>
+</td>
+<td style="width: 89.547%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">A list of eight 3-D points that define the corners of the box if successful. &#160;Points are returned in counter-clockwise order starting with the bottom rectangle of the box. &#160;See the image below for details.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 10.453%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">None</p>
+</td>
+<td style="width: 89.547%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">If not successful, or on error.</p>
+</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as rs</p>
+<p class="Code" style="margin-left: 12px;">box = rs.GetBox()</p>
+<p class="Code" style="margin-left: 12px;">if box:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;for i, pt in enumerate(box): rs.AddTextDot( i, pt )</p>
+<p class="Code" style="margin-left: 12px;"></p>
+<h3 class="Code">Also See</h3>
+<p><a href="getrectangle.htm">GetRectangle</a></p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

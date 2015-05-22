@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>GetLine</title>
+<link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\nuserinterface\ngetline");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > <a href=\"userinterface_module.htm\">userinterface<\/a> > getline<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>GetLine</h1>
+<p>Prompts the user to pick points that define a line.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.GetLine (mode=0, point=None, message1=None, 
+ message2=None, message3=None)</p>
+<p class="Code">rhinoscript.userinterface.GetLine (mode=0, point=None, 
+ message1=None, message2=None, message3=None)</p>
+<h3>Parameters</h3>
+<table style="left: 0px; top: 152px;" cellspacing="0" width="100%">
+	<col style="width: 10.627%;" />
+	<col style="width: 89.373%;" />
+	<tr style="vertical-align: top; height: 20px;">
+		<td style="width: 10.627%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body" style="font-style: italic;">mode</p></td>
+		<td style="width: 89.373%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Optional. &#160;Integer. &#160;The line 
+		 definition mode. The possible values are as follows:</p>
+		<table cellspacing="0" width="100%">
+			<col style="width: 15.485%;" />
+			<col style="width: 84.515%;" />
+			<tr>
+				<td><p class="Table-Head">Value</p></td>
+				<td><p class="Table-Head">Description</p></td>
+			</tr>
+			<tr>
+				<td><p class="Table-Body">0 (Default)</p></td>
+				<td><p class="Table-Body">Show all modes, start in two-point 
+				 mode</p></td>
+			</tr>
+			<tr>
+				<td><p class="Table-Body">1</p></td>
+				<td><p class="Table-Body">Two-point. &#160;Defines a line 
+				 from two points.</p></td>
+			</tr>
+			<tr>
+				<td><p class="Table-Body">2</p></td>
+				<td><p class="Table-Body">Normal. &#160;Defines a line 
+				 normal to a location on a surface.</p></td>
+			</tr>
+			<tr>
+				<td><p class="Table-Body">3</p></td>
+				<td><p class="Table-Body">Angled. &#160;Defines a line 
+				 at a specified angle from a reference line.</p></td>
+			</tr>
+			<tr>
+				<td><p class="Table-Body">4</p></td>
+				<td><p class="Table-Body">Vertical. &#160;Defines a line 
+				 vertical to the construction plane.</p></td>
+			</tr>
+			<tr>
+				<td><p class="Table-Body">5</p></td>
+				<td><p class="Table-Body">Four-point. &#160;Defines a line 
+				 using two points to establish direction and two points 
+				 to establish length.</p></td>
+			</tr>
+			<tr>
+				<td><p class="Table-Body">6</p></td>
+				<td><p class="Table-Body">Bisector. &#160;Defines a line 
+				 that bisects a specified angle.</p></td>
+			</tr>
+			<tr>
+				<td><p class="Table-Body">7</p></td>
+				<td><p class="Table-Body">Perpendicular. &#160;Defines 
+				 a line perpendicular to or from a curve</p></td>
+			</tr>
+			<tr>
+				<td><p class="Table-Body">8</p></td>
+				<td><p class="Table-Body">Tangent. &#160;Defines a line 
+				 tangent from a curve.</p></td>
+			</tr>
+			<tr>
+				<td><p class="Table-Body">9</p></td>
+				<td><p class="Table-Body">Extension. &#160;Defines a line 
+				 that extends from a curve.</p></td>
+			</tr>
+		</table></td>
+	</tr>
+	<tr style="vertical-align: top; height: 20px;">
+		<td style="width: 10.627%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body" style="font-style: italic;">point</p></td>
+		<td style="width: 89.373%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Optional. &#160;Point. &#160;An optional 
+		 starting point. Of omitted, the user will be prompted for the 
+		 starting point.</p></td>
+	</tr>
+	<tr style="vertical-align: top; height: 20px;">
+		<td style="width: 10.627%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body" style="font-style: italic;">message1</p></td>
+		<td style="width: 89.373%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Optional. &#160;String. &#160;A prompt 
+		 or message for the first point.</p></td>
+	</tr>
+	<tr style="vertical-align: top; height: 20px;">
+		<td style="width: 10.627%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body" style="font-style: italic;">message2</p></td>
+		<td style="width: 89.373%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Optional. &#160;String. &#160;A prompt 
+		 or message for the second point.</p></td>
+	</tr>
+	<tr style="vertical-align: top; height: 20px;">
+		<td style="width: 10.627%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body" style="font-style: italic;">message3</p></td>
+		<td style="width: 89.373%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Optional. &#160;String. &#160;A prompt 
+		 or message for the mid point.</p></td>
+	</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+	<col style="width: 12.451%;" />
+	<col style="width: 87.549%;" />
+	<tr style="vertical-align: top;">
+		<td style="padding-right: 10px; padding-left: 10px;"><p class="Table-Body">Tuple</p></td>
+		<td style="padding-right: 10px; padding-left: 10px;"><p class="Table-Body">A 
+		 tuple of two 3-D points that define the line if successful.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="padding-right: 10px; padding-left: 10px;"><p class="Table-Body">None</p></td>
+		<td style="padding-right: 10px; padding-left: 10px;"><p class="Table-Body">If 
+		 not successful, or on error.</p></td>
+	</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as 
+ rs</p>
+<p class="Code" style="margin-left: 12px;">line = rs.GetLine()</p>
+<p class="Code" style="margin-left: 12px;">if line: rs.AddLine( line[0], 
+ line[1] )</p>
+<h3 class="Code">Also See</h3>
+<p><a href="getbox.htm">GetBox</a></p>
+<p><a href="getpoint.htm">GetPoint</a></p>
+
+<p><a href="getrectangle.htm">GetRectangle</a></p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

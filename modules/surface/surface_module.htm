@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="date" content="05 29, 2002 5:02:01 PM" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Surface Module</title>
+<link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\nsurface");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > surface<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>Surface &amp; Polysurface Methods</h1>
+<p>The following methods are available for creating, querying or manipulating 
+ surface and polysurface objects.</p>
+<p>&#160;</p>
+<table cellspacing="0" width="100%">
+	<col style="width: 15.609%;" />
+	<col style="width: 84.391%;" />
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Head">Method</p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Head">Description</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addbox.htm">AddBox</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a box object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addcone.htm">AddCone</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Add a cone object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addcutplane.htm">AddCutPlane</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a planar surface through objects at 
+		 a designated location.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addcylinder.htm">AddCylinder</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a cylinder object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addedgesrf.htm">AddEdgeSrf</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a surface from edge curves.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addloftsrf.htm">AddLoftSrf</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a surface by lofting curves.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addnetworksrf.htm">AddNetworkSrf</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;">&#160;</td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addnurbssurface.htm">AddNurbsSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a NURBS surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addpipe.htm">AddPipe</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a surface by lofting curves.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addplanarsrf.htm">AddPlanarSrf</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Creates one or more surfaces from planar 
+		 curves.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addplanesurface.htm">AddPlaneSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Creates a plane surface from three non-colinear 
+		 points.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addrevsrf.htm">AddRevSrf</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a revolved surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addsphere.htm">AddSphere</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a sphere object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addsrfcontourcrvs.htm">AddSrfContourCrvs</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds the curves generated by contouring 
+		 a surface or polysurface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addsrfcontrolptgrid.htm">AddSrfControlPtGrid</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Creates a surface from a grid of control 
+		 points.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addsrfpt.htm">AddSrfPt</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Creates a surface from corner points.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addsrfptgrid.htm">AddSrfPtGrid</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Creates a surface from a grid of points.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addsweep1.htm">AddSweep1</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a surface created through profile 
+		 curves that define the surface shape and one curve that defines 
+		 a surface edge.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addsweep2.htm">AddSweep2</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a surface created through profile 
+		 curves that define the surface shape and two curves that define 
+		 the surface edges.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="addtorus.htm">AddTorus</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Adds a torus object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="booleandifference.htm">BooleanDifference</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Boolean difference function.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="booleanintersection.htm">BooleanIntersection</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Boolean intersection function.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="booleanunion.htm">BooleanUnion</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Boolean union function.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="brepclosestpoint.htm">BrepClosestPoint</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the point on a polysurface, or 
+		 brep, that is closest to a test point.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="capplanarholes.htm">CapPlanarHoles</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Cap planar holes in a surface or polysurface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="changesurfacedegree.htm">ChangeSurfaceDegree</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Changes the degree of a surface object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="duplicateedgecurves.htm">DuplicateEdgeCurves</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Duplicates the edge curves of a surface 
+		 or polysurface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="duplicatesurfaceborder.htm">DuplicateSurfaceBorder</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Creates a curve that duplicates a surface 
+		 or polysurface border.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="evaluatesurface.htm">EvaluateSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Evaluates a surface point at a U,V parameter.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="explodepolysurfaces.htm">ExplodePolysurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Explodes one or more polysurface objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="extendsurface.htm">ExtendSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;">&#160;</td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="extractisocurve.htm">ExtractIsoCurve</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Extracts isoparametric curves from a surface 
+		 object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="extractsurface.htm">ExtractSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;">&#160;</td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="extrudecurve.htm">ExtrudeCurve</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Extrudes a curve along a path.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="extrudecurvepoint.htm">ExtrudeCurvePoint</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Extrudes a curve to a point.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="extrudecurvestraight.htm">ExtrudeCurveStraight</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Extrudes a curve straight.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="extrudesurface.htm">ExtrudeSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Extrudes a surface along a path.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="filletsurfaces.htm">FilletSurfaces</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;">&#160;</td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="flipsurface.htm">FlipSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns or modifies the normal direction 
+		 of a surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="intersectbreps.htm">IntersectBreps</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Calculates the intersection of two brep 
+		 objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="intersectspheres.htm">IntersectSpheres</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Calculates the intersection of two spheres.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="isbrep.htm">IsBrep</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies an object is a Brep.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="iscone.htm">IsCone</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Determines if a surface is a portion of 
+		 a cone.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="iscylinder.htm">IsCylinder</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Determines if a surface is a portion of 
+		 a cylinder.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="isplanesurface.htm">IsPlaneSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies an object is a plane surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="ispointinsurface.htm">IsPointInSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies a point is inside a closed surface 
+		 or polysurface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="ispointonsurface.htm">IsPointOnSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies a point is on a surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="ispolysurface.htm">IsPolysurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies an object is a polysurface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="ispolysurfaceclosed.htm">IsPolysurfaceClosed</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies a a polysurface object is closed.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="issphere.htm">IsSphere</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Determines if a surface is a portion of 
+		 a sphere.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="issurface.htm">IsSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies an object is a surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="issurfaceclosed.htm">IsSurfaceClosed</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies a surface object is closed.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="issurfaceperiodic.htm">IsSurfacePeriodic</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies a surface object is periodic.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="issurfaceplanar.htm">IsSurfacePlanar</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies a surface object is planar.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="issurfacerational.htm">IsSurfaceRational</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies a surface object is rational.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="issurfacesingular.htm">IsSurfaceSingular</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies a surface object is singular.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="issurfacetrimmed.htm">IsSurfaceTrimmed</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Verifies a surface object is a trimmed 
+		 surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="istorus.htm">IsTorus</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Determines if a surface is a portion of 
+		 a torus.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="joinsurfaces.htm">JoinSurfaces</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Joins two or more surface or polysurface 
+		 objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="makesurfaceperiodic.htm">MakeSurfacePeriodic</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Makes a surface object periodic.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="offsetsurface.htm">OffsetSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Offsets a surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="pullcurve.htm">PullCurve</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Pulls a curve object to a surface object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="rebuildsurface.htm">RebuildSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Rebuilds a surface to a given point count.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="reversesurface.htm">ReverseSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Reverses the U and V directions of a surface 
+		 object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="shootray.htm">ShootRay</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Shoots a ray at a collection of surfaces.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="shortpath.htm">ShortPath</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Creates the shortest possible curve (geodesic) 
+		 between two points on a surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="shrinktrimmedsurface.htm">ShrinkTrimmedSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Shrinks a surfaces or polysurfaces underlying 
+		 untrimmed surfaces near to trimming boundaries.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="splitbrep.htm">SplitBrep</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Splits a brep with another brep.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacearea.htm">SurfaceArea</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Calculates the area of a surface or polysurface 
+		 object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceareacentroid.htm">SurfaceAreaCentroid</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Calculates the area centroid of a surface 
+		 or polysurface object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceareamoments.htm">SurfaceAreaMoments</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Calculates the area moments of inertia 
+		 of surface or polysurface objects.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceclosestpoint.htm">SurfaceClosestPoint</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the u,v parameter of the point 
+		 on a surface that is closest to a test point.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacecone.htm">SurfaceCone</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the definition of a cone surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacecurvature.htm">SurfaceCurvature</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the curvature of a surface at a 
+		 U,V parameter.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacecylinder.htm">SurfaceCylinder</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the definition of a cylinder surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacedegree.htm">SurfaceDegree</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the degree of a surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacedomain.htm">SurfaceDomain</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the domain of a surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceeditpoints.htm">SurfaceEditPoints</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the edit, or Greville, points of 
+		 a surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceevaluate.htm">SurfaceEvaluate</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">General purpose surface evaluator.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceframe.htm">SurfaceFrame</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the plane, or frame, of a surface 
+		 at a U,V parameter.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceisocurvedensity.htm">SurfaceIsocurveDensity</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns or changed the isocurve density 
+		 of a surface or polysurface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceknotcount.htm">SurfaceKnotCount</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the knot count of a surface object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceknots.htm">SurfaceKnots</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the knots of a surface object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacenormal.htm">SurfaceNormal</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the normal to a surface at a U,V 
+		 parameter.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacenormalizedparameter.htm">SurfaceNormalizedParameter</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Converts a normalized surface parameter 
+		 to a surface parameter.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceparameter.htm">SurfaceParameter</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Converts a surface parameter to a normalized 
+		 surface parameter.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacepointcount.htm">SurfacePointCount</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the point count of a surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacepoints.htm">SurfacePoints</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the control points of a surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacetorus.htm">SurfaceTorus</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the definition of a torus surface.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacevolume.htm">SurfaceVolume</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Calculates the volume of closed surfaces 
+		 or polysurfaces.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacevolumecentroid.htm">SurfaceVolumeCentroid</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Calculates the volume centroid of closed 
+		 surfaces or polysurfaces.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfacevolumemoments.htm">SurfaceVolumeMoments</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Calculates the volume moments of inertia 
+		 of closed surfaces or polysurfaces.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="surfaceweights.htm">SurfaceWeights</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Returns the weight values assigned to control 
+		 points of a surface object.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="trimbrep.htm">TrimBrep</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;">&#160;</td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="trimsurface.htm">TrimSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;">&#160;</td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 15.609%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body"><a href="unrollsurface.htm">UnrollSurface</a></p></td>
+		<td style="width: 84.391%; padding-right: 10px; padding-left: 10px;"><p 
+			 class="Table-Body">Flattens a developable surface</p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

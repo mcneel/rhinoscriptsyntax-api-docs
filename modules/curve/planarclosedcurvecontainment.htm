@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>PlanarClosedCurveContainment</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\ncurve\nplanarclosedcurvecontainment");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > <a href=\"curve_module.htm\">curve<\/a> > planarclosedcurvecontainment<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>PlanarClosedCurveContainment</h1>
+<p>Determines the relationship between the regions bounded by two coplanar simple closed curves.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.PlanarClosedCurveContainment (curve_a, curve_b, plane=None, tolerance=None)</p>
+<p class="Code">rhinoscript.curve.PlanarClosedCurveContainment (curve_a, curve_b, plane=None, tolerance=None)</p>
+<h3>Parameters</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.632%;" />
+<col style="width: 90.368%;" />
+<tr style="vertical-align: top;">
+<td style="width: 9.632%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">curve_a</p>
+</td>
+<td style="width: 90.368%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. &#160;String or Guid. &#160;The object identifier of the first planar, closed curve.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 9.632%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">curve_b</p>
+</td>
+<td style="width: 90.368%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. &#160;String or Guid. &#160;The object identifier of the second planar, closed curve.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 9.632%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">plane</p>
+</td>
+<td style="width: 90.368%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;The new construction plane. &#160;If omitted, the currently active construction plane is used.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 9.632%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">tolerance</p>
+</td>
+<td style="width: 90.368%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Number. &#160;The tolerance. &#160;If omitted, the current document absolute tolerance is used.</p>
+</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.618%;" />
+<col style="width: 90.382%;" />
+<tr style="vertical-align: top;">
+<td style="width: 9.618%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Number</p>
+</td>
+<td style="width: 90.382%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">A number identifying the relationship if successful. &#160;The possible values are as follows:</p>
+<table cellspacing="0" width="100%">
+<col style="width: 5.146%;" />
+<col style="width: 94.854%;" />
+<tr style="vertical-align: top;">
+<td style="width: 5.146%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Value</p>
+</td>
+<td style="width: 94.854%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Description</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 5.146%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">0</p>
+</td>
+<td style="width: 94.854%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">The regions bounded by the curves are disjoint.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 5.146%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">1</p>
+</td>
+<td style="width: 94.854%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">The two curves intersect.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 5.146%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">2</p>
+</td>
+<td style="width: 94.854%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">The region bounded by <span style="font-style: italic;"><i>curve_a</i></span> is inside of <span style="font-style: italic;"><i>curve_b</i></span>.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 5.146%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">3</p>
+</td>
+<td style="width: 94.854%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">The region bounded by <span style="font-style: italic;"><i>curve_b</i></span> is inside of <span style="font-style: italic;"><i>curve_a</i></span>. &#160;</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 9.618%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">None</p>
+</td>
+<td style="width: 90.382%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">If not successful, or on error.</p>
+</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as rs</p>
+<p class="Code" style="margin-left: 12px;">curve1 = rs.GetObject("Select first curve", rs.filter.curve )</p>
+<p class="Code" style="margin-left: 12px;">curve2 = rs.GetObject("Select second curve", rs.filter.curve )</p>
+<p class="Code" style="margin-left: 12px;">if rs.IsCurvePlanar(curve1) and rs.IsCurvePlanar(curve2):</p>
+<p class="Code" style="margin-left: 12px;"><span style="margin-left: 24px;">&#160;&#160;&#160;&#160;if rs.IsCurveClosed(curve1) and rs.IsCurveClosed(curve2):</span></p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if rs.IsCurveInPlane(curve1) and rs.IsCurveInPlane(curve2):</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;result = rs.PlanarClosedCurveContainment(curve1, curve2)</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if result==0: print <span style="margin-left: 60px;">"The regions bounded by the curves are disjoint."</span></p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;elif result==1: p<span style="margin-left: 12px;">rint "The two curves intersect.."</span></p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;elif result==2: p<span style="margin-left: 12px;">rint "The region bounded by Curve1 is inside of Curve2."</span></p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;else: p<span style="margin-left: 12px;">rint "The region bounded by Curve2 is inside of Curve1."</span></p>
+<h3 class="Code">Also See</h3>
+<p><a href="planarcurvecollision.htm">PlanarCurveCollision</a></p>
+<p><a href="pointinplanarclosedcurve.htm">PointInPlanarClosedCurve</a></p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

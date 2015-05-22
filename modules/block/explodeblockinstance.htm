@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="topic-status" content="In Progress" />
+<meta name="topic-priority" content="0" />
+<meta name="topic-time-estimate" content="0" />
+<meta name="topic-comment" content="" />
+<meta name="topic-id" content="ExplodeBlockInstance" />
+<meta name="topic-check-list" content="Ran Smart Index" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>ExplodeBlockInstance</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+</head>
+<body>
+<script type="text/javascript" src="../../ehlpdhtm.js"></script>
+
+<h1>ExplodeBlockInstance</h1>
+<p>Explodes a block instance into it's geometric components. &#160;The exploded objects are added to the document.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.ExplodeBlockInstance (object_id)</p>
+<p class="Code">rhinoscript.block.ExplodeBlockInstance (object_id)</p>
+<h3>Parameters</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.679%;" />
+<col style="width: 90.321%;" />
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">object_id</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. &#160;String or Guid. &#160;The identifier of an existing block definition.</p>
+</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.756%;" />
+<col style="width: 90.244%;" />
+<tr style="vertical-align: top;">
+<td style="width: 9.756%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">List</p>
+</td>
+<td style="width: 90.244%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">An array of strings identifying the newly exploded objects if successful.</p>
+</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as rs</p>
+<p class="Code" style="margin-left: 12px;">strObject = rs.GetObject("Select block instance to explode")</p>
+<p class="Code" style="margin-left: 12px;">if rs.IsBlockInstance(strObject):</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;rs.ExplodeBlockInstance(strObject)</p>
+<h3 class="code">Also See</h3>
+<p><a href="deleteblock.htm">DeleteBlock</a></p>
+<p><a href="isblockinstance.htm">IsBlockInstance</a></p>
+<p>&#160;</p>
+</body>
+</html>

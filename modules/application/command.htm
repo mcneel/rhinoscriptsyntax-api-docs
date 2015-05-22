@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="date" content="06 7, 2002 11:52:13 AM" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>Command</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\napplication\ncommand");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > <a href=\"application_module.htm\">application<\/a> > command<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>Command</h1>
+<p>Runs a Rhino command script. &#160;All Rhino commands can be used in command scripts. &#160;The command can be a built-in Rhino command or a command that is provided by a 3rd party plug-in.</p>
+<p>Write command scripts just as you would type the command sequence at the command line. A space between characters or a new line act like pressing &lt;Enter&gt; at the command line. &#160;For more information on writing command scripts, see "Scripting" in the Rhino help file.</p>
+<p>Note, this function is designed to run one command and one command only. &#160;Do not combine multiple Rhino commands into a single call to this method. &#160;For example:</p>
+<p>&#160;</p>
+<p>WRONG:</p>
+<p class="Code" style="margin-left: 8px;">rhinoscriptsyntax.Command("_Line _SelLast _Invert")</p>
+<p>&#160;</p>
+<p>CORRECT:</p>
+<p class="Code">rhinoscriptsyntax.Command("_Line")</p>
+<p class="Code">rhinoscriptsyntax.Command("_SelLast")</p>
+<p class="Code">rhinoscriptsyntax.Command("_Invert")</p>
+<p>&#160;</p>
+<p>Also, the exclamation point and space character ( ! ) combination used by button macros and batch-driven scripts to cancel the previous command is not valid. &#160;For example:</p>
+<p>&#160;</p>
+<p>WRONG:</p>
+<p class="Code">rhinoscriptsyntax.Command("! _Line _Pause _Pause")</p>
+<p>&#160;</p>
+<p>CORRECT:</p>
+<p class="Code">rhinoscriptsyntax.Command("_Line _Pause _Pause")</p>
+<p>&#160;</p>
+<p>After the command script has run, you can obtain the identifiers of most recently created or changed object by calling <a href="LastCreatedObjects.htm">LastCreatedObjects</a>.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.Command (commandString, echo=True)</p>
+<p class="Code">rhinoscript.application.Command (commandString, echo=True)</p>
+<h3>Parameters</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 10.804%;" />
+<col style="width: 89.196%;" />
+<tr style="vertical-align: top;">
+<td style="width: 10.804%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">commandString</p>
+</td>
+<td style="width: 89.196%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Required. &#160;String. &#160;A Rhino command including any arguments.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 10.804%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">echo</p>
+</td>
+<td style="width: 89.196%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Boolean. The command echo mode. &#160;If omitted, command prompts are echoed (True).</p>
+</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 10.883%;" />
+<col style="width: 89.117%;" />
+<tr style="vertical-align: top;">
+<td style="width: 10.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Boolean</p>
+</td>
+<td style="width: 89.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">True or False indicating success or failure.</p>
+</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as rs</p>
+<p class="Code" style="margin-left: 12px;">rs.Command("_Line 0,0,0 2,2,2")</p>
+<p class="Code" style="margin-left: 12px;">rs.Command("_Line _Pause _Pause")</p>
+<h3>Also See</h3>
+<p><a href="iscommand.htm">IsCommand</a></p>
+<p><a href="lastcommandname.htm">LastCommandName</a></p>
+<p><a href="lastcommandresult.htm">LastCommandResult</a></p>
+<p><a href="../selection/lastcreatedobjects.htm">LastCreatedObjects</a></p>
+
+<p><a href="prompt.htm">Prompt</a></p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>

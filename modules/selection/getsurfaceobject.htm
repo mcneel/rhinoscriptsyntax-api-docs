@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Adobe RoboHelp 11" />
+<title>GetSurfaceObject</title>
+
+ <link rel="StyleSheet" href="../../rhinoscript.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+<script type="text/javascript" language="javascript1.2" src="../../whmsg.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript" src="../../whver.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whutils.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whproxy.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whlang.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2" src="../../whtopic.js" charset="utf-8"></script>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.gbWhTopic)
+{
+	var strUrl = document.location.href;
+	var bc = 0;
+	var n = strUrl.toLowerCase().indexOf("bc-");
+	if(n != -1)
+	{
+		document.location.href = strUrl.substring(0, n);
+		bc = strUrl.substring(n+3);
+	}
+
+	addTocInfo("Modules\nselection\ngetsurfaceobject");
+addButton("show",BTN_IMG,"Show","","","","",0,0,"../../whd_show0.gif","../../whd_show2.gif","../../whd_show1.gif");
+addButton("hide",BTN_IMG,"Hide","","","","",0,0,"../../whd_hide0.gif","../../whd_hide2.gif","../../whd_hide1.gif");
+addButton("prev",BTN_IMG,"<<","","","","",0,0,"../../whd_prev0.gif","../../whd_prev2.gif","../../whd_prev1.gif");
+addButton("next",BTN_IMG,">>","","","","",0,0,"../../whd_next0.gif","../../whd_next2.gif","../../whd_next1.gif");
+
+
+	document.write("<p style=\"text-align:right\"> ");
+AddMasterBreadcrumbs("../../index.html", "", ">", "Home", "../../title.htm");
+document.write("<a href=\"../../introduction/rhino_package.htm\">Modules<\/a> > <a href=\"selection_module.htm\">selection<\/a> > getsurfaceobject<\/p>");
+
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+    
+onLoadHandler = function()
+{
+	if (window.setRelStartPage)
+	{
+    setTimeout("setRelStartPage('../../index.html');", 1)
+
+    setTimeout("UpdateBreadCrumbsMarker();", 1);
+    }
+} 
+
+if (window.addEventListener){  
+	window.addEventListener('load', onLoadHandler, false);   
+} else if (window.attachEvent){  
+	window.attachEvent('onload', onLoadHandler);  
+}
+
+function onSetStartPage()
+{
+	autoSync(1);
+	sendSyncInfo();
+	sendAveInfoOut();
+}
+//-->
+//]]></script>
+</head>
+<body><script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(4);
+//-->
+//]]></script>
+<script type="text/javascript" src="../../ehlpdhtm.js" language="JavaScript1.2"></script>
+
+<h1>GetSurfaceObject</h1>
+<p>Prompts the user to pick, or select, a single surface object.</p>
+<h3>Syntax</h3>
+<p class="Code">rhinoscriptsyntax.GetSurfaceObject (message="select surface", preselect=False, select=False)</p>
+<p class="Code">rhinoscript.selection.GetSurfaceObject (message="select surface", preselect=False, select=False)</p>
+<h3>Parameters</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.679%;" />
+<col style="width: 90.321%;" />
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">message</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;String. &#160;A prompt or message.</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">preselect</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Boolean. &#160;Allow for the selection of pre-selected objects. &#160;If omitted, pre-selected objects are not accepted (False).</p>
+</td>
+</tr>
+<tr style="vertical-align: top; height: 24px;">
+<td style="width: 9.679%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-style: italic;">select</p>
+</td>
+<td style="width: 90.321%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Optional. &#160;Boolean. &#160;Select the picked objects. &#160;If omitted, the objects that are picked are not selected (False).</p>
+</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<table cellspacing="0" width="100%">
+<col style="width: 9.756%;" />
+<col style="width: 90.244%;" />
+<tr style="vertical-align: top;">
+<td style="width: 9.756%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Tuple</p>
+</td>
+<td style="width: 90.244%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">A tuple of selection information if successful. The tuple will contain the following information:</p>
+<table cellspacing="0" width="100%">
+<col style="width: 7.117%;" />
+<col style="width: 92.883%;" />
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Element</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body" style="font-weight: bold;">Description</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">0</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Guid. The identifier of the surface object.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">1</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Boolean. True if the surface was pre-selected, otherwise False.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">2</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Number. The selection method: &#160;&#160;&#160;&#160;</p>
+<p class="Table-Body">0: selected by non-mouse method (SelAll, etc.).</p>
+<p class="Table-Body">1: selected by mouse click on the object.</p>
+<p class="Table-Body">2: selected by being inside of a mouse window.</p>
+<p class="Table-Body">3: selected by intersecting a mouse crossing window.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">3</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">Point3d. The selection point. This value is valid only if the surface was not pre-selected and it was selected by clicking the mouse on the surface.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">4</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">tuple. The u,v surface parameter of the selection point. This value is valid only if the surface was not pre-selected and it was selected by clicking the mouse on the surface.</p>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 7.117%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">5</p>
+</td>
+<td style="width: 92.883%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">String. The name of the view in which the selection was made.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="vertical-align: top;">
+<td style="width: 9.756%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">None</p>
+</td>
+<td style="width: 90.244%; padding-right: 10px; padding-left: 10px;">
+<p class="Table-Body">If no object picked</p>
+</td>
+</tr>
+</table>
+<h3>Example</h3>
+<p class="Code" style="margin-left: 12px;">import rhinoscriptsyntax as rs</p>
+<p class="Code" style="margin-left: 12px;">select = rs.GetSurfaceObject("Select surface")</p>
+<p class="Code" style="margin-left: 12px;">if select:</p>
+<p class="Code" style="margin-left: 12px;">&#160;&#160;&#160;&#160;print "Surface identifier: ", select[0]</p>
+<h3>Also See</h3>
+<p><a href="getcurveobject.htm">GetCurveObject</a></p>
+<p><a href="getobject.htm">GetObject</a></p>
+<p><a href="getobjects.htm">GetObjects</a></p>
+<script type="text/javascript" language="javascript1.2">//<![CDATA[
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+
+highlightSearch();
+//-->
+//]]></script>
+</body>
+</html>
