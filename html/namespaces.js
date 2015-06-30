@@ -1,0 +1,27 @@
+var namespaces =
+[
+    [ "AddPatchTests", "namespace_add_patch_tests.html", null ],
+    [ "AnnotateCurveEndPoints", "namespace_annotate_curve_end_points.html", null ],
+    [ "AnnotateCurveForm", "namespace_annotate_curve_form.html", null ],
+    [ "ArrayPointsOnSurface", "namespace_array_points_on_surface.html", null ],
+    [ "ChangeCurveDegreeTests", "namespace_change_curve_degree_tests.html", null ],
+    [ "ChangeSurfaceDegreeTests", "namespace_change_surface_degree_tests.html", null ],
+    [ "CircleFromLength", "namespace_circle_from_length.html", null ],
+    [ "CopyObjectsToLayer", "namespace_copy_objects_to_layer.html", null ],
+    [ "CreateShortcut", "namespace_create_shortcut.html", null ],
+    [ "CurrentModelInfo", "namespace_current_model_info.html", null ],
+    [ "CurveLength", "namespace_curve_length.html", null ],
+    [ "CustomGetPoint", "namespace_custom_get_point.html", null ],
+    [ "DrawParametricCurve", "namespace_draw_parametric_curve.html", null ],
+    [ "ExportControlPoints", "namespace_export_control_points.html", null ],
+    [ "ExportPoints", "namespace_export_points.html", null ],
+    [ "HelloPython", "namespace_hello_python.html", null ],
+    [ "ImportPoints", "namespace_import_points.html", null ],
+    [ "MakeCircleWithRhinoCommon", "namespace_make_circle_with_rhino_common.html", null ],
+    [ "PointArrayBoundingBoxTests", "namespace_point_array_bounding_box_tests.html", null ],
+    [ "rhinoscript", "namespacerhinoscript.html", "namespacerhinoscript" ],
+    [ "scriptcontext", "namespacescriptcontext.html", null ],
+    [ "sticky", "namespacesticky.html", null ],
+    [ "UseModule", "namespace_use_module.html", null ],
+    [ "UserDataDocumentLevelTests", "namespace_user_data_document_level_tests.html", null ]
+];
