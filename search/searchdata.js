@@ -1,21 +1,18 @@
 var indexSectionsWithContent =
 {
-  0: "acdehimprsu",
-  1: "acdehimprsu",
-  2: "r"
+  0: "r",
+  1: "r"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "namespaces",
-  2: "pages"
+  1: "namespaces"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Namespaces",
-  2: "Pages"
+  1: "Namespaces"
 };
 
