@@ -125,10 +125,783 @@ $(document).ready(function(){initNavTree('namespacerhinoscript_1_1transformation
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">rhinoscript.transformation Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:acfdec7f6dbb8d3bd4c1916ae7ea0be1a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#acfdec7f6dbb8d3bd4c1916ae7ea0be1a">IsXformIdentity</a> (xform)</td></tr>
+<tr class="memdesc:acfdec7f6dbb8d3bd4c1916ae7ea0be1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies a matrix is a similarity transformation.  <a href="#acfdec7f6dbb8d3bd4c1916ae7ea0be1a">More...</a><br /></td></tr>
+<tr class="separator:acfdec7f6dbb8d3bd4c1916ae7ea0be1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fd274c90dbcfc5ad435e223158b63f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a59fd274c90dbcfc5ad435e223158b63f">IsXformSimilarity</a> (xform)</td></tr>
+<tr class="memdesc:a59fd274c90dbcfc5ad435e223158b63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two transformation matrices.  <a href="#a59fd274c90dbcfc5ad435e223158b63f">More...</a><br /></td></tr>
+<tr class="separator:a59fd274c90dbcfc5ad435e223158b63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc78ef82e002a1d4b0ad45c292dd2516"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#adc78ef82e002a1d4b0ad45c292dd2516">IsXformZero</a> (xform)</td></tr>
+<tr class="memdesc:adc78ef82e002a1d4b0ad45c292dd2516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the determinant of a transformation matrix.  <a href="#adc78ef82e002a1d4b0ad45c292dd2516">More...</a><br /></td></tr>
+<tr class="separator:adc78ef82e002a1d4b0ad45c292dd2516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6641cfe41a744ab8d8adb3041afdc2e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#ae6641cfe41a744ab8d8adb3041afdc2e">XformChangeBasis</a> (initial_plane, final_plane)</td></tr>
+<tr class="separator:ae6641cfe41a744ab8d8adb3041afdc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb18775a12bdc3286abe09248871fd5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a7cb18775a12bdc3286abe09248871fd5">XformChangeBasis2</a> (x0, y0, z0, x1, y1, z1)</td></tr>
+<tr class="separator:a7cb18775a12bdc3286abe09248871fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd4936d9a70cf01b618bd5f9da051a0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a6cd4936d9a70cf01b618bd5f9da051a0">XformCompare</a> (xform1, xform2)</td></tr>
+<tr class="separator:a6cd4936d9a70cf01b618bd5f9da051a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58c527b2329461ddbcaa5c33cafd8c5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#ab58c527b2329461ddbcaa5c33cafd8c5">XformCPlaneToWorld</a> (point, plane)</td></tr>
+<tr class="memdesc:ab58c527b2329461ddbcaa5c33cafd8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies two transformation matrices, where result = xform1 * xform2.  <a href="#ab58c527b2329461ddbcaa5c33cafd8c5">More...</a><br /></td></tr>
+<tr class="separator:ab58c527b2329461ddbcaa5c33cafd8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259cb72d4c883e8f51c8e62ca2748174"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a259cb72d4c883e8f51c8e62ca2748174">XformDeterminant</a> (xform)</td></tr>
+<tr class="memdesc:a259cb72d4c883e8f51c8e62ca2748174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the minimal transformation that rotates start_direction to end_direction while fixing center_point.  <a href="#a259cb72d4c883e8f51c8e62ca2748174">More...</a><br /></td></tr>
+<tr class="separator:a259cb72d4c883e8f51c8e62ca2748174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b6c7b1b575c35d633e82d98b4da6ef"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a05b6c7b1b575c35d633e82d98b4da6ef">XformDiagonal</a> (diagonal_value)</td></tr>
+<tr class="memdesc:a05b6c7b1b575c35d633e82d98b4da6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a scale transformation.  <a href="#a05b6c7b1b575c35d633e82d98b4da6ef">More...</a><br /></td></tr>
+<tr class="separator:a05b6c7b1b575c35d633e82d98b4da6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f55af68565b0d67fe9f9c221a2f1774"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a1f55af68565b0d67fe9f9c221a2f1774">XformIdentity</a> ()</td></tr>
+<tr class="separator:a1f55af68565b0d67fe9f9c221a2f1774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669634fd55f54e207aef316cd889aa54"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a669634fd55f54e207aef316cd889aa54">XformInverse</a> (xform)</td></tr>
+<tr class="memdesc:a669634fd55f54e207aef316cd889aa54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a point from either client-area coordinates of the specified view or screen coordinates to world coordinates.  <a href="#a669634fd55f54e207aef316cd889aa54">More...</a><br /></td></tr>
+<tr class="separator:a669634fd55f54e207aef316cd889aa54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3db8b684a4bf33420e1d93c3eb81f06"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#ad3db8b684a4bf33420e1d93c3eb81f06">XformMirror</a> (mirror_plane_point, mirror_plane_normal)</td></tr>
+<tr class="separator:ad3db8b684a4bf33420e1d93c3eb81f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b91f708fff51f07778e6d22438dcea"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a97b91f708fff51f07778e6d22438dcea">XformMultiply</a> (xform1, xform2)</td></tr>
+<tr class="separator:a97b91f708fff51f07778e6d22438dcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab635b74f4f76938e9179b48b45155119"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#ab635b74f4f76938e9179b48b45155119">XformPlanarProjection</a> (plane)</td></tr>
+<tr class="separator:ab635b74f4f76938e9179b48b45155119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4102ea52b13a57efc26768adf93d280"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#ac4102ea52b13a57efc26768adf93d280">XformRotation1</a> (initial_plane, final_plane)</td></tr>
+<tr class="separator:ac4102ea52b13a57efc26768adf93d280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2026e1b16005e8da46f2d2173758265"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#af2026e1b16005e8da46f2d2173758265">XformRotation2</a> (angle_degrees, rotation_axis, center_point)</td></tr>
+<tr class="separator:af2026e1b16005e8da46f2d2173758265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56fd5dbfb0d18ec30bd30be9f5de201d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a56fd5dbfb0d18ec30bd30be9f5de201d">XformRotation3</a> (start_direction, end_direction, center_point)</td></tr>
+<tr class="separator:a56fd5dbfb0d18ec30bd30be9f5de201d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5530b132611f6da0557fd2943374fe64"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a5530b132611f6da0557fd2943374fe64">XformRotation4</a> (x0, y0, z0, x1, y1, z1)</td></tr>
+<tr class="separator:a5530b132611f6da0557fd2943374fe64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3f8b59008ce0d97b307e576caa62c8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a9e3f8b59008ce0d97b307e576caa62c8">XformScale</a></td></tr>
+<tr class="separator:a9e3f8b59008ce0d97b307e576caa62c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9749f910eb37208c1b00dcfafec02f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a7b9749f910eb37208c1b00dcfafec02f">XformScreenToWorld</a></td></tr>
+<tr class="separator:a7b9749f910eb37208c1b00dcfafec02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52dfe7bc884623b3c7d837f2ca6d49c4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#a52dfe7bc884623b3c7d837f2ca6d49c4">XformShear</a> (plane, x, y, z)</td></tr>
+<tr class="separator:a52dfe7bc884623b3c7d837f2ca6d49c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5a098df1a6ef474068ff007ad011db"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#aec5a098df1a6ef474068ff007ad011db">XformTranslation</a> (vector)</td></tr>
+<tr class="separator:aec5a098df1a6ef474068ff007ad011db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2961aa5fc2ed3036d7358d9fd39b5fb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#ad2961aa5fc2ed3036d7358d9fd39b5fb">XformWorldToCPlane</a> (point, plane)</td></tr>
+<tr class="separator:ad2961aa5fc2ed3036d7358d9fd39b5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e0e05f825f022d4b038661a3e32ef8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#af8e0e05f825f022d4b038661a3e32ef8">XformWorldToScreen</a></td></tr>
+<tr class="separator:af8e0e05f825f022d4b038661a3e32ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7994f865f4bf57f7fdb60bf21dea22"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerhinoscript_1_1transformation.html#aec7994f865f4bf57f7fdb60bf21dea22">XformZero</a> ()</td></tr>
+<tr class="separator:aec7994f865f4bf57f7fdb60bf21dea22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="acfdec7f6dbb8d3bd4c1916ae7ea0be1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.IsXformIdentity </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xform</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifies a matrix is a similarity transformation. </p>
+<p>A similarity transformation can be broken into a sequence of dialations, translations, rotations, and reflections </p>
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00013">13</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a59fd274c90dbcfc5ad435e223158b63f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.IsXformSimilarity </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xform</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares two transformation matrices. </p>
+<dl class="section user"><dt>Parameters</dt><dd>xform1, xform2 = matrices to compare </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 if xform1&lt;xform2 1 if xform1&gt;xform2 0 if xform1=xform2 </dd></dl>
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00032">32</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc78ef82e002a1d4b0ad45c292dd2516"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.IsXformZero </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xform</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the determinant of a transformation matrix. </p>
+<p>If the determinant of a transformation matrix is 0, the matrix is said to be singular. Singular matrices do not have inverses. </p>
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00048">48</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6641cfe41a744ab8d8adb3041afdc2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformChangeBasis </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>initial_plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>final_plane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00057">57</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7cb18775a12bdc3286abe09248871fd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformChangeBasis2 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>z0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>z1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00069">69</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6cd4936d9a70cf01b618bd5f9da051a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformCompare </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xform1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xform2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00084">84</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab58c527b2329461ddbcaa5c33cafd8c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformCPlaneToWorld </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>plane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiplies two transformation matrices, where result = xform1 * xform2. </p>
+<dl class="section return"><dt>Returns</dt><dd>result transformation on success </dd></dl>
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00101">101</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a259cb72d4c883e8f51c8e62ca2748174"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformDeterminant </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xform</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate the minimal transformation that rotates start_direction to end_direction while fixing center_point. </p>
+<dl class="section user"><dt>Parameters</dt><dd>start_direction, end_direction = 3d vectors center_point = the rotation center </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The 4x4 transformation matrix. None on error.Returns a rotation transformation. </dd></dl>
+<dl class="section user"><dt>Paramters</dt><dd>x0,y0,z0 = Vectors defining the initial orthonormal frame x1,y1,z1 = Vectors defining the final orthonormal frame </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The 4x4 transformation matrix. None on error. </dd></dl>
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00148">148</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05b6c7b1b575c35d633e82d98b4da6ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformDiagonal </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>diagonal_value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a scale transformation. </p>
+<dl class="section user"><dt>Parameters</dt><dd>scale = single number, list of 3 numbers, Point3d, or Vector3d point[opt] = center of scale. If omitted, world origin is used </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The 4x4 transformation matrix on success None on error </dd></dl>
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00161">161</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f55af68565b0d67fe9f9c221a2f1774"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformIdentity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00165">165</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a669634fd55f54e207aef316cd889aa54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformInverse </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xform</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transforms a point from either client-area coordinates of the specified view or screen coordinates to world coordinates. </p>
+<p>The resulting coordinates are represented as a 3-D point </p><dl class="section user"><dt>Parameters</dt><dd>point = 2D point view[opt] = title or identifier of a view. If omitted, the active view is used screen_coordinates[opt] = if False, point is in client-area coordinates. If True, point is in screen-area coordinates </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>3D point on success None on error </dd></dl>
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00182">182</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3db8b684a4bf33420e1d93c3eb81f06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformMirror </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mirror_plane_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mirror_plane_normal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00196">196</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a97b91f708fff51f07778e6d22438dcea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformMultiply </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xform1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>xform2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00202">202</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab635b74f4f76938e9179b48b45155119"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformPlanarProjection </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>plane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00215">215</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4102ea52b13a57efc26768adf93d280"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformRotation1 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>initial_plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>final_plane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00220">220</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2026e1b16005e8da46f2d2173758265"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformRotation2 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>angle_degrees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>rotation_axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>center_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00240">240</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a56fd5dbfb0d18ec30bd30be9f5de201d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformRotation3 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>start_direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>end_direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>center_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00249">249</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5530b132611f6da0557fd2943374fe64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformRotation4 </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>z0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>z1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00258">258</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e3f8b59008ce0d97b307e576caa62c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformScale </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>point</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00270">270</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b9749f910eb37208c1b00dcfafec02f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformScreenToWorld </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>view</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>screen_coordinates</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00283">283</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52dfe7bc884623b3c7d837f2ca6d49c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformShear </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00297">297</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec5a098df1a6ef474068ff007ad011db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformTranslation </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00305">305</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2961aa5fc2ed3036d7358d9fd39b5fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformWorldToCPlane </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>plane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00311">311</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8e0e05f825f022d4b038661a3e32ef8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformWorldToScreen </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>view</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>screen_coordinates</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00318">318</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec7994f865f4bf57f7fdb60bf21dea22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def rhinoscript.transformation.XformZero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="transformation_8py_source.html#l00332">332</a> of file <a class="el" href="transformation_8py_source.html">transformation.py</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.9.1-->
@@ -136,7 +909,7 @@ $(document).ready(function(){initNavTree('namespacerhinoscript_1_1transformation
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacerhinoscript.html">rhinoscript</a></li><li class="navelem"><a class="el" href="namespacerhinoscript_1_1transformation.html">transformation</a></li>
-    <li class="footer">Generated on Tue Jun 30 2015 13:49:37 for rhinoscriptsyntax API docs by
+    <li class="footer">Generated on Tue Jun 30 2015 15:12:41 for rhinoscriptsyntax API docs by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

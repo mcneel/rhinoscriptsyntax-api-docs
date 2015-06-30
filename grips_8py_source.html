@@ -134,21 +134,21 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> Rhino</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">def </span>EnableObjectGrips(object_id, enable=True):</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#ad270c0a7eefd1af09e0aa231bdfbe57d">EnableObjectGrips</a>(object_id, enable=True):</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Enables or disables an object&#39;s grips. For curves and surfaces, these are</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="stringliteral">    also called control points.</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="stringliteral">      object_id = identifier of the object</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="stringliteral">      enable [opt] = if True, the specified object&#39;s grips will be turned on.</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="stringliteral">        Otherwise, they will be turned off</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#ad270c0a7eefd1af09e0aa231bdfbe57d">   13</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span> enable!=rhobj.GripsOn:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        rhobj.GripsOn = enable</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">def </span>GetObjectGrip(message=None, preselect=False, select=False):</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#a6c3b1a5bccf5a309268d1a24c26be7dc">GetObjectGrip</a>(message=None, preselect=False, select=False):</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Prompts the user to pick a single object grip</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">      message [opt] = prompt for picking</span></div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral">        grip_record[1] = index value of the grip</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">        grip_record[2] = location of the grip</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#a6c3b1a5bccf5a309268d1a24c26be7dc">   32</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> preselect:</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        scriptcontext.doc.Objects.UnselectAll()</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        scriptcontext.doc.Views.Redraw()</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> grip.OwnerId, grip.Index, grip.CurrentLocation</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">def </span>GetObjectGrips(message=None, preselect=False, select=False):</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#a888ded6ccd9245702a744c229e6d38af">GetObjectGrips</a>(message=None, preselect=False, select=False):</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Prompts user to pick one or more object grips from one or more objects.</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">      message [opt] = prompt for picking</span></div>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="stringliteral">        grip_record[1] = index value of the grip</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="stringliteral">        grip_record[2] = location of the grip</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#a888ded6ccd9245702a744c229e6d38af">   56</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> preselect:</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        scriptcontext.doc.Objects.UnselectAll()</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        scriptcontext.doc.Views.Redraw()</div>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> next_grip</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">def </span>NextObjectGrip(object_id, index, direction=0, enable=True):</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#a793982b9fb761ee838c418ed97a73b22">NextObjectGrip</a>(object_id, index, direction=0, enable=True):</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the next grip index from a specified grip index of an object</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="stringliteral">      object_id = identifier of the object</span></div>
@@ -227,25 +227,25 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="stringliteral">      enable[opt] = if True, the next grip index found will be selected</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="stringliteral">      index of the next grip on success, None on failure</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#a793982b9fb761ee838c418ed97a73b22">   99</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> __neighborgrip(1, object_id, index, direction, enable)</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">def </span>ObjectGripCount(object_id):</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#a53b8d4b04c0e55537a840f806a712159">ObjectGripCount</a>(object_id):</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns number of grips owned by an object</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="stringliteral">      object_id = identifier of the object</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="stringliteral">      number of grips if successful</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="stringliteral">      None on error  </span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#a53b8d4b04c0e55537a840f806a712159">  110</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    grips = rhobj.GetGrips()</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> grips: <span class="keywordflow">return</span> scriptcontext.errorhandler()</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> grips.Length</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">def </span>ObjectGripLocation(object_id, index, point=None):</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#a11583cc26efb392078d676c914b00fdc">ObjectGripLocation</a>(object_id, index, point=None):</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or modifies the location of an object&#39;s grip</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="stringliteral">      object_id = identifier of the object</span></div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="stringliteral">      if point is not specified, the current location of the grip referenced by index</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="stringliteral">      if point is specified, the previous location of the grip referenced by index</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#a11583cc26efb392078d676c914b00fdc">  127</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> rhobj.GripsOn: <span class="keywordflow">return</span> scriptcontext.errorhandler()</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    grips = rhobj.GetGrips()</div>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">def </span>ObjectGripLocations(object_id, points=None):</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#a3067e43fb5b692d5dc4711a45926dc43">ObjectGripLocations</a>(object_id, points=None):</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or modifies the location of all grips owned by an object. The</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="stringliteral">    locations of the grips are returned in a list of Point3d with each position</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="stringliteral">    in the list corresponding to that grip&#39;s index. To modify the locations of</span></div>
@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="stringliteral">      if points is not specified, the current location of all grips</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="stringliteral">      if points is specified, the previous location of all grips</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="stringliteral">      None if not successful</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#a3067e43fb5b692d5dc4711a45926dc43">  155</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> rhobj.GripsOn: <span class="keywordflow">return</span> scriptcontext.errorhandler()</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    grips = rhobj.GetGrips()</div>
@@ -299,26 +299,26 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">def </span>ObjectGripsOn(object_id):</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#a9ba07d372f690115b90272c3515aa0ef">ObjectGripsOn</a>(object_id):</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies that an object&#39;s grips are turned on</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="stringliteral">      object_id = identifier of the object</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="stringliteral">      True or False indcating Grips state</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#a9ba07d372f690115b90272c3515aa0ef">  178</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">return</span> rhobj.GripsOn</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">def </span>ObjectGripsSelected(object_id):</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#a52390bc0f38783768061331d7e4a808f">ObjectGripsSelected</a>(object_id):</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies that an object&#39;s grips are turned on and at least one grip</span></div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="stringliteral">    is selected</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="stringliteral">      object_id = identifier of the object</span></div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="stringliteral">      True or False indicating success or failure</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#a52390bc0f38783768061331d7e4a808f">  190</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> rhobj.GripsOn: <span class="keywordflow">return</span> <span class="keyword">False</span></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    grips = rhobj.GetGrips()</div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">False</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">def </span>PrevObjectGrip(object_id, index, direction=0, enable=True):</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#af6c9e4fb6dcaaa8a41c832e6d3ab19e0">PrevObjectGrip</a>(object_id, index, direction=0, enable=True):</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the prevoius grip index from a specified grip index of an object</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="stringliteral">      object_id = identifier of the object</span></div>
@@ -337,18 +337,18 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="stringliteral">      enable[opt] = if True, the next grip index found will be selected</span></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="stringliteral">      index of the next grip on success, None on failure</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#af6c9e4fb6dcaaa8a41c832e6d3ab19e0">  209</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> __neighborgrip(-1, object_id, index, direction, enable)</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keyword">def </span>SelectedObjectGrips(object_id):</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#ae758fe98f49ab516139adff2ae8da404">SelectedObjectGrips</a>(object_id):</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns a list of grip indices indentifying an object&#39;s selected grips</span></div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="stringliteral">      object_id = identifier of the object</span></div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="stringliteral">      list of indices on success</span></div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="stringliteral">      None on failure or if no grips are selected</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#ae758fe98f49ab516139adff2ae8da404">  220</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> rhobj.GripsOn: <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    grips = rhobj.GetGrips()</div>
@@ -359,7 +359,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="keyword">def </span>SelectObjectGrip(object_id, index):</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#aa2e0bd44b55fba49bdda075d004146f3">SelectObjectGrip</a>(object_id, index):</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Selects a single grip owned by an object. If the object&#39;s grips are</span></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="stringliteral">    not turned on, the grips will not be selected</span></div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -367,7 +367,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="stringliteral">      index = index of the grip to select</span></div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="stringliteral">      True or False indicating success or failure</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#aa2e0bd44b55fba49bdda075d004146f3">  239</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> rhobj.GripsOn: <span class="keywordflow">return</span> <span class="keyword">False</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    grips = rhobj.GetGrips()</div>
@@ -380,7 +380,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">False</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">def </span>SelectObjectGrips(object_id):</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#aaec1ec5892c7e573e9bcc7a6d79c7d0a">SelectObjectGrips</a>(object_id):</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Selects an object&#39;s grips. If the object&#39;s grips are not turned on,</span></div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="stringliteral">    they will not be selected</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -388,7 +388,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="stringliteral">      Number of grips selected on success</span></div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="stringliteral">      None on failure</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#aaec1ec5892c7e573e9bcc7a6d79c7d0a">  260</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> rhobj.GripsOn: <span class="keywordflow">return</span> scriptcontext.errorhandler()</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    grips = rhobj.GetGrips()</div>
@@ -402,7 +402,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">return</span> scriptcontext.errorhandler()</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">def </span>UnselectObjectGrip(object_id, index):</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#a1edc08f45ee6f05fa9ba9324894223c5">UnselectObjectGrip</a>(object_id, index):</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Unselects a single grip owned by an object. If the object&#39;s grips are</span></div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="stringliteral">    not turned on, the grips will not be unselected</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -410,7 +410,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="stringliteral">      index = index of the grip to unselect</span></div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="stringliteral">      True or False indicating success or failure</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#a1edc08f45ee6f05fa9ba9324894223c5">  282</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> rhobj.GripsOn: <span class="keywordflow">return</span> <span class="keyword">False</span></div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    grips = rhobj.GetGrips()</div>
@@ -423,14 +423,14 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">False</span></div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keyword">def </span>UnselectObjectGrips(object_id):</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1grips.html#aacc5eddf11a79e0205a3828652a74efb">UnselectObjectGrips</a>(object_id):</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Unselects an object&#39;s grips. Note, the grips will not be turned off.</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="stringliteral">      object_id = identifier of the object</span></div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="stringliteral">      Number of grips unselected on success</span></div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="stringliteral">      None on failure</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1grips.html#aacc5eddf11a79e0205a3828652a74efb">  302</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    rhobj = rhutil.coercerhinoobject(object_id, <span class="keyword">True</span>, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> rhobj.GripsOn: <span class="keywordflow">return</span> scriptcontext.errorhandler()</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    grips = rhobj.GetGrips()</div>
@@ -442,6 +442,21 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">return</span> count</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">return</span> scriptcontext.errorhandler()</div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_ad270c0a7eefd1af09e0aa231bdfbe57d"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#ad270c0a7eefd1af09e0aa231bdfbe57d">rhinoscript.grips.EnableObjectGrips</a></div><div class="ttdeci">def EnableObjectGrips</div><div class="ttdoc">Enables or disables an object&#39;s grips. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00013">grips.py:13</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_a6c3b1a5bccf5a309268d1a24c26be7dc"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#a6c3b1a5bccf5a309268d1a24c26be7dc">rhinoscript.grips.GetObjectGrip</a></div><div class="ttdeci">def GetObjectGrip</div><div class="ttdoc">Prompts the user to pick a single object grip. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00032">grips.py:32</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_aaec1ec5892c7e573e9bcc7a6d79c7d0a"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#aaec1ec5892c7e573e9bcc7a6d79c7d0a">rhinoscript.grips.SelectObjectGrips</a></div><div class="ttdeci">def SelectObjectGrips(object_id)</div><div class="ttdoc">Selects an object&#39;s grips. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00260">grips.py:260</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_a52390bc0f38783768061331d7e4a808f"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#a52390bc0f38783768061331d7e4a808f">rhinoscript.grips.ObjectGripsSelected</a></div><div class="ttdeci">def ObjectGripsSelected(object_id)</div><div class="ttdoc">Verifies that an object&#39;s grips are turned on and at least one grip is selected. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00190">grips.py:190</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_a11583cc26efb392078d676c914b00fdc"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#a11583cc26efb392078d676c914b00fdc">rhinoscript.grips.ObjectGripLocation</a></div><div class="ttdeci">def ObjectGripLocation</div><div class="ttdoc">Returns or modifies the location of an object&#39;s grip. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00127">grips.py:127</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_a3067e43fb5b692d5dc4711a45926dc43"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#a3067e43fb5b692d5dc4711a45926dc43">rhinoscript.grips.ObjectGripLocations</a></div><div class="ttdeci">def ObjectGripLocations</div><div class="ttdoc">Returns or modifies the location of all grips owned by an object. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00155">grips.py:155</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_af6c9e4fb6dcaaa8a41c832e6d3ab19e0"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#af6c9e4fb6dcaaa8a41c832e6d3ab19e0">rhinoscript.grips.PrevObjectGrip</a></div><div class="ttdeci">def PrevObjectGrip</div><div class="ttdoc">Returns the prevoius grip index from a specified grip index of an object. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00209">grips.py:209</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_aacc5eddf11a79e0205a3828652a74efb"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#aacc5eddf11a79e0205a3828652a74efb">rhinoscript.grips.UnselectObjectGrips</a></div><div class="ttdeci">def UnselectObjectGrips(object_id)</div><div class="ttdoc">Unselects an object&#39;s grips. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00302">grips.py:302</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_a888ded6ccd9245702a744c229e6d38af"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#a888ded6ccd9245702a744c229e6d38af">rhinoscript.grips.GetObjectGrips</a></div><div class="ttdeci">def GetObjectGrips</div><div class="ttdoc">Prompts user to pick one or more object grips from one or more objects. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00056">grips.py:56</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_a1edc08f45ee6f05fa9ba9324894223c5"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#a1edc08f45ee6f05fa9ba9324894223c5">rhinoscript.grips.UnselectObjectGrip</a></div><div class="ttdeci">def UnselectObjectGrip(object_id, index)</div><div class="ttdoc">Unselects a single grip owned by an object. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00282">grips.py:282</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_a53b8d4b04c0e55537a840f806a712159"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#a53b8d4b04c0e55537a840f806a712159">rhinoscript.grips.ObjectGripCount</a></div><div class="ttdeci">def ObjectGripCount(object_id)</div><div class="ttdoc">Returns number of grips owned by an object. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00110">grips.py:110</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_ae758fe98f49ab516139adff2ae8da404"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#ae758fe98f49ab516139adff2ae8da404">rhinoscript.grips.SelectedObjectGrips</a></div><div class="ttdeci">def SelectedObjectGrips(object_id)</div><div class="ttdoc">Returns a list of grip indices indentifying an object&#39;s selected grips. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00220">grips.py:220</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_a793982b9fb761ee838c418ed97a73b22"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#a793982b9fb761ee838c418ed97a73b22">rhinoscript.grips.NextObjectGrip</a></div><div class="ttdeci">def NextObjectGrip</div><div class="ttdoc">Returns the next grip index from a specified grip index of an object. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00099">grips.py:99</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_aa2e0bd44b55fba49bdda075d004146f3"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#aa2e0bd44b55fba49bdda075d004146f3">rhinoscript.grips.SelectObjectGrip</a></div><div class="ttdeci">def SelectObjectGrip(object_id, index)</div><div class="ttdoc">Selects a single grip owned by an object. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00239">grips.py:239</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1grips_html_a9ba07d372f690115b90272c3515aa0ef"><div class="ttname"><a href="namespacerhinoscript_1_1grips.html#a9ba07d372f690115b90272c3515aa0ef">rhinoscript.grips.ObjectGripsOn</a></div><div class="ttdeci">def ObjectGripsOn(object_id)</div><div class="ttdoc">Verifies that an object&#39;s grips are turned on. </div><div class="ttdef"><b>Definition:</b> <a href="grips_8py_source.html#l00178">grips.py:178</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.9.1-->
@@ -449,7 +464,7 @@ $(document).ready(function(){initNavTree('grips_8py_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_498fa6d7fadccabe7b36c98a7b98e64b.html">rhinoscriptsyntax</a></li><li class="navelem"><a class="el" href="dir_50c1069cab179abf171fcff507cfe76b.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_efda7f8bc7876f22620c0ac8c5470b21.html">rhinoscript</a></li><li class="navelem"><b>grips.py</b></li>
-    <li class="footer">Generated on Tue Jun 30 2015 13:49:37 for rhinoscriptsyntax API docs by
+    <li class="footer">Generated on Tue Jun 30 2015 15:12:41 for rhinoscriptsyntax API docs by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span> raise_if_missing: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;unable to find InstanceObject&quot;</span>)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">def </span>AddBlock(object_ids, base_point, name=None, delete_input=False):</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#aeb93f222a1ba9243ed0f881fa473f6db">AddBlock</a>(object_ids, base_point, name=None, delete_input=False):</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Adds a new block definition to the document</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">      object_ids = objects that will be included in the block</span></div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral">      delete_input(opt) = if True, the object_ids will be deleted</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">      name of new block definition on success</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#aeb93f222a1ba9243ed0f881fa473f6db">   23</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    base_point = rhutil.coerce3dpoint(base_point, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> name:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        name = scriptcontext.doc.InstanceDefinitions.GetUnusedInstanceDefinitionName()</div>
@@ -183,23 +183,23 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> name</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">def </span>BlockContainerCount(block_name):</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a04831f7c168db3c55d28014471769765">BlockContainerCount</a>(block_name):</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns number of block definitions that contain a specified</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="stringliteral">    block definition</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="stringliteral">      block_name = the name of an existing block definition</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> len(BlockContainers(block_name))</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a04831f7c168db3c55d28014471769765">   60</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> len(<a class="code" href="namespacerhinoscript_1_1block.html#a8ead44638318689c29e895165619d4fb">BlockContainers</a>(block_name))</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">def </span>BlockContainers(block_name):</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a8ead44638318689c29e895165619d4fb">BlockContainers</a>(block_name):</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns names of the block definitions that contain a specified block</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="stringliteral">    definition.</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="stringliteral">      block_name = the name of an existing block definition</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="stringliteral">      A list of block definition names</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a8ead44638318689c29e895165619d4fb">   71</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in InstanceDefinitionsTable&quot;</span>%block_name)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    containers = idef.GetContainers()</div>
@@ -209,12 +209,12 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">def </span>BlockCount():</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a8067e90f8d0dc91c18d6f5eeedda7612">BlockCount</a>():</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="stringliteral">&quot;Returns the number of block definitions in the document&quot;</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> scriptcontext.doc.InstanceDefinitions.ActiveCount</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">def </span>BlockDescription(block_name, description=None):</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a2039bdbf0759d20419fceac342dc7038">BlockDescription</a>(block_name, description=None):</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or sets the description of a block definition</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="stringliteral">      block_name = the name of an existing block definition</span></div>
@@ -226,18 +226,18 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in InstanceDefinitionsTable&quot;</span>%block_name)</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    rc = idef.Description</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span> description: scriptcontext.doc.InstanceDefinitions.Modify( idef, idef.Name, description, <span class="keyword">True</span> )</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a8067e90f8d0dc91c18d6f5eeedda7612">   98</a></span>&#160;    <span class="keywordflow">if</span> description: scriptcontext.doc.InstanceDefinitions.Modify( idef, idef.Name, description, <span class="keyword">True</span> )</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">def </span>BlockInstanceCount(block_name,where_to_look=0):</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a421af1ae39408df0546c09f380a19a92">BlockInstanceCount</a>(block_name,where_to_look=0):</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Counts number of instances of the block in the document.</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="stringliteral">    Nested instances are not included in the count.</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="stringliteral">      block_name = the name of an existing block definition</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="stringliteral">      where_to_look [opt] =</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="stringliteral">        0 = get top level references in active document.</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="stringliteral">        1 = get top level and nested references in active document.</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a2039bdbf0759d20419fceac342dc7038">  109</a></span>&#160;<span class="stringliteral">        1 = get top level and nested references in active document.</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="stringliteral">        2 = check for references from other instance definitions</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
@@ -245,8 +245,8 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    refs = idef.GetReferences(where_to_look)</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> len(refs)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">def </span>BlockInstanceInsertPoint(object_id):</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a421af1ae39408df0546c09f380a19a92">  117</a></span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a7be03b3fe47ddaa4a2736d3359901d16">BlockInstanceInsertPoint</a>(object_id):</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the insertion point of a block instance.</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="stringliteral">      object_id = The identifier of an existing block insertion object</span></div>
@@ -256,11 +256,11 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    instance = __InstanceObjectFromId(object_id, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    xf = instance.InstanceXform</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    pt = Rhino.Geometry.Point3d.Origin</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    pt.Transform(xf)</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a7be03b3fe47ddaa4a2736d3359901d16">  128</a></span>&#160;    pt.Transform(xf)</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> pt</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">def </span>BlockInstanceName(object_id):</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a88f311e82a3dc1e39378cacc3be154dc">BlockInstanceName</a>(object_id):</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the block name of a block instance</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="stringliteral">      object_id = The identifier of an existing block insertion object</span></div>
@@ -270,20 +270,20 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> idef.Name</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">def </span>BlockInstances(block_name):</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#ab066e1dc8ff26af9b554d6c81ad56f1c">BlockInstances</a>(block_name):</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the identifiers of the inserted instances of a block.</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="stringliteral">      block_name = the name of an existing block definition</span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="stringliteral">      list of guids identifying the instances of a block</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a88f311e82a3dc1e39378cacc3be154dc">  148</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in InstanceDefinitionsTable&quot;</span>%block_name)</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    instances = idef.GetReferences(0)</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">return</span> [item.Id <span class="keywordflow">for</span> item <span class="keywordflow">in</span> instances]</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">def </span>BlockInstanceXform(object_id):</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#ab066e1dc8ff26af9b554d6c81ad56f1c">  154</a></span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#ad0cebdf3a54286478f202257cec00a6d">BlockInstanceXform</a>(object_id):</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the location of a block instance relative to the world coordinate</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="stringliteral">    system origin (0,0,0). The position is returned as a 4x4 transformation</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="stringliteral">    matrix</span></div>
@@ -293,8 +293,8 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    instance = __InstanceObjectFromId(object_id, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> instance.InstanceXform</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">def </span>BlockNames( sort=False ):</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#ad0cebdf3a54286478f202257cec00a6d">  165</a></span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a814eb0d7773e679a192720841fe07d4b">BlockNames</a>( sort=False ):</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the names of all block definitions in the document</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="stringliteral">      sort = return a sorted list</span></div>
@@ -302,10 +302,10 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    ideflist = scriptcontext.doc.InstanceDefinitions.GetList(<span class="keyword">True</span>)</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    rc = [item.Name <span class="keywordflow">for</span> item <span class="keywordflow">in</span> ideflist]</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    if(sort): rc.sort()</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">return</span> rc</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a814eb0d7773e679a192720841fe07d4b">  174</a></span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">def </span>BlockObjectCount(block_name):</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#ac14a75c2e9b822cd8f7a7c9319a4f654">BlockObjectCount</a>(block_name):</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns number of objects that make up a block definition</span></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
@@ -315,7 +315,7 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">return</span> idef.ObjectCount</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keyword">def </span>BlockObjects(block_name):</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a687c24ac5e1c88b2fc5bdcc93b1004be">BlockObjects</a>(block_name):</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns identifiers of the objects that make up a block definition</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
@@ -323,33 +323,33 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="stringliteral">      list of identifiers on success</span></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in InstanceDefinitionsTable&quot;</span>%block_name)</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#ac14a75c2e9b822cd8f7a7c9319a4f654">  195</a></span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in InstanceDefinitionsTable&quot;</span>%block_name)</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    rhobjs = idef.GetObjects()</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> [obj.Id <span class="keywordflow">for</span> obj <span class="keywordflow">in</span> rhobjs]</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">def </span>BlockPath(block_name):</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#aee12e81a14857125486acac2a9eccfd5">BlockPath</a>(block_name):</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns path to the source of a linked or embedded block definition.</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="stringliteral">    A linked or embedded block definition is a block definition that was</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a687c24ac5e1c88b2fc5bdcc93b1004be">  202</a></span>&#160;<span class="stringliteral">    A linked or embedded block definition is a block definition that was</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="stringliteral">    inserted from an external file.</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="stringliteral">      path to the linked block on success</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#aee12e81a14857125486acac2a9eccfd5">  209</a></span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in InstanceDefinitionsTable&quot;</span>%block_name)</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">return</span> idef.SourceArchive</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword">def </span>BlockStatus(block_name):</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a65f0213b9301090a39e628f18592c247">BlockStatus</a>(block_name):</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the status of a linked block. See help for status codes&quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">return</span> -3</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">return</span> int(idef.ArchiveFileStatus)</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword">def </span>DeleteBlock(block_name):</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a9c285686643c65d0a5c511e9b662e867">DeleteBlock</a>(block_name):</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Deletes a block definition and all of it&#39;s inserted instances.</span></div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
@@ -357,13 +357,13 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="stringliteral">      True or False indicating success or failure  </span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in InstanceDefinitionsTable&quot;</span>%block_name)</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a65f0213b9301090a39e628f18592c247">  229</a></span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in InstanceDefinitionsTable&quot;</span>%block_name)</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    rc = scriptcontext.doc.InstanceDefinitions.Delete(idef.Index, <span class="keyword">True</span>, <span class="keyword">False</span>)</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">def </span>ExplodeBlockInstance(object_id, explode_nested_instances=False):</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#ad8c359cc544cb05fe4f3a09eb0633068">ExplodeBlockInstance</a>(object_id, explode_nested_instances=False):</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Explodes a block instance into it&#39;s geometric components. The</span></div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="stringliteral">    exploded objects are added to the document</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -373,13 +373,13 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="stringliteral">      identifiers for the newly exploded objects on success</span></div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    instance = __InstanceObjectFromId(object_id, <span class="keyword">True</span>)</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    guids = scriptcontext.doc.Objects.AddExplodedInstancePieces(instance, explodeNestedInstances=explode_nested_instances, deleteInstance=<span class="keyword">True</span>)</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a9c285686643c65d0a5c511e9b662e867">  245</a></span>&#160;    guids = scriptcontext.doc.Objects.AddExplodedInstancePieces(instance, explodeNestedInstances=explode_nested_instances, deleteInstance=<span class="keyword">True</span>)</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span> guids:</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">return</span> guids</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword">def </span>InsertBlock( block_name, insertion_point, scale=(1,1,1), angle_degrees=0, rotation_normal=(0,0,1) ):</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a77c9589833cf1d53b173846f3fc7700c">InsertBlock</a>( block_name, insertion_point, scale=(1,1,1), angle_degrees=0, rotation_normal=(0,0,1) ):</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Inserts a block whose definition already exists in the document</span></div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
@@ -388,7 +388,7 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="stringliteral">      angle_degrees [opt] = rotation angle in degrees</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="stringliteral">      rotation_normal [opt] = the axis of rotation.</span></div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="stringliteral">    Returns:</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="stringliteral">      id for the block that was added to the doc</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#ad8c359cc544cb05fe4f3a09eb0633068">  260</a></span>&#160;<span class="stringliteral">      id for the block that was added to the doc</span></div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    insertion_point = rhutil.coerce3dpoint(insertion_point, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    rotation_normal = rhutil.coerce3dvector(rotation_normal, <span class="keyword">True</span>)</div>
@@ -396,12 +396,12 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    trans = Rhino.Geometry.Transform</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    move = trans.Translation(insertion_point[0],insertion_point[1],insertion_point[2])</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    scale = trans.Scale(Rhino.Geometry.Plane.WorldXY, scale[0], scale[1], scale[2])</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    rotate = trans.Rotation(angle_radians, rotation_normal, Rhino.Geometry.Point3d.Origin)</div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a77c9589833cf1d53b173846f3fc7700c">  268</a></span>&#160;    rotate = trans.Rotation(angle_radians, rotation_normal, Rhino.Geometry.Point3d.Origin)</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    xform = move * scale * rotate</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">return</span> InsertBlock2( block_name, xform )</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacerhinoscript_1_1block.html#a8629a2a7a3343d425c901e12efccb97f">InsertBlock2</a>( block_name, xform )</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">def </span>InsertBlock2(block_name, xform):</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a8629a2a7a3343d425c901e12efccb97f">InsertBlock2</a>(block_name, xform):</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Inserts a block whose definition already exists in the document</span></div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
@@ -415,10 +415,10 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    id = scriptcontext.doc.Objects.AddInstanceObject(idef.Index, xform )</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordflow">if</span> id!=System.Guid.Empty:</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        scriptcontext.doc.Views.Redraw()</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">return</span> id</div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a8629a2a7a3343d425c901e12efccb97f">  287</a></span>&#160;        <span class="keywordflow">return</span> id</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">def </span>IsBlock(block_name):</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#aacfc961eef925c8e7052125fe2b826a3">IsBlock</a>(block_name):</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies the existence of a block definition in the document.</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
@@ -429,7 +429,7 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">return</span> (idef <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>)</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="keyword">def </span>IsBlockEmbedded(block_name):</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a06b6c67687af515f55772df6749c3ca8">IsBlockEmbedded</a>(block_name):</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies a block definition is embedded, or linked, from an external file.</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
@@ -439,12 +439,12 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in InstanceDefinitionsTable&quot;</span>%block_name)</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    ut = Rhino.DocObjects.InstanceDefinitionUpdateType</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">return</span> (idef.UpdateType==ut.Embedded <span class="keywordflow">or</span> idef.UpdateType==ut.LinkedAndEmbedded)</div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#aacfc961eef925c8e7052125fe2b826a3">  311</a></span>&#160;    <span class="keywordflow">return</span> (idef.UpdateType==ut.Embedded <span class="keywordflow">or</span> idef.UpdateType==ut.LinkedAndEmbedded)</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">def </span>IsBlockInstance(object_id):</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a9c3e427125472d1f99e7f90439858b73">IsBlockInstance</a>(object_id):</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies an object is a block instance</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="stringliteral">    Parameters:</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a06b6c67687af515f55772df6749c3ca8">  316</a></span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="stringliteral">      object_id = The identifier of an existing block insertion object</span></div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="stringliteral">      True or False</span></div>
@@ -452,7 +452,7 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordflow">return</span>  __InstanceObjectFromId(object_id, <span class="keyword">False</span>) <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keyword">def </span>IsBlockInUse(block_name, where_to_look=0):</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a2776170238c7f5456817219ad1bb88ed">IsBlockInUse</a>(block_name, where_to_look=0):</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies that a block definition is being used by an inserted instance</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
@@ -468,8 +468,8 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">return</span> idef.InUse(where_to_look)</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">def </span>IsBlockReference(block_name):</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies that a block definition is from a reference file.</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#acf5970374c1c0b0e0c3c84893eeec100">IsBlockReference</a>(block_name):</div>
+<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a9c3e427125472d1f99e7f90439858b73">  341</a></span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies that a block definition is from a reference file.</span></div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="stringliteral">    Returns:</span></div>
@@ -480,19 +480,44 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">return</span> idef.IsReference</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keyword">def </span>RenameBlock( block_name, new_name ):</div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a2776170238c7f5456817219ad1bb88ed">  352</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1block.html#a868f21a6b7b156657ff74adc31e6498f">RenameBlock</a>( block_name, new_name ):</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Renames an existing block definition</span></div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="stringliteral">      block_name = name of an existing block definition</span></div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="stringliteral">      new_name = name to change to</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="stringliteral">    Returns:</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="stringliteral">      True or False indicating success or failure</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#acf5970374c1c0b0e0c3c84893eeec100">  358</a></span>&#160;<span class="stringliteral">      True or False indicating success or failure</span></div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    idef = scriptcontext.doc.InstanceDefinitions.Find(block_name, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> idef: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in InstanceDefinitionsTable&quot;</span>%block_name)</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    description = idef.Description</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    rc = scriptcontext.doc.InstanceDefinitions.Modify(idef, new_name, description, <span class="keyword">False</span>)</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordflow">return</span> rc</div>
+<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1block.html#a868f21a6b7b156657ff74adc31e6498f">  364</a></span>&#160;    <span class="keywordflow">return</span> rc</div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a2776170238c7f5456817219ad1bb88ed"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a2776170238c7f5456817219ad1bb88ed">rhinoscript.block.IsBlockInUse</a></div><div class="ttdeci">def IsBlockInUse</div><div class="ttdoc">Renames an existing block definition. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00352">block.py:352</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a04831f7c168db3c55d28014471769765"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a04831f7c168db3c55d28014471769765">rhinoscript.block.BlockContainerCount</a></div><div class="ttdeci">def BlockContainerCount(block_name)</div><div class="ttdoc">Returns number of block definitions that contain a specified block definition. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00060">block.py:60</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a77c9589833cf1d53b173846f3fc7700c"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a77c9589833cf1d53b173846f3fc7700c">rhinoscript.block.InsertBlock</a></div><div class="ttdeci">def InsertBlock(block_name, insertion_point, scale=(1, 1, angle_degrees=0, rotation_normal=(0, 0)</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00268">block.py:268</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_aeb93f222a1ba9243ed0f881fa473f6db"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#aeb93f222a1ba9243ed0f881fa473f6db">rhinoscript.block.AddBlock</a></div><div class="ttdeci">def AddBlock</div><div class="ttdoc">Adds a new block definition to the document. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00023">block.py:23</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_ad0cebdf3a54286478f202257cec00a6d"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#ad0cebdf3a54286478f202257cec00a6d">rhinoscript.block.BlockInstanceXform</a></div><div class="ttdeci">def BlockInstanceXform(object_id)</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00165">block.py:165</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_ac14a75c2e9b822cd8f7a7c9319a4f654"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#ac14a75c2e9b822cd8f7a7c9319a4f654">rhinoscript.block.BlockObjectCount</a></div><div class="ttdeci">def BlockObjectCount(block_name)</div><div class="ttdoc">Returns path to the source of a linked or embedded block definition. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00195">block.py:195</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a868f21a6b7b156657ff74adc31e6498f"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a868f21a6b7b156657ff74adc31e6498f">rhinoscript.block.RenameBlock</a></div><div class="ttdeci">def RenameBlock(block_name, new_name)</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00364">block.py:364</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_ad8c359cc544cb05fe4f3a09eb0633068"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#ad8c359cc544cb05fe4f3a09eb0633068">rhinoscript.block.ExplodeBlockInstance</a></div><div class="ttdeci">def ExplodeBlockInstance</div><div class="ttdoc">Inserts a block whose definition already exists in the document. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00260">block.py:260</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a88f311e82a3dc1e39378cacc3be154dc"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a88f311e82a3dc1e39378cacc3be154dc">rhinoscript.block.BlockInstanceName</a></div><div class="ttdeci">def BlockInstanceName(object_id)</div><div class="ttdoc">Returns the location of a block instance relative to the world coordinate system origin (0...</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00148">block.py:148</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a8ead44638318689c29e895165619d4fb"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a8ead44638318689c29e895165619d4fb">rhinoscript.block.BlockContainers</a></div><div class="ttdeci">def BlockContainers(block_name)</div><div class="ttdoc">Returns names of the block definitions that contain a specified block definition. ...</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00071">block.py:71</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a65f0213b9301090a39e628f18592c247"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a65f0213b9301090a39e628f18592c247">rhinoscript.block.BlockStatus</a></div><div class="ttdeci">def BlockStatus(block_name)</div><div class="ttdoc">Deletes a block definition and all of it&#39;s inserted instances. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00229">block.py:229</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a687c24ac5e1c88b2fc5bdcc93b1004be"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a687c24ac5e1c88b2fc5bdcc93b1004be">rhinoscript.block.BlockObjects</a></div><div class="ttdeci">def BlockObjects(block_name)</div><div class="ttdoc">Returns the status of a linked block. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00202">block.py:202</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a9c3e427125472d1f99e7f90439858b73"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a9c3e427125472d1f99e7f90439858b73">rhinoscript.block.IsBlockInstance</a></div><div class="ttdeci">def IsBlockInstance(object_id)</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00341">block.py:341</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a8067e90f8d0dc91c18d6f5eeedda7612"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a8067e90f8d0dc91c18d6f5eeedda7612">rhinoscript.block.BlockCount</a></div><div class="ttdeci">def BlockCount()</div><div class="ttdoc">Returns or sets the description of a block definition. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00098">block.py:98</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a7be03b3fe47ddaa4a2736d3359901d16"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a7be03b3fe47ddaa4a2736d3359901d16">rhinoscript.block.BlockInstanceInsertPoint</a></div><div class="ttdeci">def BlockInstanceInsertPoint(object_id)</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00128">block.py:128</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a2039bdbf0759d20419fceac342dc7038"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a2039bdbf0759d20419fceac342dc7038">rhinoscript.block.BlockDescription</a></div><div class="ttdeci">def BlockDescription</div><div class="ttdoc">Returns the insertion point of a block instance. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00109">block.py:109</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_ab066e1dc8ff26af9b554d6c81ad56f1c"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#ab066e1dc8ff26af9b554d6c81ad56f1c">rhinoscript.block.BlockInstances</a></div><div class="ttdeci">def BlockInstances(block_name)</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00154">block.py:154</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a421af1ae39408df0546c09f380a19a92"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a421af1ae39408df0546c09f380a19a92">rhinoscript.block.BlockInstanceCount</a></div><div class="ttdeci">def BlockInstanceCount</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00117">block.py:117</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a06b6c67687af515f55772df6749c3ca8"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a06b6c67687af515f55772df6749c3ca8">rhinoscript.block.IsBlockEmbedded</a></div><div class="ttdeci">def IsBlockEmbedded(block_name)</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00316">block.py:316</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a9c285686643c65d0a5c511e9b662e867"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a9c285686643c65d0a5c511e9b662e867">rhinoscript.block.DeleteBlock</a></div><div class="ttdeci">def DeleteBlock(block_name)</div><div class="ttdoc">Inserts a block whose definition already exists in the document. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00245">block.py:245</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_aacfc961eef925c8e7052125fe2b826a3"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#aacfc961eef925c8e7052125fe2b826a3">rhinoscript.block.IsBlock</a></div><div class="ttdeci">def IsBlock(block_name)</div><div class="ttdoc">Verifies an object is a block instance. </div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00311">block.py:311</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_aee12e81a14857125486acac2a9eccfd5"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#aee12e81a14857125486acac2a9eccfd5">rhinoscript.block.BlockPath</a></div><div class="ttdeci">def BlockPath(block_name)</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00209">block.py:209</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_acf5970374c1c0b0e0c3c84893eeec100"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#acf5970374c1c0b0e0c3c84893eeec100">rhinoscript.block.IsBlockReference</a></div><div class="ttdeci">def IsBlockReference(block_name)</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00358">block.py:358</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a8629a2a7a3343d425c901e12efccb97f"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a8629a2a7a3343d425c901e12efccb97f">rhinoscript.block.InsertBlock2</a></div><div class="ttdeci">def InsertBlock2(block_name, xform)</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00287">block.py:287</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1block_html_a814eb0d7773e679a192720841fe07d4b"><div class="ttname"><a href="namespacerhinoscript_1_1block.html#a814eb0d7773e679a192720841fe07d4b">rhinoscript.block.BlockNames</a></div><div class="ttdeci">def BlockNames</div><div class="ttdef"><b>Definition:</b> <a href="block_8py_source.html#l00174">block.py:174</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.9.1-->
@@ -500,7 +525,7 @@ $(document).ready(function(){initNavTree('block_8py_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_498fa6d7fadccabe7b36c98a7b98e64b.html">rhinoscriptsyntax</a></li><li class="navelem"><a class="el" href="dir_50c1069cab179abf171fcff507cfe76b.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_efda7f8bc7876f22620c0ac8c5470b21.html">rhinoscript</a></li><li class="navelem"><b>block.py</b></li>
-    <li class="footer">Generated on Tue Jun 30 2015 13:49:37 for rhinoscriptsyntax API docs by
+    <li class="footer">Generated on Tue Jun 30 2015 15:12:41 for rhinoscriptsyntax API docs by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

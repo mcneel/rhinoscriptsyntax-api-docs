@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span> raise_if_missing: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;%s does not exist in LayerTable&quot;</span> % name_or_id)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">def </span>AddLayer(name=None, color=None, visible=True, locked=False, parent=None):</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a85a96358b0749de5ff688366901ab35e">AddLayer</a>(name=None, color=None, visible=True, locked=False, parent=None):</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Add a new layer to the document</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">      name[opt]: The name of the new layer. If omitted, Rhino automatically</span></div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral">          layer will not have a parent layer.</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">      The full name of the new layer if successful.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a85a96358b0749de5ff688366901ab35e">   32</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    names = [<span class="stringliteral">&#39;&#39;</span>]</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> name:</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">if</span> <span class="keywordflow">not</span> isinstance(name, str): name = str(name)</div>
@@ -196,14 +196,14 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        last_parent_index = scriptcontext.doc.Layers.FindByFullPath(full_path, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> scriptcontext.doc.Layers[last_parent_index].FullPath</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">def </span>CurrentLayer(layer=None):</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#aba4b9b2d7a06225d36d7ba437ac7f198">CurrentLayer</a>(layer=None):</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or changes the current layer</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="stringliteral">      layer[opt] = the name or Guid of an existing layer to make current</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="stringliteral">      If a layer name is not specified, the full name of the current layer</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="stringliteral">      If a layer name is specified, the full name of the previous current layer</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#aba4b9b2d7a06225d36d7ba437ac7f198">   75</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    rc = scriptcontext.doc.Layers.CurrentLayer.FullPath</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> layer:</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        layer = __getlayer(layer, <span class="keyword">True</span>)</div>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">def </span>DeleteLayer(layer):</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a1ede00ed9696405bf3c6b2462f10cc0b">DeleteLayer</a>(layer):</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Removes an existing layer from the document. The layer to be removed</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="stringliteral">    cannot be the current layer. Unlike the PurgeLayer method, the layer must</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="stringliteral">    be empty, or contain no objects, before it can be removed. Any layers that</span></div>
@@ -221,42 +221,42 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="stringliteral">      layer = the name or id of an existing empty layer</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="stringliteral">      True or False indicating success or failure</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a1ede00ed9696405bf3c6b2462f10cc0b">   93</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> scriptcontext.doc.Layers.Delete( layer.LayerIndex, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">def </span>ExpandLayer( layer, expand ):</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a9c4bdbcebc229304c58e0e398cfecaee">ExpandLayer</a>( layer, expand ):</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Expands a layer. Expanded layers can be viewed in Rhino&#39;s layer dialog</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="stringliteral">      layer = name of the layer to expand</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="stringliteral">      expand = True to expand, False to collapse</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="stringliteral">      True or False indicating success or failure</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a9c4bdbcebc229304c58e0e398cfecaee">  105</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> layer.IsExpanded==expand: <span class="keywordflow">return</span> <span class="keyword">True</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    layer.IsExpanded = expand</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> scriptcontext.doc.Layers.Modify(layer, layer.LayerIndex, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">def </span>IsLayer(layer):</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#afc3f2fcea4f567402908119e21fdd351">IsLayer</a>(layer):</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies the existance of a layer in the document</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="stringliteral">    Parameter:</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="stringliteral">      layer = the name or id of a layer to search for</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#afc3f2fcea4f567402908119e21fdd351">  116</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    layer = __getlayer(layer, <span class="keyword">False</span>)</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> layer <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">def </span>IsLayerChangeable(layer):</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a52a6cfabcd5d43bc97fa7db23bc581da">IsLayerChangeable</a>(layer):</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="stringliteral">&quot;Verifies that the objects on a layer can be changed (normal)&quot;</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    rc = layer.IsVisible <span class="keywordflow">and</span> <span class="keywordflow">not</span> layer.IsLocked</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> rc</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a52a6cfabcd5d43bc97fa7db23bc581da">  126</a></span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">def </span>IsLayerChildOf(layer, test):</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a772767eef91aa36863fd6b1996cb3761">IsLayerChildOf</a>(layer, test):</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies that a layer is a child of another layer</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="stringliteral">      layer = the name or id of the layer to test against</span></div>
@@ -264,16 +264,16 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    test = __getlayer(test, <span class="keyword">True</span>)</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">return</span> test.IsChildOf(layer)</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a772767eef91aa36863fd6b1996cb3761">  136</a></span>&#160;    <span class="keywordflow">return</span> test.IsChildOf(layer)</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">def </span>IsLayerCurrent(layer):</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a8a13463c67c6c13f3a9ada81f9e84b16">IsLayerCurrent</a>(layer):</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="stringliteral">&quot;Verifies that a layer is the current layer&quot;</span></div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">return</span> layer.LayerIndex == scriptcontext.doc.Layers.CurrentLayerIndex</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">def </span>IsLayerEmpty(layer):</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a8b77b8d00f40e6ed5232379244c005a8">IsLayerEmpty</a>(layer):</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="stringliteral">&quot;Verifies that an existing layer is empty, or contains no objects&quot;</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    rhobjs = scriptcontext.doc.Objects.FindByLayer(layer)</div>
@@ -281,7 +281,7 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">False</span></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">def </span>IsLayerExpanded(layer):</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a4338e30f916ad9f90655c07915724a8c">IsLayerExpanded</a>(layer):</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies that a layer is expanded. Expanded layers can be viewed in</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="stringliteral">    Rhino&#39;s layer dialog</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
@@ -289,25 +289,25 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> layer.IsExpanded   </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">def </span>IsLayerLocked(layer):</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#aa6ba913612903b65a8812d9483b7b719">IsLayerLocked</a>(layer):</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="stringliteral">&quot;Verifies that a layer is locked.&quot;</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> layer.IsLocked</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">def </span>IsLayerOn(layer):</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a61f38d55f3cf854ad2a8bcdfcdd2f88b">IsLayerOn</a>(layer):</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="stringliteral">&quot;Verifies that a layer is on.&quot;</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">return</span> layer.IsVisible</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">def </span>IsLayerSelectable(layer):</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#add3b3414e9500376aeed4fcd38186469">IsLayerSelectable</a>(layer):</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="stringliteral">&quot;Verifies that an existing layer is selectable (normal and reference)&quot;</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span> layer.IsVisible <span class="keywordflow">and</span> <span class="keywordflow">not</span> layer.IsLocked</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">def </span>IsLayerParentOf(layer, test):</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a2b65a021143043a1ef7375db48587c1d">IsLayerParentOf</a>(layer, test):</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies that a layer is a parent of another layer</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="stringliteral">      layer = the name or id of the layer to test against</span></div>
@@ -318,19 +318,19 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">return</span> test.IsParentOf(layer)</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">def </span>IsLayerReference(layer):</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#aa14057f789afafffaf5d214a139021ee">IsLayerReference</a>(layer):</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="stringliteral">&quot;Verifies that a layer is from a reference file.&quot;</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> layer.IsReference</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keyword">def </span>IsLayerVisible(layer):</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a8a13463c67c6c13f3a9ada81f9e84b16">  195</a></span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a45022bcd7dbccda1bdf446292ea5a9c1">IsLayerVisible</a>(layer):</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="stringliteral">&quot;Verifies that a layer is visible (normal, locked, and reference)&quot;</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">return</span> layer.IsVisible</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keyword">def </span>LayerChildCount(layer):</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a41294eb5f36b81e63a8c7cb6cb1b2a32">LayerChildCount</a>(layer):</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="stringliteral">&quot;Returns the number of immediate child layers of a layer&quot;</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    children = layer.GetChildren()</div>
@@ -338,7 +338,7 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">return</span> 0</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword">def </span>LayerChildren(layer):</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#afa11aeb3ef3bad285ae8cb88d2aff949">LayerChildren</a>(layer):</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the immediate child layers of a layer</span></div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="stringliteral">      layer = the name or id of an existing layer</span></div>
@@ -351,7 +351,7 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">return</span> [] <span class="comment">#empty list</span></div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword">def </span>LayerColor(layer, color=None):</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a8cf895e1694a6b657c14a4cec21d74cc">LayerColor</a>(layer, color=None):</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or changes the color of a layer.</span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="stringliteral">      layer = name or id of an existing layer</span></div>
@@ -362,7 +362,7 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    rc = layer.Color</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">if</span> color:</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a8b77b8d00f40e6ed5232379244c005a8">  234</a></span>&#160;    <span class="keywordflow">if</span> color:</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        color = rhutil.coercecolor(color)</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        layer.Color = color</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">if</span> scriptcontext.doc.Layers.Modify(layer, layer.LayerIndex, <span class="keyword">False</span>):</div>
@@ -370,17 +370,17 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">def </span>LayerCount():</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a95fe991d6836ba7e8256abec9d1b4253">LayerCount</a>():</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="stringliteral">&quot;Returns the number of layers in the document&quot;</span></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">return</span> scriptcontext.doc.Layers.ActiveCount</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keyword">def </span>LayerIds():</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a8f69d641cefd12e6125ca8406e264587">LayerIds</a>():</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="stringliteral">&quot;Return identifiers of all layers in the document&quot;</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">return</span> [layer.Id <span class="keywordflow">for</span> layer <span class="keywordflow">in</span> scriptcontext.doc.Layers]</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">def </span>LayerLinetype(layer, linetype=None):</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#ae626a5e6d8bbe428b80059ab27bd5984">LayerLinetype</a>(layer, linetype=None):</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or changes the linetype of a layer</span></div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="stringliteral">      layer = name of an existing layer</span></div>
@@ -397,66 +397,66 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        index = scriptcontext.doc.Linetypes.Find(linetype, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">if</span> index==-1: <span class="keywordflow">return</span> scriptcontext.errorhandler()</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        layer.LinetypeIndex = index</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        scriptcontext.doc.Views.Redraw()</div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a4338e30f916ad9f90655c07915724a8c">  269</a></span>&#160;        scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">def </span>LayerLocked(layer, locked=None):</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a93e1b584347bcb55f1dd51d2782cd0a9">LayerLocked</a>(layer, locked=None):</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or changes the locked mode of a layer</span></div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="stringliteral">      layer = name of an existing layer</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="stringliteral">      locked[opt] = new layer locked mode</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#aa6ba913612903b65a8812d9483b7b719">  277</a></span>&#160;<span class="stringliteral">      locked[opt] = new layer locked mode</span></div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="stringliteral">      If locked is not specified, the current layer locked mode</span></div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="stringliteral">      If locked is specified, the previous layer locked mode</span></div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    rc = layer.IsLocked</div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a61f38d55f3cf854ad2a8bcdfcdd2f88b">  283</a></span>&#160;    rc = layer.IsLocked</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">if</span> locked!=<span class="keywordtype">None</span> <span class="keywordflow">and</span> locked!=rc:</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        layer.IsLocked = locked</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">def </span>LayerMaterialIndex(layer,index=None):</div>
+<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#add3b3414e9500376aeed4fcd38186469">  289</a></span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a7a7d9394bff9c4a41a4bbb3898cfc0d4">LayerMaterialIndex</a>(layer,index=None):</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or changes the material index of a layer. A material index of -1</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="stringliteral">    indicates that no material has been assigned to the layer. Thus, the layer</span></div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="stringliteral">    will use Rhino&#39;s default layer material</span></div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="stringliteral">    Parameters:</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="stringliteral">      layer = name of existing layer</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a2b65a021143043a1ef7375db48587c1d">  295</a></span>&#160;<span class="stringliteral">      layer = name of existing layer</span></div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    rc = layer.RenderMaterialIndex</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordflow">if</span> index <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span> <span class="keywordflow">and</span> index&gt;=-1:</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        layer.RenderMaterialIndex = index</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        scriptcontext.doc.Views.Redraw()</div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#aa14057f789afafffaf5d214a139021ee">  301</a></span>&#160;        scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">def </span>LayerId(layer):</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#ae4901831e8d886c99c644772fe53de14">LayerId</a>(layer):</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the identifier of a layer given the layer&#39;s name.</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="stringliteral">    Parameters:</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a45022bcd7dbccda1bdf446292ea5a9c1">  307</a></span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="stringliteral">      layer = name of existing layer</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="stringliteral">      String - The layer&#39;s identifier if successful.</span></div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="stringliteral">      Null - If not successful, or on error.</span></div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    idx = scriptcontext.doc.Layers.FindByFullPath(layer, <span class="keyword">True</span>)</div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a41294eb5f36b81e63a8c7cb6cb1b2a32">  313</a></span>&#160;    idx = scriptcontext.doc.Layers.FindByFullPath(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">return</span> str(scriptcontext.doc.Layers[idx].Id) <span class="keywordflow">if</span> idx &gt;= 0 <span class="keywordflow">else</span> <span class="keywordtype">None</span></div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keyword">def </span>LayerName(layer_id, fullpath=True):</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#ae68cf8cbaa5c6488c559e77072c857b2">LayerName</a>(layer_id, fullpath=True):</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Return the name of a layer given it&#39;s identifier</span></div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="stringliteral">      layer_id = layer identifier</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="stringliteral">      fullpath [opt] = return the full path name or short name</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#afa11aeb3ef3bad285ae8cb88d2aff949">  321</a></span>&#160;<span class="stringliteral">      fullpath [opt] = return the full path name or short name</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    layer = __getlayer(layer_id, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">if</span> fullpath: <span class="keywordflow">return</span> layer.FullPath</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">return</span> layer.Name</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keyword">def </span>LayerNames(sort=False):</div>
+<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a8cf895e1694a6b657c14a4cec21d74cc">  328</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#aa37f74a24ac8bc7dd1acd57662639919">LayerNames</a>(sort=False):</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the names of all layers in the document.</span></div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="stringliteral">      sort [opt] = return a sorted list of the layer names</span></div>
@@ -467,30 +467,30 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">for</span> layer <span class="keywordflow">in</span> scriptcontext.doc.Layers:</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">if</span> <span class="keywordflow">not</span> layer.IsDeleted: rc.append(layer.FullPath)</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">if</span> sort: rc.sort()</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">return</span> rc</div>
+<div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a95fe991d6836ba7e8256abec9d1b4253">  339</a></span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="keyword">def </span>LayerOrder(layer):</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a545d01e3901e9c42aa94acf125869fad">LayerOrder</a>(layer):</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns the current display order index of a layer as displayed in Rhino&#39;s</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="stringliteral">    layer dialog box. A display order index of -1 indicates that the current</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a8f69d641cefd12e6125ca8406e264587">  344</a></span>&#160;<span class="stringliteral">    layer dialog box. A display order index of -1 indicates that the current</span></div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="stringliteral">    layer dialog filter does not allow the layer to appear in the layer list</span></div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="stringliteral">      layer = name of existing layer</span></div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="stringliteral">    Returns:</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="stringliteral">      0 based index</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#ae626a5e6d8bbe428b80059ab27bd5984">  349</a></span>&#160;<span class="stringliteral">      0 based index</span></div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">return</span> layer.SortIndex</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">def </span>LayerPrintColor(layer, color=None):</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#aa38d900c74e742c68563e5645b7a96b2">LayerPrintColor</a>(layer, color=None):</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or changes the print color of a layer. Layer print colors are</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="stringliteral">    represented as RGB colors.</span></div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="stringliteral">      layer = name of existing layer</span></div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="stringliteral">      color[opt] = new print color</span></div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="stringliteral">    Returns:</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="stringliteral">      if color is not specified, the current layer print color</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a93e1b584347bcb55f1dd51d2782cd0a9">  362</a></span>&#160;<span class="stringliteral">      if color is not specified, the current layer print color</span></div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="stringliteral">      if color is specified, the previous layer print color</span></div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="stringliteral">      None on error</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
@@ -499,40 +499,40 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">if</span> color:</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        color = rhutil.coercecolor(color)</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        layer.PlotColor = color</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        scriptcontext.doc.Views.Redraw()</div>
+<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a7a7d9394bff9c4a41a4bbb3898cfc0d4">  371</a></span>&#160;        scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="keyword">def </span>LayerPrintWidth(layer, width=None):</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a0057c6c8e9b437ff054a1b1783c94fee">LayerPrintWidth</a>(layer, width=None):</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or changes the print width of a layer. Print width is specified</span></div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="stringliteral">    in millimeters. A print width of 0.0 denotes the &quot;default&quot; print width.</span></div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="stringliteral">      layer = name of existing layer</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="stringliteral">      width[opt] = new print width</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#ae4901831e8d886c99c644772fe53de14">  380</a></span>&#160;<span class="stringliteral">      width[opt] = new print width</span></div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="stringliteral">      if width is not specified, the current layer print width</span></div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="stringliteral">      if width is specified, the previous layer print width</span></div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
+<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#ae68cf8cbaa5c6488c559e77072c857b2">  385</a></span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    rc = layer.PlotWeight</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordflow">if</span> width <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span> <span class="keywordflow">and</span> width!=rc:</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        layer.PlotWeight = width</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">return</span> rc</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#aa37f74a24ac8bc7dd1acd57662639919">  391</a></span>&#160;</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keyword">def </span>LayerVisible(layer, visible=None, force_visible=False):</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a140f788427be21276979e29e4e9a034c">LayerVisible</a>(layer, visible=None, force_visible=False):</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns or changes the visible property of a layer.</span></div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="stringliteral">      layer = name of existing layer</span></div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="stringliteral">      visible[opt] = new visible state</span></div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="stringliteral">    Returns:</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="stringliteral">      if visible is not specified, the current layer visibility</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a545d01e3901e9c42aa94acf125869fad">  399</a></span>&#160;<span class="stringliteral">      if visible is not specified, the current layer visibility</span></div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="stringliteral">      if visible is specified, the previous layer visibility</span></div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    rc = layer.IsVisible</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordflow">if</span> visible <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span> <span class="keywordflow">and</span> visible!=rc:</div>
+<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#aa38d900c74e742c68563e5645b7a96b2">  404</a></span>&#160;    <span class="keywordflow">if</span> visible <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span> <span class="keywordflow">and</span> visible!=rc:</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">if</span> visible <span class="keywordflow">and</span> force_visible:</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            scriptcontext.doc.Layers.ForceLayerVisible(layer.Id)</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keywordflow">else</span>:</div>
@@ -541,8 +541,8 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keyword">def </span>ParentLayer(layer, parent=None):</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Return or modify the parent layer of a layer</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#ae020a4c7f34a1651baa9f39f6a128abe">ParentLayer</a>(layer, parent=None):</div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a0057c6c8e9b437ff054a1b1783c94fee">  414</a></span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Return or modify the parent layer of a layer</span></div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="stringliteral">      layer = name of an existing layer</span></div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="stringliteral">      parent[opt] = name of new parent layer. To remove the parent layer,</span></div>
@@ -551,7 +551,7 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="stringliteral">      If parent is not specified, the name of the current parent layer</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="stringliteral">      If parent is specified, the name of the previous parent layer</span></div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="stringliteral">      None if the layer does not have a parent</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a140f788427be21276979e29e4e9a034c">  423</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    parent_id = layer.ParentLayerId</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    oldparent = <span class="keywordtype">None</span></div>
@@ -563,13 +563,13 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordflow">if</span> parent <span class="keywordflow">is</span> <span class="keywordtype">None</span>: <span class="keywordflow">return</span> oldparent</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordflow">if</span> parent==<span class="stringliteral">&quot;&quot;</span>:</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        layer.ParentLayerId = System.Guid.Empty</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00435"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#ae020a4c7f34a1651baa9f39f6a128abe">  435</a></span>&#160;    <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        parent = __getlayer(parent, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        layer.ParentLayerId = parent.Id</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordflow">return</span> oldparent</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="keyword">def </span>PurgeLayer(layer):</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a1194d1c2e48e3f6417c8d370df635039">PurgeLayer</a>(layer):</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Removes an existing layer from the document. The layer will be removed</span></div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="stringliteral">    even if it contains geometry objects. The layer to be removed cannot be the</span></div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="stringliteral">    current layer</span></div>
@@ -581,17 +581,51 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    layer = __getlayer(layer, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    rc = scriptcontext.doc.Layers.Purge( layer.LayerIndex, <span class="keyword">True</span>)</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    scriptcontext.doc.Views.Redraw()</div>
+<div class="line"><a name="l00453"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a1194d1c2e48e3f6417c8d370df635039">  453</a></span>&#160;    scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="keyword">def </span>RenameLayer(oldname, newname):</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1layer.html#a84d6604e3bcea17de60fedb25dc5f422">RenameLayer</a>(oldname, newname):</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Renames an existing layer</span></div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="stringliteral">    Returns: The new layer name if successful</span></div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1layer.html#a84d6604e3bcea17de60fedb25dc5f422">  459</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordflow">if</span> oldname <span class="keywordflow">and</span> newname:</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        layer = __getlayer(oldname, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        layer.Name = newname</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <span class="keywordflow">return</span> newname</div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_aa37f74a24ac8bc7dd1acd57662639919"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#aa37f74a24ac8bc7dd1acd57662639919">rhinoscript.layer.LayerNames</a></div><div class="ttdeci">def LayerNames</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00391">layer.py:391</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a1ede00ed9696405bf3c6b2462f10cc0b"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a1ede00ed9696405bf3c6b2462f10cc0b">rhinoscript.layer.DeleteLayer</a></div><div class="ttdeci">def DeleteLayer(layer)</div><div class="ttdoc">Removes an existing layer from the document. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00093">layer.py:93</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a61f38d55f3cf854ad2a8bcdfcdd2f88b"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a61f38d55f3cf854ad2a8bcdfcdd2f88b">rhinoscript.layer.IsLayerOn</a></div><div class="ttdeci">def IsLayerOn(layer)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00283">layer.py:283</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_afa11aeb3ef3bad285ae8cb88d2aff949"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#afa11aeb3ef3bad285ae8cb88d2aff949">rhinoscript.layer.LayerChildren</a></div><div class="ttdeci">def LayerChildren(layer)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00321">layer.py:321</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_aa38d900c74e742c68563e5645b7a96b2"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#aa38d900c74e742c68563e5645b7a96b2">rhinoscript.layer.LayerPrintColor</a></div><div class="ttdeci">def LayerPrintColor</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00404">layer.py:404</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a9c4bdbcebc229304c58e0e398cfecaee"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a9c4bdbcebc229304c58e0e398cfecaee">rhinoscript.layer.ExpandLayer</a></div><div class="ttdeci">def ExpandLayer(layer, expand)</div><div class="ttdoc">Expands a layer. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00105">layer.py:105</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a45022bcd7dbccda1bdf446292ea5a9c1"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a45022bcd7dbccda1bdf446292ea5a9c1">rhinoscript.layer.IsLayerVisible</a></div><div class="ttdeci">def IsLayerVisible(layer)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00307">layer.py:307</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a2b65a021143043a1ef7375db48587c1d"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a2b65a021143043a1ef7375db48587c1d">rhinoscript.layer.IsLayerParentOf</a></div><div class="ttdeci">def IsLayerParentOf(layer, test)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00295">layer.py:295</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a8b77b8d00f40e6ed5232379244c005a8"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a8b77b8d00f40e6ed5232379244c005a8">rhinoscript.layer.IsLayerEmpty</a></div><div class="ttdeci">def IsLayerEmpty(layer)</div><div class="ttdoc">Returns or changes the print width of a layer. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00234">layer.py:234</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_ae68cf8cbaa5c6488c559e77072c857b2"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#ae68cf8cbaa5c6488c559e77072c857b2">rhinoscript.layer.LayerName</a></div><div class="ttdeci">def LayerName</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00385">layer.py:385</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a52a6cfabcd5d43bc97fa7db23bc581da"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a52a6cfabcd5d43bc97fa7db23bc581da">rhinoscript.layer.IsLayerChangeable</a></div><div class="ttdeci">def IsLayerChangeable(layer)</div><div class="ttdoc">Verifies that a layer is a child of another layer. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00126">layer.py:126</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a1194d1c2e48e3f6417c8d370df635039"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a1194d1c2e48e3f6417c8d370df635039">rhinoscript.layer.PurgeLayer</a></div><div class="ttdeci">def PurgeLayer(layer)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00453">layer.py:453</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a4338e30f916ad9f90655c07915724a8c"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a4338e30f916ad9f90655c07915724a8c">rhinoscript.layer.IsLayerExpanded</a></div><div class="ttdeci">def IsLayerExpanded(layer)</div><div class="ttdoc">Returns or changes the visible property of a layer. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00269">layer.py:269</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a93e1b584347bcb55f1dd51d2782cd0a9"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a93e1b584347bcb55f1dd51d2782cd0a9">rhinoscript.layer.LayerLocked</a></div><div class="ttdeci">def LayerLocked</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00362">layer.py:362</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a95fe991d6836ba7e8256abec9d1b4253"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a95fe991d6836ba7e8256abec9d1b4253">rhinoscript.layer.LayerCount</a></div><div class="ttdeci">def LayerCount()</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00339">layer.py:339</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_add3b3414e9500376aeed4fcd38186469"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#add3b3414e9500376aeed4fcd38186469">rhinoscript.layer.IsLayerSelectable</a></div><div class="ttdeci">def IsLayerSelectable(layer)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00289">layer.py:289</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_ae4901831e8d886c99c644772fe53de14"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#ae4901831e8d886c99c644772fe53de14">rhinoscript.layer.LayerId</a></div><div class="ttdeci">def LayerId(layer)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00380">layer.py:380</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_ae020a4c7f34a1651baa9f39f6a128abe"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#ae020a4c7f34a1651baa9f39f6a128abe">rhinoscript.layer.ParentLayer</a></div><div class="ttdeci">def ParentLayer</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00435">layer.py:435</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a8a13463c67c6c13f3a9ada81f9e84b16"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a8a13463c67c6c13f3a9ada81f9e84b16">rhinoscript.layer.IsLayerCurrent</a></div><div class="ttdeci">def IsLayerCurrent(layer)</div><div class="ttdoc">Returns the immediate child layers of a layer. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00195">layer.py:195</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a7a7d9394bff9c4a41a4bbb3898cfc0d4"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a7a7d9394bff9c4a41a4bbb3898cfc0d4">rhinoscript.layer.LayerMaterialIndex</a></div><div class="ttdeci">def LayerMaterialIndex</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00371">layer.py:371</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a772767eef91aa36863fd6b1996cb3761"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a772767eef91aa36863fd6b1996cb3761">rhinoscript.layer.IsLayerChildOf</a></div><div class="ttdeci">def IsLayerChildOf(layer, test)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00136">layer.py:136</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a140f788427be21276979e29e4e9a034c"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a140f788427be21276979e29e4e9a034c">rhinoscript.layer.LayerVisible</a></div><div class="ttdeci">def LayerVisible</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00423">layer.py:423</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_aba4b9b2d7a06225d36d7ba437ac7f198"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#aba4b9b2d7a06225d36d7ba437ac7f198">rhinoscript.layer.CurrentLayer</a></div><div class="ttdeci">def CurrentLayer</div><div class="ttdoc">Returns or changes the current layer. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00075">layer.py:75</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a41294eb5f36b81e63a8c7cb6cb1b2a32"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a41294eb5f36b81e63a8c7cb6cb1b2a32">rhinoscript.layer.LayerChildCount</a></div><div class="ttdeci">def LayerChildCount(layer)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00313">layer.py:313</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_afc3f2fcea4f567402908119e21fdd351"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#afc3f2fcea4f567402908119e21fdd351">rhinoscript.layer.IsLayer</a></div><div class="ttdeci">def IsLayer(layer)</div><div class="ttdoc">Verifies the existance of a layer in the document. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00116">layer.py:116</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_aa14057f789afafffaf5d214a139021ee"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#aa14057f789afafffaf5d214a139021ee">rhinoscript.layer.IsLayerReference</a></div><div class="ttdeci">def IsLayerReference(layer)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00301">layer.py:301</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a8cf895e1694a6b657c14a4cec21d74cc"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a8cf895e1694a6b657c14a4cec21d74cc">rhinoscript.layer.LayerColor</a></div><div class="ttdeci">def LayerColor</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00328">layer.py:328</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a0057c6c8e9b437ff054a1b1783c94fee"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a0057c6c8e9b437ff054a1b1783c94fee">rhinoscript.layer.LayerPrintWidth</a></div><div class="ttdeci">def LayerPrintWidth</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00414">layer.py:414</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_aa6ba913612903b65a8812d9483b7b719"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#aa6ba913612903b65a8812d9483b7b719">rhinoscript.layer.IsLayerLocked</a></div><div class="ttdeci">def IsLayerLocked(layer)</div><div class="ttdoc">Renames an existing layer Returns The new layer name if successful. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00277">layer.py:277</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a8f69d641cefd12e6125ca8406e264587"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a8f69d641cefd12e6125ca8406e264587">rhinoscript.layer.LayerIds</a></div><div class="ttdeci">def LayerIds()</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00344">layer.py:344</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a545d01e3901e9c42aa94acf125869fad"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a545d01e3901e9c42aa94acf125869fad">rhinoscript.layer.LayerOrder</a></div><div class="ttdeci">def LayerOrder(layer)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00399">layer.py:399</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a85a96358b0749de5ff688366901ab35e"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a85a96358b0749de5ff688366901ab35e">rhinoscript.layer.AddLayer</a></div><div class="ttdeci">def AddLayer</div><div class="ttdoc">Add a new layer to the document. </div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00032">layer.py:32</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_a84d6604e3bcea17de60fedb25dc5f422"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#a84d6604e3bcea17de60fedb25dc5f422">rhinoscript.layer.RenameLayer</a></div><div class="ttdeci">def RenameLayer(oldname, newname)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00459">layer.py:459</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1layer_html_ae626a5e6d8bbe428b80059ab27bd5984"><div class="ttname"><a href="namespacerhinoscript_1_1layer.html#ae626a5e6d8bbe428b80059ab27bd5984">rhinoscript.layer.LayerLinetype</a></div><div class="ttdeci">def LayerLinetype</div><div class="ttdef"><b>Definition:</b> <a href="layer_8py_source.html#l00349">layer.py:349</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.9.1-->
@@ -599,7 +633,7 @@ $(document).ready(function(){initNavTree('layer_8py_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_498fa6d7fadccabe7b36c98a7b98e64b.html">rhinoscriptsyntax</a></li><li class="navelem"><a class="el" href="dir_50c1069cab179abf171fcff507cfe76b.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_efda7f8bc7876f22620c0ac8c5470b21.html">rhinoscript</a></li><li class="navelem"><b>layer.py</b></li>
-    <li class="footer">Generated on Tue Jun 30 2015 13:49:37 for rhinoscriptsyntax API docs by
+    <li class="footer">Generated on Tue Jun 30 2015 15:12:41 for rhinoscriptsyntax API docs by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

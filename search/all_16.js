@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['xformchangebasis',['XformChangeBasis',['../namespacerhinoscript_1_1transformation.html#ae6641cfe41a744ab8d8adb3041afdc2e',1,'rhinoscript::transformation']]],
+  ['xformchangebasis2',['XformChangeBasis2',['../namespacerhinoscript_1_1transformation.html#a7cb18775a12bdc3286abe09248871fd5',1,'rhinoscript::transformation']]],
+  ['xformcompare',['XformCompare',['../namespacerhinoscript_1_1transformation.html#a6cd4936d9a70cf01b618bd5f9da051a0',1,'rhinoscript::transformation']]],
+  ['xformcplanetoworld',['XformCPlaneToWorld',['../namespacerhinoscript_1_1transformation.html#ab58c527b2329461ddbcaa5c33cafd8c5',1,'rhinoscript::transformation']]],
+  ['xformdeterminant',['XformDeterminant',['../namespacerhinoscript_1_1transformation.html#a259cb72d4c883e8f51c8e62ca2748174',1,'rhinoscript::transformation']]],
+  ['xformdiagonal',['XformDiagonal',['../namespacerhinoscript_1_1transformation.html#a05b6c7b1b575c35d633e82d98b4da6ef',1,'rhinoscript::transformation']]],
+  ['xformidentity',['XformIdentity',['../namespacerhinoscript_1_1transformation.html#a1f55af68565b0d67fe9f9c221a2f1774',1,'rhinoscript::transformation']]],
+  ['xforminverse',['XformInverse',['../namespacerhinoscript_1_1transformation.html#a669634fd55f54e207aef316cd889aa54',1,'rhinoscript::transformation']]],
+  ['xformmirror',['XformMirror',['../namespacerhinoscript_1_1transformation.html#ad3db8b684a4bf33420e1d93c3eb81f06',1,'rhinoscript::transformation']]],
+  ['xformmultiply',['XformMultiply',['../namespacerhinoscript_1_1transformation.html#a97b91f708fff51f07778e6d22438dcea',1,'rhinoscript::transformation']]],
+  ['xformplanarprojection',['XformPlanarProjection',['../namespacerhinoscript_1_1transformation.html#ab635b74f4f76938e9179b48b45155119',1,'rhinoscript::transformation']]],
+  ['xformrotation1',['XformRotation1',['../namespacerhinoscript_1_1transformation.html#ac4102ea52b13a57efc26768adf93d280',1,'rhinoscript::transformation']]],
+  ['xformrotation2',['XformRotation2',['../namespacerhinoscript_1_1transformation.html#af2026e1b16005e8da46f2d2173758265',1,'rhinoscript::transformation']]],
+  ['xformrotation3',['XformRotation3',['../namespacerhinoscript_1_1transformation.html#a56fd5dbfb0d18ec30bd30be9f5de201d',1,'rhinoscript::transformation']]],
+  ['xformrotation4',['XformRotation4',['../namespacerhinoscript_1_1transformation.html#a5530b132611f6da0557fd2943374fe64',1,'rhinoscript::transformation']]],
+  ['xformscale',['XformScale',['../namespacerhinoscript_1_1transformation.html#a9e3f8b59008ce0d97b307e576caa62c8',1,'rhinoscript::transformation']]],
+  ['xformscreentoworld',['XformScreenToWorld',['../namespacerhinoscript_1_1transformation.html#a7b9749f910eb37208c1b00dcfafec02f',1,'rhinoscript::transformation']]],
+  ['xformshear',['XformShear',['../namespacerhinoscript_1_1transformation.html#a52dfe7bc884623b3c7d837f2ca6d49c4',1,'rhinoscript::transformation']]],
+  ['xformtranslation',['XformTranslation',['../namespacerhinoscript_1_1transformation.html#aec5a098df1a6ef474068ff007ad011db',1,'rhinoscript::transformation']]],
+  ['xformworldtocplane',['XformWorldToCPlane',['../namespacerhinoscript_1_1transformation.html#ad2961aa5fc2ed3036d7358d9fd39b5fb',1,'rhinoscript::transformation']]],
+  ['xformworldtoscreen',['XformWorldToScreen',['../namespacerhinoscript_1_1transformation.html#af8e0e05f825f022d4b038661a3e32ef8',1,'rhinoscript::transformation']]],
+  ['xformzero',['XformZero',['../namespacerhinoscript_1_1transformation.html#aec7994f865f4bf57f7fdb60bf21dea22',1,'rhinoscript::transformation']]]
+];

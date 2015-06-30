@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">from</span> view <span class="keyword">import</span> __viewhelper</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">def </span>BrowseForFolder(folder=None, message=None, title=None):</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a44813b290bd99c80d8badc925ef63268">BrowseForFolder</a>(folder=None, message=None, title=None):</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Display browse-for-folder dialog allowing the user to select a folder</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="stringliteral">      folder[opt] = a default folder</span></div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">      selected folder</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a44813b290bd99c80d8badc925ef63268">   23</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    dlg = System.Windows.Forms.FolderBrowserDialog()</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> folder:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span> <span class="keywordflow">not</span> isinstance(folder, str): folder = str(folder)</div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> dlg.SelectedPath</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">def </span>CheckListBox(items, message=None, title=None):</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#aa8543306675baaed2384edc23479d4c5">CheckListBox</a>(items, message=None, title=None):</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Displays a list of items in a checkable-style list dialog box</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">      items = a list of tuples containing a string and a boolean check state</span></div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">      A list of tuples containing the input string in items along with their</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">      new boolean check value</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">      None on error      </span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#aa8543306675baaed2384edc23479d4c5">   45</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    checkstates = [item[1] <span class="keywordflow">for</span> item <span class="keywordflow">in</span> items]</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    itemstrs = [str(item[0]) <span class="keywordflow">for</span> item <span class="keywordflow">in</span> items]</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    newcheckstates = Rhino.UI.Dialogs.ShowCheckListBox(title, message, itemstrs, checkstates)</div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> scriptcontext.errorhandler()</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">def </span>ComboListBox(items, message=None, title=None):</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a4c70c201c16493bd96de673491c4175b">ComboListBox</a>(items, message=None, title=None):</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Displays a list of items in a combo-style list box dialog.</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="stringliteral">      items = a list of string</span></div>
@@ -192,18 +192,18 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="stringliteral">      The selected item if successful</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="stringliteral">      None if not successful or on error</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a4c70c201c16493bd96de673491c4175b">   64</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> Rhino.UI.Dialogs.ShowComboListBox(title, message, items)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">def </span>EditBox(default_string=None, message=None, title=None):</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#afff2dc29092e66d1a0b53eb72d7637e4">EditBox</a>(default_string=None, message=None, title=None):</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Display dialog prompting the user to enter a string. The</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="stringliteral">    string value may span multiple lines</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#afff2dc29092e66d1a0b53eb72d7637e4">   71</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    rc, text = Rhino.UI.Dialogs.ShowEditBox(title, message, default_string, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> text</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">def </span>GetAngle(point=None, reference_point=None, default_angle_degrees=0, message=None):</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a1e36bc49c063f9b0d389b3c1a97df40a">GetAngle</a>(point=None, reference_point=None, default_angle_degrees=0, message=None):</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pause for user input of an angle</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="stringliteral">      point(opt) = starting, or base point</span></div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="stringliteral">      message(opt) = a prompt to display</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="stringliteral">      angle in degree if successful, None on error</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a1e36bc49c063f9b0d389b3c1a97df40a">   85</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    point = rhutil.coerce3dpoint(point)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> point: point = Rhino.Geometry.Point3d.Unset</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    reference_point = rhutil.coerce3dpoint(reference_point)</div>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> rc==Rhino.Commands.Result.Success: <span class="keywordflow">return</span> math.degrees(angle)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">def </span>GetBoolean(message, items, defaults):</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#af0adf5fb689cc15b25af259e724118e4">GetBoolean</a>(message, items, defaults):</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of one or more boolean values. Boolean values are</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="stringliteral">    displayed as click-able command line option toggles</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="stringliteral">      a list of values that represent the boolean values if successful</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#af0adf5fb689cc15b25af259e724118e4">  109</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    go = Rhino.Input.Custom.GetOption()</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    go.AcceptNothing(<span class="keyword">True</span>)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    go.SetCommandPrompt( message )</div>
@@ -263,7 +263,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> [t.CurrentValue <span class="keywordflow">for</span> t <span class="keywordflow">in</span> toggles]</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">def </span>GetBox(mode=0, base_point=None, prompt1=None, prompt2=None, prompt3=None):</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a5380ef4691125d01671cd18cb4f3304c">GetBox</a>(mode=0, base_point=None, prompt1=None, prompt2=None, prompt3=None):</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of a box</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="stringliteral">      mode[opt] = The box selection mode.</span></div>
@@ -277,21 +277,21 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="stringliteral">      list of eight Point3d that define the corners of the box on success</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="stringliteral">      None is not successful, or on error</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a5380ef4691125d01671cd18cb4f3304c">  149</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    base_point = rhutil.coerce3dpoint(base_point)</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">if</span> base_point <span class="keywordflow">is</span> <span class="keywordtype">None</span>: base_point = Rhino.Geometry.Point3d.Unset</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    rc, box = Rhino.Input.RhinoGet.GetBox(mode, base_point, prompt1, prompt2, prompt3)</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> rc==Rhino.Commands.Result.Success: <span class="keywordflow">return</span> tuple(box.GetCorners())</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">def </span>GetColor(color=[0,0,0]):</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a9c1b3c0328209c6d5f7ef0db36c611eb">GetColor</a>(color=[0,0,0]):</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Display the Rhino color picker dialog allowing the user to select an RGB color</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="stringliteral">      color [opt] = default RGB value. If omitted, the default color is black</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="stringliteral">      RGB tuple of three numbers on success</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a9c1b3c0328209c6d5f7ef0db36c611eb">  163</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    color = rhutil.coercecolor(color)</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> color <span class="keywordflow">is</span> <span class="keywordtype">None</span>: color = System.Drawing.Color.Black</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    rc, color = Rhino.UI.Dialogs.ShowColorDialog(color)</div>
@@ -299,14 +299,14 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> scriptcontext.errorhandler()</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">def </span>GetCursorPos():</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a717634c7017ef062de94358aaa532bc8">GetCursorPos</a>():</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Retrieves the cursor&#39;s position</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="stringliteral">    Returns: tuple containing the following information</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="stringliteral">      cursor position in world coordinates</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="stringliteral">      cursor position in screen coordinates</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="stringliteral">      id of the active viewport</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="stringliteral">      cursor position in client coordinates</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a717634c7017ef062de94358aaa532bc8">  178</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    view = scriptcontext.doc.Views.ActiveView</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    screen_pt = Rhino.UI.MouseCursor.Location</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    client_pt = view.ScreenToClient(screen_pt)</div>
@@ -317,7 +317,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">return</span> world_pt, screen_pt, viewport.Id, client_pt</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">def </span>GetDistance(first_pt=None, distance=None, first_pt_msg=&#39;First distance point&#39;, second_pt_msg=&#39;Second distance point&#39;):</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a3d803994f4f263970bf334418cb7c324">GetDistance</a>(first_pt=None, distance=None, first_pt_msg=&#39;First distance point&#39;, second_pt_msg=&#39;Second distance point&#39;):</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of a distance.</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="stringliteral">      first_pt [opt] = First distance point</span></div>
@@ -327,7 +327,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="stringliteral">      The distance between the two points if successful.</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="stringliteral">      None if not successful, or on error.</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a3d803994f4f263970bf334418cb7c324">  199</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">if</span> distance <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span> <span class="keywordflow">and</span> first_pt <span class="keywordflow">is</span> <span class="keywordtype">None</span>: </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">raise</span> Exception(<span class="stringliteral">&quot;The &#39;first_pt&#39; parameter needs a value if &#39;distance&#39; is not None.&quot;</span>)</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> distance <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span> <span class="keywordflow">and</span> <span class="keywordflow">not</span> (isinstance(distance, int) <span class="keywordflow">or</span> isinstance(distance, float)): <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
@@ -365,7 +365,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">return</span> distance</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">def </span>GetEdgeCurves(message=None, min_count=1, max_count=0, select=False):</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a76b6f0fab76c877c1ce3c0d1eae086d8">GetEdgeCurves</a>(message=None, min_count=1, max_count=0, select=False):</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Prompt the user to pick one or more surface or polysurface edge curves</span></div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="stringliteral">      message [optional] = A prompt or message.</span></div>
@@ -375,7 +375,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="stringliteral">      List of (curve id, parent id, selection point)</span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="stringliteral">      None if not successful</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a76b6f0fab76c877c1ce3c0d1eae086d8">  247</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">if</span> min_count&lt;0 <span class="keywordflow">or</span> (max_count&gt;0 <span class="keywordflow">and</span> min_count&gt;max_count): <span class="keywordflow">return</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> message: message = <span class="stringliteral">&quot;Select Edges&quot;</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    go = Rhino.Input.Custom.GetObject()</div>
@@ -402,7 +402,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">return</span> rc        </div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">def </span>GetInteger(message=None, number=None, minimum=None, maximum=None):</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#aff3540bb80fe73869f17a1b5f18a250b">GetInteger</a>(message=None, number=None, minimum=None, maximum=None):</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of a whole number.</span></div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="stringliteral">      message [optional] = A prompt or message.</span></div>
@@ -412,7 +412,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="stringliteral">       The whole number input by the user if successful.</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="stringliteral">       None if not successful, or on error</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#aff3540bb80fe73869f17a1b5f18a250b">  284</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    gi = Rhino.Input.Custom.GetInteger()</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">if</span> message: gi.SetCommandPrompt(message)</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">if</span> number <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>: gi.SetDefaultInteger(number)</div>
@@ -424,7 +424,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="keyword">def </span>GetLayer(title=&quot;Select Layer&quot;, layer=None, show_new_button=False, show_set_current=False):</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a268fb9c5ff9d5550384078e5a6ada037">GetLayer</a>(title=&quot;Select Layer&quot;, layer=None, show_new_button=False, show_set_current=False):</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Displays dialog box prompting the user to select a layer</span></div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="stringliteral">      title[opt] = dialog box title</span></div>
@@ -433,7 +433,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="stringliteral">      name of selected layer if successful</span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a268fb9c5ff9d5550384078e5a6ada037">  305</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    layer_index = scriptcontext.doc.Layers.CurrentLayerIndex</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">if</span> layer:</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        index = scriptcontext.doc.Layers.Find(layer, <span class="keyword">True</span>)</div>
@@ -444,20 +444,20 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">return</span> layer.FullPath</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="keyword">def </span>GetLayers(title=&quot;Select Layers&quot;, show_new_button=False):</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a7a9a7e18fb7e28889ae827e504413467">GetLayers</a>(title=&quot;Select Layers&quot;, show_new_button=False):</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Displays a dialog box prompting the user to select one or more layers</span></div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="stringliteral">      title[opt] = dialog box title</span></div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="stringliteral">      show_new_button[opt] = Optional button to show on the dialog</span></div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="stringliteral">      The names of selected layers if successful</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a7a9a7e18fb7e28889ae827e504413467">  323</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    rc, layer_indices = Rhino.UI.Dialogs.ShowSelectMultipleLayersDialog(<span class="keywordtype">None</span>, title, show_new_button)</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span> rc:</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">return</span> [scriptcontext.doc.Layers[index].FullPath <span class="keywordflow">for</span> index <span class="keywordflow">in</span> layer_indices]</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keyword">def </span>GetLine(mode=0, point=None, message1=None, message2=None, message3=None):</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a2b4b6adb40d703b6eb0290a48e05b9e7">GetLine</a>(mode=0, point=None, message1=None, message2=None, message3=None):</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Prompts the user to pick points that define a line</span></div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="stringliteral">      mode[opt] = line definition mode. See help file for details</span></div>
@@ -466,7 +466,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="stringliteral">      Tuple of two points on success</span></div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a2b4b6adb40d703b6eb0290a48e05b9e7">  338</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    gl = Rhino.Input.Custom.GetLine()</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">if</span> mode==0: gl.EnableAllVariations(<span class="keyword">True</span>)</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">else</span>: gl.GetLineMode = System.Enum.ToObject( Rhino.Input.Custom.GetLineMode, mode-1 )</div>
@@ -480,7 +480,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">if</span> rc==Rhino.Commands.Result.Success: <span class="keywordflow">return</span> line.From, line.To</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keyword">def </span>GetMeshFaces(object_id, message=&quot;&quot;, min_count=1, max_count=0):</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a60a8b7b7461852ec3c30bdb102e2166d">GetMeshFaces</a>(object_id, message=&quot;&quot;, min_count=1, max_count=0):</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Prompts the user to pick one or more mesh faces</span></div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="stringliteral">      object_id = the mesh object&#39;s identifier</span></div>
@@ -492,7 +492,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="stringliteral">      list of mesh face indices on success</span></div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a60a8b7b7461852ec3c30bdb102e2166d">  364</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    scriptcontext.doc.Objects.UnselectAll()</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    object_id = rhutil.coerceguid(object_id, <span class="keyword">True</span>)</div>
@@ -510,7 +510,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="keyword">def </span>GetMeshVertices(object_id, message=&quot;&quot;, min_count=1, max_count=0):</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a4e5c876023de4b2674fbbc23fed8f47f">GetMeshVertices</a>(object_id, message=&quot;&quot;, min_count=1, max_count=0):</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Prompts the user to pick one or more mesh vertices</span></div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="stringliteral">      object_id = the mesh object&#39;s identifier</span></div>
@@ -522,7 +522,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="stringliteral">      list of mesh vertex indices on success</span></div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a4e5c876023de4b2674fbbc23fed8f47f">  394</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    scriptcontext.doc.Objects.UnselectAll()</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    scriptcontext.doc.Views.Redraw()</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    object_id = rhutil.coerceguid(object_id, <span class="keyword">True</span>)</div>
@@ -540,7 +540,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="keyword">def </span>GetPoint(message=None, base_point=None, distance=None, in_plane=False):</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a76c5eade590395a223663fc2e37168d2">GetPoint</a>(message=None, base_point=None, distance=None, in_plane=False):</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of a point.</span></div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="stringliteral">      message [opt] = A prompt or message.</span></div>
@@ -551,7 +551,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="stringliteral">      point on success</span></div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="stringliteral">      None if no point picked or user canceled</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a76c5eade590395a223663fc2e37168d2">  423</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    gp = Rhino.Input.Custom.GetPoint()</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordflow">if</span> message: gp.SetCommandPrompt(message)</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    base_point = rhutil.coerce3dpoint(base_point)</div>
@@ -568,7 +568,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordflow">return</span> pt</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="keyword">def </span>GetPointOnCurve(curve_id, message=None):</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#ae2c58424926fb90c4fef46d659e19b2b">GetPointOnCurve</a>(curve_id, message=None):</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of a point constrainted to a curve object</span></div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="stringliteral">      curve_id = identifier of the curve to get a point on</span></div>
@@ -576,7 +576,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="stringliteral">      3d point if successful</span></div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#ae2c58424926fb90c4fef46d659e19b2b">  448</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    curve = rhutil.coercecurve(curve_id, -1, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    gp = Rhino.Input.Custom.GetPoint()</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">if</span> message: gp.SetCommandPrompt(message)</div>
@@ -589,7 +589,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordflow">return</span> pt</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="keyword">def </span>GetPointOnMesh(mesh_id, message=None):</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#afb75416d7f222e301c4f57b51484f035">GetPointOnMesh</a>(mesh_id, message=None):</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of a point constrained to a mesh object</span></div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="stringliteral">      mesh_id = identifier of the mesh to get a point on</span></div>
@@ -597,14 +597,14 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="stringliteral">      3d point if successful</span></div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#afb75416d7f222e301c4f57b51484f035">  469</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    mesh_id = rhutil.coerceguid(mesh_id, <span class="keyword">True</span>)</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> message: message = <span class="stringliteral">&quot;Point&quot;</span></div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    cmdrc, point = Rhino.Input.RhinoGet.GetPointOnMesh(mesh_id, message, <span class="keyword">False</span>)</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">if</span> cmdrc==Rhino.Commands.Result.Success: <span class="keywordflow">return</span> point</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="keyword">def </span>GetPointOnSurface(surface_id, message=None):</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#aaa84e98d7d933a17108806c02e8c960d">GetPointOnSurface</a>(surface_id, message=None):</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of a point constrained to a surface or polysurface</span></div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="stringliteral">    object</span></div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -613,7 +613,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="stringliteral">      3d point if successful</span></div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00485"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#aaa84e98d7d933a17108806c02e8c960d">  485</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    surfOrBrep = rhutil.coercesurface(surface_id)</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <span class="keywordflow">if</span> <span class="keywordflow">not</span> surfOrBrep:</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        surfOrBrep = rhutil.coercebrep(surface_id, <span class="keyword">True</span>)</div>
@@ -631,7 +631,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <span class="keywordflow">return</span> pt</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="keyword">def </span>GetPoints(draw_lines=False, in_plane=False, message1=None, message2=None, max_points=None, base_point=None):</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a048f5cb70425ea59fd10a38ccd01a8a7">GetPoints</a>(draw_lines=False, in_plane=False, message1=None, message2=None, max_points=None, base_point=None):</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of one or more points</span></div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="stringliteral">      draw_lines [opt] = Draw lines between points</span></div>
@@ -644,7 +644,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="stringliteral">      list of 3d points if successful</span></div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="stringliteral">      None if not successful or on error</span></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a048f5cb70425ea59fd10a38ccd01a8a7">  516</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    gp = Rhino.Input.Custom.GetPoint()</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="keywordflow">if</span> message1: gp.SetCommandPrompt(message1)</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    gp.EnableDrawLineFromPoint( draw_lines )</div>
@@ -677,7 +677,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="keyword">def </span>GetReal(message=&quot;Number&quot;, number=None, minimum=None, maximum=None):</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a1f104a806ac1e8777fd93323644c7bac">GetReal</a>(message=&quot;Number&quot;, number=None, minimum=None, maximum=None):</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of a number.</span></div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="stringliteral">      message [optional] = A prompt or message.</span></div>
@@ -687,7 +687,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="stringliteral">       The number input by the user if successful.</span></div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="stringliteral">       None if not successful, or on error</span></div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00559"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a1f104a806ac1e8777fd93323644c7bac">  559</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    gn = Rhino.Input.Custom.GetNumber()</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="keywordflow">if</span> message: gn.SetCommandPrompt(message)</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="keywordflow">if</span> number <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>: gn.SetDefaultNumber(number)</div>
@@ -699,7 +699,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="keywordflow">return</span> rc</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="keyword">def </span>GetRectangle(mode=0, base_point=None, prompt1=None, prompt2=None, prompt3=None):</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a594eb6bfe4b83ac3282b6e41f3eff389">GetRectangle</a>(mode=0, base_point=None, prompt1=None, prompt2=None, prompt3=None):</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of a rectangle</span></div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;<span class="stringliteral">      mode[opt] = The rectangle selection mode. The modes are as follows</span></div>
@@ -713,7 +713,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="stringliteral">      a tuple of four 3d points that define the corners of the rectangle</span></div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a594eb6bfe4b83ac3282b6e41f3eff389">  585</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    mode = System.Enum.ToObject( Rhino.Input.GetBoxMode, mode )</div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    base_point = rhutil.coerce3dpoint(base_point)</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    if( base_point==<span class="keywordtype">None</span> ): base_point = Rhino.Geometry.Point3d.Unset</div>
@@ -726,14 +726,14 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="keyword">def </span>GetString(message=None, defaultString=None, strings=None):</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#aa632d169be908cb3b49fd12c4e6ea364">GetString</a>(message=None, defaultString=None, strings=None):</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Pauses for user input of a string value</span></div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;<span class="stringliteral">      message [opt]: a prompt or message</span></div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="stringliteral">      defaultString [opt]: a default value</span></div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;<span class="stringliteral">      strings [opt]: list of strings to be displayed as a click-able command options.</span></div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="stringliteral">        Note, strings cannot begin with a numeric character</span></div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00605"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#aa632d169be908cb3b49fd12c4e6ea364">  605</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    gs = Rhino.Input.Custom.GetString()</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    gs.AcceptNothing(<span class="keyword">True</span>)</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    <span class="keywordflow">if</span> message: gs.SetCommandPrompt(message)</div>
@@ -747,7 +747,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    <span class="keywordflow">return</span> gs.StringResult()</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="keyword">def </span>ListBox(items, message=None, title=None, default=None):</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a44a9bc9f38e1b2c4266ce7f850c7abf0">ListBox</a>(items, message=None, title=None, default=None):</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Display a list of items in a list box dialog.</span></div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="stringliteral">      items = a list</span></div>
@@ -757,11 +757,11 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;<span class="stringliteral">      The selected item if successful</span></div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;<span class="stringliteral">      None if not successful or on error</span></div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00629"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a44a9bc9f38e1b2c4266ce7f850c7abf0">  629</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    <span class="keywordflow">return</span> Rhino.UI.Dialogs.ShowListBox(title, message, items, default)</div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="keyword">def </span>MessageBox(message, buttons=0, title=&quot;&quot;):</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#ab26a1ed7a3183a24c5bd87f73b5a8cd5">MessageBox</a>(message, buttons=0, title=&quot;&quot;):</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Displays a message box. A message box contains a message and</span></div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="stringliteral">    title, plus any combination of predefined icons and push buttons.</span></div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -796,7 +796,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;<span class="stringliteral">        5      Ignore button was clicked.</span></div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;<span class="stringliteral">        6      Yes button was clicked.</span></div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;<span class="stringliteral">        7      No button was clicked.</span></div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00668"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#ab26a1ed7a3183a24c5bd87f73b5a8cd5">  668</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    buttontype = buttons &amp; 0x00000007 <span class="comment">#111 in binary</span></div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    btn = Rhino.UI.ShowMessageBoxButton.OK</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    <span class="keywordflow">if</span> buttontype==1: btn = Rhino.UI.ShowMessageBoxButton.OKCancel</div>
@@ -833,7 +833,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="keywordflow">if</span> dlg_result==Rhino.UI.ShowMessageBoxResult.No:     <span class="keywordflow">return</span> 7</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="keyword">def </span>PropertyListBox(items, values, message=None, title=None):</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a1e1c97f6483fb06184bad0382a115136">PropertyListBox</a>(items, values, message=None, title=None):</div>
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Displays list of items and their values in a property-style list box dialog</span></div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="stringliteral">      items, values = list of string items and their corresponding values</span></div>
@@ -842,12 +842,12 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="stringliteral">      a list of new values on success</span></div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00714"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a1e1c97f6483fb06184bad0382a115136">  714</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    values = [str(v) <span class="keywordflow">for</span> v <span class="keywordflow">in</span> values]</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <span class="keywordflow">return</span> Rhino.UI.Dialogs.ShowPropertyListBox(title, message, items, values)</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="keyword">def </span>MultiListBox(items, message=None, title=None, defaults=None):</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#ad89a67c70b4d72370c542b0e0c4eaf4e">MultiListBox</a>(items, message=None, title=None, defaults=None):</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Displays a list of items in a multiple-selection list box dialog</span></div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="stringliteral">      items = a zero-based, one-dimensional array of string items</span></div>
@@ -857,13 +857,13 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="stringliteral">      a list containing the selected items if succesful</span></div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00729"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#ad89a67c70b4d72370c542b0e0c4eaf4e">  729</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordflow">if</span> isinstance(defaults, str):</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;      defaults = [defaults]  </div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="keywordflow">return</span> Rhino.UI.Dialogs.ShowMultiListBox(title, message, items, defaults)</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="keyword">def </span>OpenFileName(title=None, filter=None, folder=None, filename=None, extension=None):</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#ac1ca495ca3eb8d74efaeb2a81d6343e0">OpenFileName</a>(title=None, filter=None, folder=None, filename=None, extension=None):</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Displays file open dialog box allowing the user to enter a file name.</span></div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="stringliteral">    Note, this function does not open the file.</span></div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -877,7 +877,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="stringliteral">      the file name is successful</span></div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="stringliteral">      None if not successful, or on error</span></div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00749"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#ac1ca495ca3eb8d74efaeb2a81d6343e0">  749</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    fd = Rhino.UI.OpenFileDialog()</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="keywordflow">if</span> title: fd.Title = title</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <span class="keywordflow">if</span> filter: fd.Filter = filter</div>
@@ -887,7 +887,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="keywordflow">if</span> fd.ShowDialog(): <span class="keywordflow">return</span> fd.FileName</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;<span class="keyword">def </span>OpenFileNames(title=None, filter=None, folder=None, filename=None, extension=None):</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#af48862901ac15280e456edbf6689b40c">OpenFileNames</a>(title=None, filter=None, folder=None, filename=None, extension=None):</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Displays file open dialog box allowing the user to select one or more file names.</span></div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="stringliteral">    Note, this function does not open the file.</span></div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -900,7 +900,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="stringliteral">      extension[opt] = a default file extension</span></div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;<span class="stringliteral">      list of selected file names</span></div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00772"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#af48862901ac15280e456edbf6689b40c">  772</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    fd = Rhino.UI.OpenFileDialog()</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="keywordflow">if</span> title: fd.Title = title</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="keywordflow">if</span> filter: fd.Filter = filter</div>
@@ -912,7 +912,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    <span class="keywordflow">return</span> []</div>
 <div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;</div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="keyword">def </span>PopupMenu(items, modes=None, point=None, view=None):</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a2eca5311a62829ddb1302a4b0c0ed452">PopupMenu</a>(items, modes=None, point=None, view=None):</div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Display a context-style popup menu. The popup menu can appear almost</span></div>
 <div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;<span class="stringliteral">    anywhere, and can be dismissed by clicking the left or right mouse buttons</span></div>
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -930,7 +930,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;<span class="stringliteral">        If omitted, the active view is used</span></div>
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="stringliteral">      index of the menu item picked or -1 if no menu item was picked</span></div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a2eca5311a62829ddb1302a4b0c0ed452">  802</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;    screen_point = System.Windows.Forms.Cursor.Position</div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    <span class="keywordflow">if</span> point:</div>
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        point = rhutil.coerce3dpoint(point)</div>
@@ -941,12 +941,12 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <span class="keywordflow">return</span> Rhino.UI.Dialogs.ShowContextMenu(items, screen_point, modes);</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="keyword">def </span>RealBox(message=&quot;&quot;, default_number=None, title=&quot;&quot;, minimum=None, maximum=None):</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#acc43f633a3ff6a378a18a411c5b3b828">RealBox</a>(message=&quot;&quot;, default_number=None, title=&quot;&quot;, minimum=None, maximum=None):</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Display a dialog box prompting the user to enter a number</span></div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;<span class="stringliteral">      number on success</span></div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;<span class="stringliteral">      None on error</span></div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00818"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#acc43f633a3ff6a378a18a411c5b3b828">  818</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    <span class="keywordflow">if</span> default_number <span class="keywordflow">is</span> <span class="keywordtype">None</span>: default_number = Rhino.RhinoMath.UnsetValue</div>
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    <span class="keywordflow">if</span> minimum <span class="keywordflow">is</span> <span class="keywordtype">None</span>: minimum = Rhino.RhinoMath.UnsetValue</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    <span class="keywordflow">if</span> maximum <span class="keywordflow">is</span> <span class="keywordtype">None</span>: maximum = Rhino.RhinoMath.UnsetValue</div>
@@ -954,7 +954,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <span class="keywordflow">if</span> rc: <span class="keywordflow">return</span> number</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;<span class="keyword">def </span>SaveFileName(title=None, filter=None, folder=None, filename=None, extension=None):</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#a5173cb79e10bc210f1dac134087f3651">SaveFileName</a>(title=None, filter=None, folder=None, filename=None, extension=None):</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Display a save dialog box allowing the user to enter a file name.</span></div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;<span class="stringliteral">    Note, this function does not save the file.</span></div>
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;<span class="stringliteral">    Parameters:</span></div>
@@ -968,7 +968,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<span class="stringliteral">    Returns:</span></div>
 <div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;<span class="stringliteral">      the file name is successful</span></div>
 <div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;<span class="stringliteral">      None if not successful, or on error</span></div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00840"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#a5173cb79e10bc210f1dac134087f3651">  840</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    fd = Rhino.UI.SaveFileDialog()</div>
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    <span class="keywordflow">if</span> title: fd.Title = title</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    <span class="keywordflow">if</span> filter: fd.Filter = filter</div>
@@ -978,10 +978,45 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <span class="keywordflow">if</span> fd.ShowDialog(): <span class="keywordflow">return</span> fd.FileName</div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;<span class="keyword">def </span>StringBox(message=None, default_value=None, title=None):</div>
+<div class="line"><a name="l00850"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1userinterface.html#af62cc76ccc135cb19ca0530d6c2f9f98">  850</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1userinterface.html#af62cc76ccc135cb19ca0530d6c2f9f98">StringBox</a>(message=None, default_value=None, title=None):</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    <span class="stringliteral">&quot;Display a dialog box prompting the user to enter a string value.&quot;</span></div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    rc, text = Rhino.UI.Dialogs.ShowEditBox(title, message, default_value, <span class="keyword">False</span>)</div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    <span class="keywordflow">if</span> rc: <span class="keywordflow">return</span> text</div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_aa8543306675baaed2384edc23479d4c5"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#aa8543306675baaed2384edc23479d4c5">rhinoscript.userinterface.CheckListBox</a></div><div class="ttdeci">def CheckListBox</div><div class="ttdoc">Displays a list of items in a checkable-style list dialog box. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00045">userinterface.py:45</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_af48862901ac15280e456edbf6689b40c"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#af48862901ac15280e456edbf6689b40c">rhinoscript.userinterface.OpenFileNames</a></div><div class="ttdeci">def OpenFileNames</div><div class="ttdoc">Displays file open dialog box allowing the user to select one or more file names. ...</div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00772">userinterface.py:772</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a048f5cb70425ea59fd10a38ccd01a8a7"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a048f5cb70425ea59fd10a38ccd01a8a7">rhinoscript.userinterface.GetPoints</a></div><div class="ttdeci">def GetPoints</div><div class="ttdoc">Pauses for user input of one or more points. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00516">userinterface.py:516</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a44813b290bd99c80d8badc925ef63268"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a44813b290bd99c80d8badc925ef63268">rhinoscript.userinterface.BrowseForFolder</a></div><div class="ttdeci">def BrowseForFolder</div><div class="ttdoc">Display browse-for-folder dialog allowing the user to select a folder. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00023">userinterface.py:23</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_af62cc76ccc135cb19ca0530d6c2f9f98"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#af62cc76ccc135cb19ca0530d6c2f9f98">rhinoscript.userinterface.StringBox</a></div><div class="ttdeci">def StringBox</div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00850">userinterface.py:850</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a1e36bc49c063f9b0d389b3c1a97df40a"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a1e36bc49c063f9b0d389b3c1a97df40a">rhinoscript.userinterface.GetAngle</a></div><div class="ttdeci">def GetAngle</div><div class="ttdoc">Pause for user input of an angle. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00085">userinterface.py:85</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_ae2c58424926fb90c4fef46d659e19b2b"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#ae2c58424926fb90c4fef46d659e19b2b">rhinoscript.userinterface.GetPointOnCurve</a></div><div class="ttdeci">def GetPointOnCurve</div><div class="ttdoc">Pauses for user input of a point constrainted to a curve object. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00448">userinterface.py:448</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a76c5eade590395a223663fc2e37168d2"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a76c5eade590395a223663fc2e37168d2">rhinoscript.userinterface.GetPoint</a></div><div class="ttdeci">def GetPoint</div><div class="ttdoc">Pauses for user input of a point. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00423">userinterface.py:423</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a3d803994f4f263970bf334418cb7c324"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a3d803994f4f263970bf334418cb7c324">rhinoscript.userinterface.GetDistance</a></div><div class="ttdeci">def GetDistance</div><div class="ttdoc">Pauses for user input of a distance. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00199">userinterface.py:199</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a594eb6bfe4b83ac3282b6e41f3eff389"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a594eb6bfe4b83ac3282b6e41f3eff389">rhinoscript.userinterface.GetRectangle</a></div><div class="ttdeci">def GetRectangle</div><div class="ttdoc">Pauses for user input of a rectangle. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00585">userinterface.py:585</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a44a9bc9f38e1b2c4266ce7f850c7abf0"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a44a9bc9f38e1b2c4266ce7f850c7abf0">rhinoscript.userinterface.ListBox</a></div><div class="ttdeci">def ListBox</div><div class="ttdoc">Display a list of items in a list box dialog. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00629">userinterface.py:629</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a60a8b7b7461852ec3c30bdb102e2166d"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a60a8b7b7461852ec3c30bdb102e2166d">rhinoscript.userinterface.GetMeshFaces</a></div><div class="ttdeci">def GetMeshFaces</div><div class="ttdoc">Prompts the user to pick one or more mesh faces. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00364">userinterface.py:364</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a268fb9c5ff9d5550384078e5a6ada037"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a268fb9c5ff9d5550384078e5a6ada037">rhinoscript.userinterface.GetLayer</a></div><div class="ttdeci">def GetLayer</div><div class="ttdoc">Displays dialog box prompting the user to select a layer. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00305">userinterface.py:305</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a4c70c201c16493bd96de673491c4175b"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a4c70c201c16493bd96de673491c4175b">rhinoscript.userinterface.ComboListBox</a></div><div class="ttdeci">def ComboListBox</div><div class="ttdoc">Displays a list of items in a combo-style list box dialog. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00064">userinterface.py:64</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a717634c7017ef062de94358aaa532bc8"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a717634c7017ef062de94358aaa532bc8">rhinoscript.userinterface.GetCursorPos</a></div><div class="ttdeci">def GetCursorPos()</div><div class="ttdoc">Retrieves the cursor&#39;s position Returns tuple containing the following information cursor position in...</div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00178">userinterface.py:178</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_aff3540bb80fe73869f17a1b5f18a250b"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#aff3540bb80fe73869f17a1b5f18a250b">rhinoscript.userinterface.GetInteger</a></div><div class="ttdeci">def GetInteger</div><div class="ttdoc">Pauses for user input of a whole number. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00284">userinterface.py:284</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a5173cb79e10bc210f1dac134087f3651"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a5173cb79e10bc210f1dac134087f3651">rhinoscript.userinterface.SaveFileName</a></div><div class="ttdeci">def SaveFileName</div><div class="ttdoc">Display a save dialog box allowing the user to enter a file name. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00840">userinterface.py:840</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a2b4b6adb40d703b6eb0290a48e05b9e7"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a2b4b6adb40d703b6eb0290a48e05b9e7">rhinoscript.userinterface.GetLine</a></div><div class="ttdeci">def GetLine</div><div class="ttdoc">Prompts the user to pick points that define a line. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00338">userinterface.py:338</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_ad89a67c70b4d72370c542b0e0c4eaf4e"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#ad89a67c70b4d72370c542b0e0c4eaf4e">rhinoscript.userinterface.MultiListBox</a></div><div class="ttdeci">def MultiListBox</div><div class="ttdoc">Displays a list of items in a multiple-selection list box dialog. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00729">userinterface.py:729</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_acc43f633a3ff6a378a18a411c5b3b828"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#acc43f633a3ff6a378a18a411c5b3b828">rhinoscript.userinterface.RealBox</a></div><div class="ttdeci">def RealBox</div><div class="ttdoc">Display a dialog box prompting the user to enter a number. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00818">userinterface.py:818</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a5380ef4691125d01671cd18cb4f3304c"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a5380ef4691125d01671cd18cb4f3304c">rhinoscript.userinterface.GetBox</a></div><div class="ttdeci">def GetBox</div><div class="ttdoc">Pauses for user input of a box. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00149">userinterface.py:149</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a7a9a7e18fb7e28889ae827e504413467"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a7a9a7e18fb7e28889ae827e504413467">rhinoscript.userinterface.GetLayers</a></div><div class="ttdeci">def GetLayers</div><div class="ttdoc">Displays a dialog box prompting the user to select one or more layers. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00323">userinterface.py:323</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_afff2dc29092e66d1a0b53eb72d7637e4"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#afff2dc29092e66d1a0b53eb72d7637e4">rhinoscript.userinterface.EditBox</a></div><div class="ttdeci">def EditBox</div><div class="ttdoc">Display dialog prompting the user to enter a string. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00071">userinterface.py:71</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_ab26a1ed7a3183a24c5bd87f73b5a8cd5"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#ab26a1ed7a3183a24c5bd87f73b5a8cd5">rhinoscript.userinterface.MessageBox</a></div><div class="ttdeci">def MessageBox</div><div class="ttdoc">Displays a message box. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00668">userinterface.py:668</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a1f104a806ac1e8777fd93323644c7bac"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a1f104a806ac1e8777fd93323644c7bac">rhinoscript.userinterface.GetReal</a></div><div class="ttdeci">def GetReal</div><div class="ttdoc">Pauses for user input of a number. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00559">userinterface.py:559</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_aaa84e98d7d933a17108806c02e8c960d"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#aaa84e98d7d933a17108806c02e8c960d">rhinoscript.userinterface.GetPointOnSurface</a></div><div class="ttdeci">def GetPointOnSurface</div><div class="ttdoc">Pauses for user input of a point constrained to a surface or polysurface object. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00485">userinterface.py:485</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a2eca5311a62829ddb1302a4b0c0ed452"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a2eca5311a62829ddb1302a4b0c0ed452">rhinoscript.userinterface.PopupMenu</a></div><div class="ttdeci">def PopupMenu</div><div class="ttdoc">Display a context-style popup menu. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00802">userinterface.py:802</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_afb75416d7f222e301c4f57b51484f035"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#afb75416d7f222e301c4f57b51484f035">rhinoscript.userinterface.GetPointOnMesh</a></div><div class="ttdeci">def GetPointOnMesh</div><div class="ttdoc">Pauses for user input of a point constrained to a mesh object. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00469">userinterface.py:469</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a76b6f0fab76c877c1ce3c0d1eae086d8"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a76b6f0fab76c877c1ce3c0d1eae086d8">rhinoscript.userinterface.GetEdgeCurves</a></div><div class="ttdeci">def GetEdgeCurves</div><div class="ttdoc">Prompt the user to pick one or more surface or polysurface edge curves. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00247">userinterface.py:247</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_ac1ca495ca3eb8d74efaeb2a81d6343e0"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#ac1ca495ca3eb8d74efaeb2a81d6343e0">rhinoscript.userinterface.OpenFileName</a></div><div class="ttdeci">def OpenFileName</div><div class="ttdoc">Displays file open dialog box allowing the user to enter a file name. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00749">userinterface.py:749</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a4e5c876023de4b2674fbbc23fed8f47f"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a4e5c876023de4b2674fbbc23fed8f47f">rhinoscript.userinterface.GetMeshVertices</a></div><div class="ttdeci">def GetMeshVertices</div><div class="ttdoc">Prompts the user to pick one or more mesh vertices. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00394">userinterface.py:394</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a1e1c97f6483fb06184bad0382a115136"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a1e1c97f6483fb06184bad0382a115136">rhinoscript.userinterface.PropertyListBox</a></div><div class="ttdeci">def PropertyListBox</div><div class="ttdoc">Displays list of items and their values in a property-style list box dialog. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00714">userinterface.py:714</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_aa632d169be908cb3b49fd12c4e6ea364"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#aa632d169be908cb3b49fd12c4e6ea364">rhinoscript.userinterface.GetString</a></div><div class="ttdeci">def GetString</div><div class="ttdoc">Pauses for user input of a string value. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00605">userinterface.py:605</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_af0adf5fb689cc15b25af259e724118e4"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#af0adf5fb689cc15b25af259e724118e4">rhinoscript.userinterface.GetBoolean</a></div><div class="ttdeci">def GetBoolean(message, items, defaults)</div><div class="ttdoc">Pauses for user input of one or more boolean values. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00109">userinterface.py:109</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1userinterface_html_a9c1b3c0328209c6d5f7ef0db36c611eb"><div class="ttname"><a href="namespacerhinoscript_1_1userinterface.html#a9c1b3c0328209c6d5f7ef0db36c611eb">rhinoscript.userinterface.GetColor</a></div><div class="ttdeci">def GetColor(color=[0)</div><div class="ttdoc">Display the Rhino color picker dialog allowing the user to select an RGB color. </div><div class="ttdef"><b>Definition:</b> <a href="userinterface_8py_source.html#l00163">userinterface.py:163</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.9.1-->
@@ -989,7 +1024,7 @@ $(document).ready(function(){initNavTree('userinterface_8py_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_498fa6d7fadccabe7b36c98a7b98e64b.html">rhinoscriptsyntax</a></li><li class="navelem"><a class="el" href="dir_50c1069cab179abf171fcff507cfe76b.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_efda7f8bc7876f22620c0ac8c5470b21.html">rhinoscript</a></li><li class="navelem"><b>userinterface.py</b></li>
-    <li class="footer">Generated on Tue Jun 30 2015 13:49:37 for rhinoscriptsyntax API docs by
+    <li class="footer">Generated on Tue Jun 30 2015 15:12:41 for rhinoscriptsyntax API docs by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

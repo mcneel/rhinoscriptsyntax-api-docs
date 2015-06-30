@@ -141,35 +141,35 @@ $(document).ready(function(){initNavTree('linetype_8py_source.html','');});
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span> linetype&gt;=0: <span class="keywordflow">return</span> scriptcontext.doc.Linetypes[linetype]</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">def </span>IsLinetype(name_or_id):</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1linetype.html#a0123a70b70e413c8d3d44f341e1946a5">IsLinetype</a>(name_or_id):</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies the existance of a linetype in the document</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="stringliteral">    Returns: True or False</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1linetype.html#a0123a70b70e413c8d3d44f341e1946a5">   16</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    lt = __getlinetype(name_or_id)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> lt <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">def </span>IsLinetypeReference(name_or_id):</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1linetype.html#a3b452ad0ac42f8d19d0b8a1617191b7f">IsLinetypeReference</a>(name_or_id):</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Verifies that an existing linetype is from a reference file</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">    Returns: True or False</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1linetype.html#a3b452ad0ac42f8d19d0b8a1617191b7f">   24</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    lt = __getlinetype(name_or_id)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">if</span> lt <span class="keywordflow">is</span> <span class="keywordtype">None</span>: <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;unable to coerce %s into linetype&quot;</span>%name_or_id)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> lt.IsReference</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">def </span>LinetypeCount():</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1linetype.html#acb0695ac3b436bf914b22c04d265d168">LinetypeCount</a>():</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="stringliteral">&quot;Returns number of linetypes in the document&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> scriptcontext.doc.Linetypes.Count</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">def </span>LinetypeNames(sort=False):</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns names of all linetypes in the document</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">def </span><a class="code" href="namespacerhinoscript_1_1linetype.html#a58538747b1b0cdbc3703a1ff84eb6cf8">LinetypeNames</a>(sort=False):</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1linetype.html#acb0695ac3b436bf914b22c04d265d168">   36</a></span>&#160;    <span class="stringliteral">&quot;&quot;&quot;Returns names of all linetypes in the document</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">    Parameters:</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">      sort[opt] = return a sorted list of the linetype names</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">    Returns</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">      list of strings if successful</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacerhinoscript_1_1linetype.html#a58538747b1b0cdbc3703a1ff84eb6cf8">   41</a></span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    count = scriptcontext.doc.Linetypes.Count</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    rc = []</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> i <span class="keywordflow">in</span> xrange(count):</div>
@@ -177,6 +177,10 @@ $(document).ready(function(){initNavTree('linetype_8py_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> <span class="keywordflow">not</span> linetype.IsDeleted: rc.append(linetype.Name)</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> sort: rc.sort()</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> rc</div>
+<div class="ttc" id="namespacerhinoscript_1_1linetype_html_a0123a70b70e413c8d3d44f341e1946a5"><div class="ttname"><a href="namespacerhinoscript_1_1linetype.html#a0123a70b70e413c8d3d44f341e1946a5">rhinoscript.linetype.IsLinetype</a></div><div class="ttdeci">def IsLinetype(name_or_id)</div><div class="ttdoc">Verifies the existance of a linetype in the document Returns True or False. </div><div class="ttdef"><b>Definition:</b> <a href="linetype_8py_source.html#l00016">linetype.py:16</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1linetype_html_a58538747b1b0cdbc3703a1ff84eb6cf8"><div class="ttname"><a href="namespacerhinoscript_1_1linetype.html#a58538747b1b0cdbc3703a1ff84eb6cf8">rhinoscript.linetype.LinetypeNames</a></div><div class="ttdeci">def LinetypeNames</div><div class="ttdef"><b>Definition:</b> <a href="linetype_8py_source.html#l00041">linetype.py:41</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1linetype_html_acb0695ac3b436bf914b22c04d265d168"><div class="ttname"><a href="namespacerhinoscript_1_1linetype.html#acb0695ac3b436bf914b22c04d265d168">rhinoscript.linetype.LinetypeCount</a></div><div class="ttdeci">def LinetypeCount()</div><div class="ttdoc">Returns names of all linetypes in the document. </div><div class="ttdef"><b>Definition:</b> <a href="linetype_8py_source.html#l00036">linetype.py:36</a></div></div>
+<div class="ttc" id="namespacerhinoscript_1_1linetype_html_a3b452ad0ac42f8d19d0b8a1617191b7f"><div class="ttname"><a href="namespacerhinoscript_1_1linetype.html#a3b452ad0ac42f8d19d0b8a1617191b7f">rhinoscript.linetype.IsLinetypeReference</a></div><div class="ttdeci">def IsLinetypeReference(name_or_id)</div><div class="ttdoc">Verifies that an existing linetype is from a reference file Returns True or False. </div><div class="ttdef"><b>Definition:</b> <a href="linetype_8py_source.html#l00024">linetype.py:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.9.1-->
@@ -184,7 +188,7 @@ $(document).ready(function(){initNavTree('linetype_8py_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_498fa6d7fadccabe7b36c98a7b98e64b.html">rhinoscriptsyntax</a></li><li class="navelem"><a class="el" href="dir_50c1069cab179abf171fcff507cfe76b.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_efda7f8bc7876f22620c0ac8c5470b21.html">rhinoscript</a></li><li class="navelem"><b>linetype.py</b></li>
-    <li class="footer">Generated on Tue Jun 30 2015 13:49:37 for rhinoscriptsyntax API docs by
+    <li class="footer">Generated on Tue Jun 30 2015 15:12:41 for rhinoscriptsyntax API docs by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
