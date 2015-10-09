@@ -5,7 +5,7 @@ layout: bootstrap
 # GetCurveObject
 
 Prompts user to pick or select a single curve object
-          
+        
 
 ### Parameters:
 
@@ -27,5 +27,3 @@ Tuple containing the following information
   element 5 = name of the view selection was made
 None if no object picked
         
-
-

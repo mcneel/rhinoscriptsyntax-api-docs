@@ -5,7 +5,7 @@ layout: bootstrap
 # DimStyleExtension
 
 Returns or changes the extension line extension of a dimension style
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if extension is not specified, the current extension line extension
 if extension is specified, the previous extension line extension
 None on error
         
-
-

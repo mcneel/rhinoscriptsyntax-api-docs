@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or modifies the scale applied to the hatch pattern when it is
         mapped to the hatch's plane
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ if scale is not defined, the current scale factor
 if scale is defined, the previous scale factor
 None on error
         
-
-

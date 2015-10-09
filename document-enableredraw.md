@@ -4,12 +4,8 @@ layout: bootstrap
 
 # EnableRedraw
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Enables or disables screen redrawing
+        Returns: previous screen redrawing state
+        
 
 

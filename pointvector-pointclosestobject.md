@@ -5,7 +5,7 @@ layout: bootstrap
 # PointClosestObject
 
 Finds the object that is closest to a test point
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Finds the object that is closest to a test point
 (closest object_id, point on object) on success
 None on failure
         
-
-

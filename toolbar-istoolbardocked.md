@@ -5,7 +5,7 @@ layout: bootstrap
 # IsToolbarDocked
 
 Verifies that a toolbar group in an open toolbar collection is visible
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Verifies that a toolbar group in an open toolbar collection is visible
 True or False indicating success or failure
 None on error
         
-
-

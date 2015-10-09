@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectLinetype
 
 Returns of modifies the linetype of an object
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ If a linetype is not specified, the object's current linetype
 If linetype is specified, the object's previous linetype
 If object_ids is a list, the number of objects modified
         
-
-

@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsAngularDimension
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies an object is an angular dimension object
 
 

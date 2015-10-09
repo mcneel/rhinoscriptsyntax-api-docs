@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectPrintColorSource
 
 Returns or modifies the print color source of an object
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ If source is not specified, the object's current print color source
 If source is specified, the object's previous print color source
 If object_ids is a list or tuple, the number of objects modified
         
-
-

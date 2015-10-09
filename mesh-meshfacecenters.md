@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshFaceCenters
 
 Returns the center of each face of the mesh object
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns the center of each face of the mesh object
 
 list of 3d points defining the center of each face
         
-
-

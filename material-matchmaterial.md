@@ -5,7 +5,7 @@ layout: bootstrap
 # MatchMaterial
 
 Copies the material definition from one material to one or more objects
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Copies the material definition from one material to one or more objects
 number of objects that were modified if successful
 None if not successful or on error
         
-
-

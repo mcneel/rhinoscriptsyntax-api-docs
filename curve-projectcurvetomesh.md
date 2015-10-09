@@ -5,7 +5,7 @@ layout: bootstrap
 # ProjectCurveToMesh
 
 Projects one or more curves onto one or more surfaces or meshes
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Projects one or more curves onto one or more surfaces or meshes
 
 list of identifiers
         
-
-

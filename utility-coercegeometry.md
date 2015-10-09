@@ -4,12 +4,6 @@ layout: bootstrap
 
 # coercegeometry
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+attempt to get GeometryBase class from given input
 
 

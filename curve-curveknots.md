@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveKnots
 
 Returns the knots, or knot vector, of a curve object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ segment_index [opt] = the curve segment if curve_id identifies a polycurve.
 knot values if successful.
 None if not successful or on error.
         
-
-

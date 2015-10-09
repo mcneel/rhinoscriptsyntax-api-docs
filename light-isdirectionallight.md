@@ -5,7 +5,7 @@ layout: bootstrap
 # IsDirectionalLight
 
 Verifies a light object is a directional light
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies a light object is a directional light
 
 True or False
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # LineTransform
 
 Transforms a line
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Transforms a line
 
 transformed line
         
-
-

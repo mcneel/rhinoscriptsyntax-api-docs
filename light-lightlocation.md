@@ -5,7 +5,7 @@ layout: bootstrap
 # LightLocation
 
 Returns or changes the location of a light object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or changes the location of a light object
 if location is not specified, the current location
 if location is specified, the previous location
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddPipe
 
 Creates a single walled surface with a circular profile around a curve
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ parameters, radii = list of radius values at normalized curve parameters
 
 List of identifiers of new objects created
         
-
-

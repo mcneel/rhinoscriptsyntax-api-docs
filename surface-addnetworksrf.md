@@ -5,7 +5,7 @@ layout: bootstrap
 # AddNetworkSrf
 
 Creates a surface from a network of crossing curves
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Creates a surface from a network of crossing curves
 
 identifier of new object if successful
         
-
-

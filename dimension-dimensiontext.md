@@ -4,12 +4,12 @@ layout: bootstrap
 
 # DimensionText
 
-  
+Returns the text displayed by a dimension object
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***object_id*** = identifier of the object
+        
 
 

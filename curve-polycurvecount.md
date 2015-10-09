@@ -4,12 +4,6 @@ layout: bootstrap
 
 # PolyCurveCount
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns the number of curve segments that make up a polycurve
 
 

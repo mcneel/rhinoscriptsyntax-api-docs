@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the identifier of the last object in the document. The last object
         in the document is the first object created by the user
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns the identifier of the last object in the document. The last object
 
 identifier of the object on success
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # SelectObjects
 
 Selects one or more objects
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Selects one or more objects
 
 number of selected objects
         
-
-

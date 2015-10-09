@@ -6,7 +6,7 @@ layout: bootstrap
 
 Locks a group of objects. Locked objects are visible and they can be
         snapped to. But, they cannot be selected
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Locks a group of objects. Locked objects are visible and they can be
 Number of objects that were locked if successful
 None on error
         
-
-

@@ -6,7 +6,7 @@ layout: bootstrap
 
 Rotates a perspective-projection view's camera. See the RotateCamera
         command in the Rhino help file for more details
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ angle: [opt] the angle to rotate. If omitted, the angle of rotation
 
 True or False indicating success or failure
         
-
-

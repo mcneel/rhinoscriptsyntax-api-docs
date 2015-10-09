@@ -5,7 +5,7 @@ layout: bootstrap
 # RotateView
 
 Rotates a view. See RotateView command in Rhino help for more information
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ angle:[opt] angle to rotate. If omitted, the angle of rotation is specified
 
 True or False indicating success or failure
         
-
-

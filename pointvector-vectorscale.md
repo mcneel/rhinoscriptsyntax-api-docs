@@ -5,7 +5,7 @@ layout: bootstrap
 # VectorScale
 
 Scales a 3-D vector
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Scales a 3-D vector
 
 resulting vector on success
         
-
-

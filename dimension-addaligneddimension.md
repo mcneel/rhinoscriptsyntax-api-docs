@@ -6,7 +6,7 @@ layout: bootstrap
 
 Adds an aligned dimension object to the document. An aligned dimension
         is a linear dimension lined up with two points
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ style[opt]: name of dimension style
 identifier of new dimension on success
 None on error
         
-
-

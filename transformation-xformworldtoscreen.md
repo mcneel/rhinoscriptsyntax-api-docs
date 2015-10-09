@@ -7,7 +7,7 @@ layout: bootstrap
 Transforms a point from world coordinates to either client-area coordinates of
         the specified view or screen coordinates. The resulting coordinates are represented
         as a 2D point
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ Transforms a point from world coordinates to either client-area coordinates of
 2D point on success
 None on error
         
-
-

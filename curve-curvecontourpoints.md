@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveContourPoints
 
 Returns the 3D point locations calculated by contouring a curve object.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ bounding box divided by 50.
 
 A list of 3D points, one for each contour
         
-
-

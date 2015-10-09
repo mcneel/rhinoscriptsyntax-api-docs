@@ -5,7 +5,7 @@ layout: bootstrap
 # IsRectangularLight
 
 Verifies a light object is a rectangular light
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies a light object is a rectangular light
 
 True or False
         
-
-

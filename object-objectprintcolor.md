@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectPrintColor
 
 Returns or modifies the print color of an object
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ If color is not specified, the object's current print color
 If color is specified, the object's previous print color
 If object_ids is a list or tuple, the number of objects modified
         
-
-

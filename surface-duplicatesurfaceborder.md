@@ -5,7 +5,7 @@ layout: bootstrap
 # DuplicateSurfaceBorder
 
 Create curves that duplicate a surface or polysurface border
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Create curves that duplicate a surface or polysurface border
 list of curve ids on success
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddBlock
 
 Adds a new block definition to the document
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Adds a new block definition to the document
 
 name of new block definition on success
         
-
-

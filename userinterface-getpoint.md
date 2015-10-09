@@ -5,7 +5,7 @@ layout: bootstrap
 # GetPoint
 
 Pauses for user input of a point.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ in_plane [opt] = constrains the point selections to the active construction plan
 point on success
 None if no point picked or user canceled
         
-
-

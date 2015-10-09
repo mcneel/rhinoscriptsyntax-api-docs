@@ -5,7 +5,7 @@ layout: bootstrap
 # GetUserText
 
 Returns user text stored on an object.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns user text stored on an object.
 if key is specified, the associated value if successful
 if key is not specified, a list of key names if successful
         
-
-

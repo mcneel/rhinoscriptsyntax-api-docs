@@ -4,12 +4,6 @@ layout: bootstrap
 
 # ColorGreenValue
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Retrieves intensity value for the green component of an RGB color
 
 

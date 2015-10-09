@@ -6,7 +6,7 @@ layout: bootstrap
 
 Verifies an object is a surface. Brep objects with only one face are
         also considered surfaces.
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Verifies an object is a surface. Brep objects with only one face are
 
 True if successful, otherwise False.
         
-
-

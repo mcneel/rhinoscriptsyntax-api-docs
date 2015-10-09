@@ -4,12 +4,12 @@ layout: bootstrap
 
 # MeshTriangleCount
 
-  
+Returns number of triangular faces of a mesh
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***object_id*** = identifier of a mesh object
+        
 
 

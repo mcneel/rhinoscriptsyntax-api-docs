@@ -6,7 +6,7 @@ layout: bootstrap
 
 Makes a periodic curve non-periodic. Non-periodic curves can develop
         kinks when deformed
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Makes a periodic curve non-periodic. Non-periodic curves can develop
 id of the new or modified curve if successful
 None on error
         
-
-

@@ -7,7 +7,7 @@ layout: bootstrap
 Reduces number of curve control points while maintaining the curve's same
         general shape. Use this function for replacing curves with many control
         points. For more information, see the Rhino help for the FitCrv command.
-          
+        
 
 ### Parameters:
 
@@ -29,5 +29,3 @@ angle_tolerance [opt] = The kink smoothing tolerance in degrees. If
 The identifier of the new object
 None if not successful, or on error.
         
-
-

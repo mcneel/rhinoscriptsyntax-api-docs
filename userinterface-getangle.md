@@ -5,7 +5,7 @@ layout: bootstrap
 # GetAngle
 
 Pause for user input of an angle
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ reference_- ***point(opt)*** = if specified, the reference angle is calculated
 
 angle in degree if successful, None on error
         
-
-

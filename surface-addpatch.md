@@ -5,7 +5,7 @@ layout: bootstrap
 # AddPatch
 
 Fits a surface through curve, point, point cloud, and mesh objects.
-          
+        
 
 ### Parameters:
 
@@ -36,5 +36,3 @@ Fits a surface through curve, point, point cloud, and mesh objects.
 Identifier of the new surface object if successful.
 None on error.
         
-
-

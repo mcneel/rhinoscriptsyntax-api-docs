@@ -5,7 +5,7 @@ layout: bootstrap
 # ViewNames
 
 Return the names, titles, or identifiers of all views in the document
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ view_type: [opt] the type of view to return
 list of the view names or identifiers on success
 None on error
         
-
-

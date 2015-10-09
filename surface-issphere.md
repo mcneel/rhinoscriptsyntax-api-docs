@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsSphere
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Determines if a surface is a portion of a sphere
 
 

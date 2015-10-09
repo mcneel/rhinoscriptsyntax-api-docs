@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the point on the curve that is a specified arc length
         from the start of the curve.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Returns the point on the curve that is a specified arc length
 
 Point3d if successful
         
-
-

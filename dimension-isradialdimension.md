@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsRadialDimension
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies an object is a radial dimension object
 
 

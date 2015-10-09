@@ -6,7 +6,7 @@ layout: bootstrap
 
 Explodes, or unjoins, one or more polysurface objects. Polysurfaces
         will be exploded into separate surfaces
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Explodes, or unjoins, one or more polysurface objects. Polysurfaces
 
 List of identifiers of exploded pieces on success
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddTextDot
 
 Add a text dot to the document.
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Add a text dot to the document.
 
 The identifier of the new object if successful
         
-
-

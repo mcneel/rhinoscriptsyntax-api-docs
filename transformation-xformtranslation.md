@@ -4,12 +4,6 @@ layout: bootstrap
 
 # XformTranslation
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Creates a translation transformation matrix
 
 

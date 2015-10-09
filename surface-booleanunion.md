@@ -7,7 +7,7 @@ layout: bootstrap
 Performs a boolean union operation on a set of input surfaces and
         polysurfaces. For more details, see the BooleanUnion command in the
         Rhino help file
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Performs a boolean union operation on a set of input surfaces and
 list of identifiers of newly created objects on success
 None on error
         
-
-

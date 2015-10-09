@@ -5,7 +5,7 @@ layout: bootstrap
 # IsHatchPatternCurrent
 
 Verifies that a hatch pattern is the current hatch pattern
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Verifies that a hatch pattern is the current hatch pattern
 True or False
 None on error
         
-
-

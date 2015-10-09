@@ -6,7 +6,7 @@ layout: bootstrap
 
 Selects a single grip owned by an object. If the object's grips are
         not turned on, the grips will not be selected
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Selects a single grip owned by an object. If the object's grips are
 
 True or False indicating success or failure
         
-
-

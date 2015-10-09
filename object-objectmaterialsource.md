@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectMaterialSource
 
 Returns or modifies the rendering material source of an object.
-          
+        
 
 ### Parameters:
 
@@ -26,5 +26,3 @@ If source is not specified, the current rendering material source
 If source is specified, the previous rendering material source
 If object_ids refers to multiple objects, the number of objects modified
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # DeleteAlias
 
 Delete an existing alias from Rhino.
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Delete an existing alias from Rhino.
 
 True or False indicating success
         
-
-

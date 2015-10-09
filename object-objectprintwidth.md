@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectPrintWidth
 
 Returns or modifies the print width of an object
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ If width is not specified, the object's current print width
 If width is specified, the object's previous print width
 If object_ids is a list or tuple, the number of objects modified
         
-
-

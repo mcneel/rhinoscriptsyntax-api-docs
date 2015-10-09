@@ -7,7 +7,7 @@ layout: bootstrap
 Resturns or sets the document's absolute tolerance. Absolute tolerance
         is measured in drawing units. See Rhino's document properties command
         (Units and Page Units Window) for details
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ tolerance [opt] = the absolute tolerance to set
 if tolerance is not specified, the current absolute tolerance
 if tolerance is specified, the previous absolute tolerance
         
-
-

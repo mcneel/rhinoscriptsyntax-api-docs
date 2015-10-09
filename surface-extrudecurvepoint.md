@@ -5,7 +5,7 @@ layout: bootstrap
 # ExtrudeCurvePoint
 
 Creates a surface by extruding a curve to a point
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Creates a surface by extruding a curve to a point
 identifier of new surface on success
 None on error
         
-
-

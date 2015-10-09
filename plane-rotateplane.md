@@ -5,7 +5,7 @@ layout: bootstrap
 # RotatePlane
 
 Rotates a plane
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Rotates a plane
 
 rotated plane on success
         
-
-

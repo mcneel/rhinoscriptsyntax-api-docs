@@ -5,7 +5,7 @@ layout: bootstrap
 # ReverseCurve
 
 Reverses the direction of a curve object. Same as Rhino's Dir command
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Reverses the direction of a curve object. Same as Rhino's Dir command
 
 True or False indicating success or failure
         
-
-

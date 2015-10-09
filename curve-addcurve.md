@@ -5,7 +5,7 @@ layout: bootstrap
 # AddCurve
 
 Adds a control points curve object to the document
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Adds a control points curve object to the document
 
 id of the new curve object
         
-
-

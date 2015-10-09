@@ -10,7 +10,7 @@ Adds a surface created by lofting curves to the document.
           ReverseCurve to adjust the directions of open curves
         - seams of closed curves are not adjusted. Use CurveSeam to adjust the seam
           of closed curves
-          
+        
 
 ### Parameters:
 
@@ -47,5 +47,3 @@ value [opt] = A value based on the specified style.
 Array containing the identifiers of the new surface objects if successful
 None on error
         
-
-

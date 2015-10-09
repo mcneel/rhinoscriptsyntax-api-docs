@@ -6,7 +6,7 @@ layout: bootstrap
 
 Calculate the area of a surface or polysurface object. The results are
         based on the current drawing units
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Calculate the area of a surface or polysurface object. The results are
 list of area information on success (area, absolute error bound)
 None on error
         
-
-

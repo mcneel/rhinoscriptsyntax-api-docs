@@ -6,7 +6,7 @@ layout: bootstrap
 
 Display a context-style popup menu. The popup menu can appear almost
         anywhere, and can be dismissed by clicking the left or right mouse buttons
-          
+        
 
 ### Parameters:
 
@@ -29,5 +29,3 @@ Display a context-style popup menu. The popup menu can appear almost
 
 index of the menu item picked or -1 if no menu item was picked
         
-
-

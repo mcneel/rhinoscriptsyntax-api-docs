@@ -5,7 +5,7 @@ layout: bootstrap
 # IsObjectInBox
 
 Verifies an object's bounding box is inside of another bounding box
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ box: bounding box to test for containment
 True if object is inside box
 False is object is not inside box
         
-
-

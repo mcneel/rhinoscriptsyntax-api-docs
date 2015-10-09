@@ -6,7 +6,7 @@ layout: bootstrap
 
 Reverses U or V directions of a surface, or swaps (transposes) U and V
         directions.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ direction
 Boolean indicating success or failure
 None on error
         
-
-

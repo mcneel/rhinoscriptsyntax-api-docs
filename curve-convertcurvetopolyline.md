@@ -5,7 +5,7 @@ layout: bootstrap
 # ConvertCurveToPolyline
 
 Convert curve to a polyline curve
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ angle_tolerance [opt] = The maximum angle between curve tangents at line
 
 The new curve if successful.
         
-
-

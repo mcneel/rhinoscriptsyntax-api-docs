@@ -7,7 +7,7 @@ layout: bootstrap
 Adds material to an object and returns the new material's index. If the
         object already has a material, the the object's current material index is
         returned.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Adds material to an object and returns the new material's index. If the
 
 material index of the object
         
-
-

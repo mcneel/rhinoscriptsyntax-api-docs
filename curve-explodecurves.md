@@ -7,7 +7,7 @@ layout: bootstrap
 Explodes, or un-joins, one curves. Polycurves will be exploded into curve
         segments. Polylines will be exploded into line segments. ExplodeCurves will
         return the curves in topological order. 
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Explodes, or un-joins, one curves. Polycurves will be exploded into curve
 
 List identifying the newly created curve objects
         
-
-

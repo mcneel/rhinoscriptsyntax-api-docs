@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveWeights
 
 Returns list of weights that are assigned to the control points of a curve
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns list of weights that are assigned to the control points of a curve
 The weight values of the curve if successful.
 None if not successful, or on error.
         
-
-

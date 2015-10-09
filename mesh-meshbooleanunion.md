@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshBooleanUnion
 
 Performs boolean union operation on a set of input meshes
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Performs boolean union operation on a set of input meshes
 
 list of identifiers of new meshes
         
-
-

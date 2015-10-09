@@ -5,7 +5,7 @@ layout: bootstrap
 # IsPolyline
 
 Verifies an object is a Polyline curve object
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ segment_index [opt] = the curve segment if curve_id identifies a polycurve
 
 True or False
         
-
-

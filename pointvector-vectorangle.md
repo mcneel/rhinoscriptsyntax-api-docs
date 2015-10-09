@@ -4,12 +4,6 @@ layout: bootstrap
 
 # VectorAngle
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns the angle, in degrees, between two 3-D vectors
 
 

@@ -5,7 +5,7 @@ layout: bootstrap
 # GetMeshVertices
 
 Prompts the user to pick one or more mesh vertices
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ Prompts the user to pick one or more mesh vertices
 list of mesh vertex indices on success
 None on error
         
-
-

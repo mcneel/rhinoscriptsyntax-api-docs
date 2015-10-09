@@ -5,7 +5,7 @@ layout: bootstrap
 # SetDocumentUserText
 
 Sets or removes user text stored in the document
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Sets or removes user text stored in the document
 
 True or False indicating success
         
-
-

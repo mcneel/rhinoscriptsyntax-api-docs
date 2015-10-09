@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshAreaCentroid
 
 Calculates the area centroid of a mesh object
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Calculates the area centroid of a mesh object
 Point3d representing the area centroid if successful
 None on error  
         
-
-

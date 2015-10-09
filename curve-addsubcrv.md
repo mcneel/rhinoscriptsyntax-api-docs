@@ -6,7 +6,7 @@ layout: bootstrap
 
 Add a curve object based on a portion, or interval of an existing curve
         object. Similar in operation to Rhino's SubCrv command
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ param0, param1 = first and second parameters on the source curve
 
 id of the new curve object if successful
         
-
-

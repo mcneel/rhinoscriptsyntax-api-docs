@@ -6,7 +6,7 @@ layout: bootstrap
 
 Calculates the intersection of two closed, planar curves and adds
         the results to the document. Note, curves must be coplanar.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Calculates the intersection of two closed, planar curves and adds
 
 The identifiers of the new objects.
         
-
-

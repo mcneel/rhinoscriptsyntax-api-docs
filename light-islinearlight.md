@@ -5,7 +5,7 @@ layout: bootstrap
 # IsLinearLight
 
 Verifies a light object is a linear light
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies a light object is a linear light
 
 True or False
         
-
-

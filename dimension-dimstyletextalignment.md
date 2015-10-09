@@ -5,7 +5,7 @@ layout: bootstrap
 # DimStyleTextAlignment
 
 Returns or changes the text alignment mode of a dimension style
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ if alignment is not specified, the current text alignment
 if alignment is specified, the previous text alignment
 None on error
         
-
-

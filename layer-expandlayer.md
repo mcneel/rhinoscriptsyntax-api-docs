@@ -5,7 +5,7 @@ layout: bootstrap
 # ExpandLayer
 
 Expands a layer. Expanded layers can be viewed in Rhino's layer dialog
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Expands a layer. Expanded layers can be viewed in Rhino's layer dialog
 
 True or False indicating success or failure
         
-
-

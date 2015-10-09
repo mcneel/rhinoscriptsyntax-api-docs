@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the edit, or Greville, points of a curve object. 
         For each curve control point, there is a corresponding edit point.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Returns the edit, or Greville, points of a curve object.
 curve parameters of 3d points on success
 None on error
         
-
-

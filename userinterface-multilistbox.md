@@ -5,7 +5,7 @@ layout: bootstrap
 # MultiListBox
 
 Displays a list of items in a multiple-selection list box dialog
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ defaults [opt] = either a string representing the pre-selected item in the list 
 a list containing the selected items if succesful
 None on error
         
-
-

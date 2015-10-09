@@ -5,7 +5,7 @@ layout: bootstrap
 # AddPointLight
 
 Adds a new point light object to the document
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Adds a new point light object to the document
 
 identifier of the new object if successful
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # SelectedObjects
 
 Returns the identifiers of all objects that are currently selected
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ include_grips [opt] = include grip objects
 
 list of Guids identifying the objects
         
-
-

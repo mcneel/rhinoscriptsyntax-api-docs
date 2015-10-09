@@ -5,7 +5,7 @@ layout: bootstrap
 # ExtractIsoCurve
 
 Extracts isoparametric curves from a surface
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ direction
 list of curve ids on success
 None on error
         
-
-

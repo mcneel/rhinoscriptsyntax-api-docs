@@ -5,7 +5,7 @@ layout: bootstrap
 # TextObjectHeight
 
 Returns or modifies the height of a text object
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if height is not specified, the current text height
 if height is specified, the previous text height
 None if not successful, or on error
         
-
-

@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or sets Rhino's working folder (directory).
         The working folder is the default folder for all file operations.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or sets Rhino's working folder (directory).
 if folder is not specified, then the current working folder
 if folder is specified, then the previous working folder
         
-
-

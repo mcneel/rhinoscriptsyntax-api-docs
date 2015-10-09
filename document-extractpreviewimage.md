@@ -5,7 +5,7 @@ layout: bootstrap
 # ExtractPreviewImage
 
 Extracts the bitmap preview image from the specified model (.3dm)
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ modelname [opt] = The model (.3dm) from which to extract the
 
 True or False indicating success or failure
         
-
-

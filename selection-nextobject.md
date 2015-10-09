@@ -5,7 +5,7 @@ layout: bootstrap
 # NextObject
 
 Returns the identifier of the next object in the document
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns the identifier of the next object in the document
 
 identifier of the object on success
         
-
-

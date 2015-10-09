@@ -6,7 +6,7 @@ layout: bootstrap
 
 Display a save dialog box allowing the user to enter a file name.
         Note, this function does not save the file.
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ Display a save dialog box allowing the user to enter a file name.
 the file name is successful
 None if not successful, or on error
         
-
-

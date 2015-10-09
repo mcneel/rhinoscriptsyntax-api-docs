@@ -7,7 +7,7 @@ layout: bootstrap
 Adds a spaced series of planar curves resulting from the intersection of
         defined cutting planes through a surface or polysurface. For more
         information, see Rhino help for details on the Contour command
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ Adds a spaced series of planar curves resulting from the intersection of
 ids of new curves on success
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddEllipse3Pt
 
 Adds a 3-point elliptical curve to the document
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ third  = end point of the y axis
 
 id of the new curve object if successful
         
-
-

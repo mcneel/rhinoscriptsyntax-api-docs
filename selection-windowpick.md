@@ -5,7 +5,7 @@ layout: bootstrap
 # WindowPick
 
 Picks objects using either a window or crossing selection
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ corner1, corner2 = corners of selection window
 
 list of object ids on success
         
-
-

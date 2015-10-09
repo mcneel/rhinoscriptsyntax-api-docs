@@ -7,7 +7,7 @@ layout: bootstrap
 Return or set the document's angle tolerance. Angle tolerance is
         measured in degrees. See Rhino's DocumentProperties command
         (Units and Page Units Window) for details
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ in_model_units [opt] = Return or modify the document's model units (True)
 if angle_tolerance_degrees is not specified, the current angle tolerance
 if angle_tolerance_degrees is specified, the previous angle tolerance
         
-
-

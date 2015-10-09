@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectGripsOn
 
 Verifies that an object's grips are turned on
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Verifies that an object's grips are turned on
 True or False indcating Grips state
 None on error
         
-
-

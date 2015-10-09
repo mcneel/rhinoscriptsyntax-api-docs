@@ -11,7 +11,7 @@ Find points at which to cut a pair of curves so that a fillet of a
         function returns the one which is the closest to the base point base_point_0,
         base_point_1. Distance from the base point is measured by the sum of arc
         lengths along the two curves. 
-          
+        
 
 ### Parameters:
 
@@ -46,5 +46,3 @@ If return_points is False, then the identifier of the fillet curve
 if successful.
 None if not successful, or on error.                  
         
-
-

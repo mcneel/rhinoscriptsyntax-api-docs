@@ -5,7 +5,7 @@ layout: bootstrap
 # ShowGrid
 
 Shows or hides a view's construction plane grid
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ show:[opt] The grid state to set. If omitted, the current grid display state is 
 If show is not specified, then the grid display state if successful
 If show is specified, then the previous grid display state if successful
         
-
-

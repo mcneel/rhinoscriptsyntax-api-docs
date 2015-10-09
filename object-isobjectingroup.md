@@ -5,7 +5,7 @@ layout: bootstrap
 # IsObjectInGroup
 
 Verifies that an object is a member of a group
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ True if the object is a member of the specified group. If a group_name
 False if the object is not a member of the specified group. If a
   group_name was not specified, the object is not a member of any group
         
-
-

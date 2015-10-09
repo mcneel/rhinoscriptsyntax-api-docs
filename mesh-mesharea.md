@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshArea
 
 Returns approximate area of one or more mesh objects
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ list containing 3 numbers if successful where
   element[2] = the error estimate
 None if not successful
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # ListBox
 
 Display a list of items in a list box dialog.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ default [opt] = selected item in the list
 The selected item if successful
 None if not successful or on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # ExplodeText
 
 Creates outline curves for a given text entity
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ delete[opt]: delete the text object after the curves have been created
 
 list of outline curves
         
-
-

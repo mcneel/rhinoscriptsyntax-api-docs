@@ -5,7 +5,7 @@ layout: bootstrap
 # VisibleObjects
 
 Return identifiers of all objects that are visible in a specified view
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ include_grips [opt] = include grip objects
 
 list of Guids identifying the objects
         
-
-

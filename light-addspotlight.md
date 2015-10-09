@@ -5,7 +5,7 @@ layout: bootstrap
 # AddSpotLight
 
 Adds a new spot light object to the document
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Adds a new spot light object to the document
 
 identifier of the new object
         
-
-

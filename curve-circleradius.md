@@ -5,7 +5,7 @@ layout: bootstrap
 # CircleRadius
 
 Returns the radius of a circle curve object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ curve_id identifies a polycurve
 
 The radius of the circle if successful.
         
-
-

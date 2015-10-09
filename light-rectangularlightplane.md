@@ -5,7 +5,7 @@ layout: bootstrap
 # RectangularLightPlane
 
 Returns the plane of a rectangular light object
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Returns the plane of a rectangular light object
 the plane if successful
 None on error
         
-
-

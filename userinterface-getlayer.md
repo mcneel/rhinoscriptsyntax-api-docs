@@ -5,7 +5,7 @@ layout: bootstrap
 # GetLayer
 
 Displays dialog box prompting the user to select a layer
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ show_new_button, show_set_current[opt] = Optional buttons to show on the dialog
 name of selected layer if successful
 None on error
         
-
-

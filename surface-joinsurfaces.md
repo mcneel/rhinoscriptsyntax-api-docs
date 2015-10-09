@@ -6,7 +6,7 @@ layout: bootstrap
 
 Joins two or more surface or polysurface objects together to form one
         polysurface object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Joins two or more surface or polysurface objects together to form one
 identifier of newly created object on success
 None on failure
         
-
-

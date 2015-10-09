@@ -6,7 +6,7 @@ layout: bootstrap
 
 Explodes a block instance into it's geometric components. The
         exploded objects are added to the document
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Explodes a block instance into it's geometric components. The
 
 identifiers for the newly exploded objects on success
         
-
-

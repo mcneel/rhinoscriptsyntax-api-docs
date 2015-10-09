@@ -5,7 +5,7 @@ layout: bootstrap
 # PrevObjectGrip
 
 Returns the prevoius grip index from a specified grip index of an object
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns the prevoius grip index from a specified grip index of an object
 
 index of the next grip on success, None on failure
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # RotateObject
 
 Rotates a single object
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ rotation_angle: in degrees
 Identifier of the rotated object if successful
 None on error
         
-
-

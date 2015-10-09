@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsLeader
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies an object is a dimension leader object
 
 

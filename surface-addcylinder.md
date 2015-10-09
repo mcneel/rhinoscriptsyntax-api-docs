@@ -5,7 +5,7 @@ layout: bootstrap
 # AddCylinder
 
 Adds a cylinder-shaped polysurface to the document
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ Adds a cylinder-shaped polysurface to the document
 identifier of new object if successful
 None on error
         
-
-

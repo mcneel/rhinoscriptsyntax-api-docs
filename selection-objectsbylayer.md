@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectsByLayer
 
 Returns identifiers of all objects based on the objects' layer name
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ select [opt] = select the objects
 
 list of identifiers
         
-
-

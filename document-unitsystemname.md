@@ -4,12 +4,6 @@ layout: bootstrap
 
 # UnitSystemName
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns the name of the current unit system
 
 

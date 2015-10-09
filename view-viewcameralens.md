@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or sets the 35mm camera lens length of the specified perspective
         projection view.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ length:[opt] the new 35mm camera lens length. If omitted, the previous
 If lens length is not specified, the current lens length
 If lens length is specified, the previous lens length
         
-
-

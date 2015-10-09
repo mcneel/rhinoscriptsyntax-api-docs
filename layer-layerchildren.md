@@ -5,7 +5,7 @@ layout: bootstrap
 # LayerChildren
 
 Returns the immediate child layers of a layer
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns the immediate child layers of a layer
 
 List of children
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshQuadsToTriangles
 
 Converts a mesh object's quad faces to triangles
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Converts a mesh object's quad faces to triangles
 
 True or False indicating success or failure
         
-
-

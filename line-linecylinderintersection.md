@@ -5,7 +5,7 @@ layout: bootstrap
 # LineCylinderIntersection
 
 Calculates the intersection of a line and a cylinder
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Calculates the intersection of a line and a cylinder
 
 list of intersection points (0, 1, or 2 points)
         
-
-

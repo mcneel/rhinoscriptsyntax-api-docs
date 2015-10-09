@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectGripCount
 
 Returns number of grips owned by an object
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Returns number of grips owned by an object
 number of grips if successful
 None on error  
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # PointCompare
 
 Compares two 3D points
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ tolerance [opt] = tolerance to use for comparison. If omitted,
 
 True or False
         
-
-

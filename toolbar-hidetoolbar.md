@@ -5,7 +5,7 @@ layout: bootstrap
 # HideToolbar
 
 Hides a previously visible toolbar group in an open toolbar collection
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Hides a previously visible toolbar group in an open toolbar collection
 
 True or False indicating success or failure
         
-
-

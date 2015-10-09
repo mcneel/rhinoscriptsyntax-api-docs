@@ -4,12 +4,6 @@ layout: bootstrap
 
 # coerceplane
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Convert input into a Rhino.Geometry.Plane if possible.
 
 

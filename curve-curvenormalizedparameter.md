@@ -6,7 +6,7 @@ layout: bootstrap
 
 Converts a curve parameter to a normalized curve parameter;
         one that ranges between 0-1
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Converts a curve parameter to a normalized curve parameter;
 
 normalized curve parameter
         
-
-

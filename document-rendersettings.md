@@ -5,7 +5,7 @@ layout: bootstrap
 # RenderSettings
 
 Returns or sets render settings
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ Returns or sets render settings
 if settings are not specified, the current render settings
 if settings are specified, the previous render settings
         
-
-

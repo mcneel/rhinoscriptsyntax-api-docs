@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectGripLocation
 
 Returns or modifies the location of an object's grip
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ if point is not specified, the current location of the grip referenced by index
 if point is specified, the previous location of the grip referenced by index
 None on error
         
-
-

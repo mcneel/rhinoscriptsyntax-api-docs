@@ -5,7 +5,7 @@ layout: bootstrap
 # AddPlaneSurface
 
 Create a plane surface and add it to the document.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Create a plane surface and add it to the document.
 The identifier of the new object if successful.
 None if not successful, or on error.
         
-
-

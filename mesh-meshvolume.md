@@ -6,7 +6,7 @@ layout: bootstrap
 
 
 Returns the approximate volume of one or more closed meshes
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ tuple containing 3 numbers if successful where
   element[2] = the error estimate
 None if not successful
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # BrowseForFolder
 
 Display browse-for-folder dialog allowing the user to select a folder
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Display browse-for-folder dialog allowing the user to select a folder
 selected folder
 None on error
         
-
-

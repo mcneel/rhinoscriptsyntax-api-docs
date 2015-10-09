@@ -5,7 +5,7 @@ layout: bootstrap
 # PlaneFromFrame
 
 Construct a plane from a point, and two vectors in the plane.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Construct a plane from a point, and two vectors in the plane.
 
 The plane if successful. 
         
-
-

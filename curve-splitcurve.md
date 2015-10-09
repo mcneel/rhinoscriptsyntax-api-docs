@@ -6,7 +6,7 @@ layout: bootstrap
 
 Splits, or divides, a curve at a specified parameter. The parameter must
         be in the interior of the curve's domain
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Splits, or divides, a curve at a specified parameter. The parameter must
 list of new curves on success
 None on error
         
-
-

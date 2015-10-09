@@ -4,12 +4,6 @@ layout: bootstrap
 
 # StatusBarPoint
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Sets Rhino's status bar point coordinate pane
 
 

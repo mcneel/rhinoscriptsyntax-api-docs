@@ -6,7 +6,7 @@ layout: bootstrap
 
 Offsets a trimmed or untrimmed surface by a distance. The offset surface
         will be added to Rhino.
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ create_solid [opt] = Make a solid object
 identifier of the new object if successful
 None on error
         
-
-

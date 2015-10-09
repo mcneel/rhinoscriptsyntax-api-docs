@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns names of the block definitions that contain a specified block
         definition.
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Returns names of the block definitions that contain a specified block
 
 A list of block definition names
         
-
-

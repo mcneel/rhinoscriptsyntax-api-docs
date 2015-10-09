@@ -5,7 +5,7 @@ layout: bootstrap
 # TextDotHeight
 
 Returns or modified the font height of a text dot
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ If height is not specified, the current text dot height
 If height is specified, the previous text dot height
 None on error
         
-
-

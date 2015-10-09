@@ -5,7 +5,7 @@ layout: bootstrap
 # ProjectCurveToSurface
 
 Projects one or more curves onto one or more surfaces or polysurfaces
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Projects one or more curves onto one or more surfaces or polysurfaces
 
 list of identifiers
         
-
-

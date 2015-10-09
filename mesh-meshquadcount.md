@@ -4,12 +4,12 @@ layout: bootstrap
 
 # MeshQuadCount
 
-  
+Returns the number of quad faces of a mesh object
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***object_id*** = identifier of a mesh object
+        
 
 

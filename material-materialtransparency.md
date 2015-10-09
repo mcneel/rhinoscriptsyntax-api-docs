@@ -5,7 +5,7 @@ layout: bootstrap
 # MaterialTransparency
 
 Returns or modifies a material's transparency value
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ if transparency is not specified, the current material transparency value
 if transparency is specified, the previous material transparency value
 None on error
         
-
-

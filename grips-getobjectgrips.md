@@ -5,7 +5,7 @@ layout: bootstrap
 # GetObjectGrips
 
 Prompts user to pick one or more object grips from one or more objects.
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ list containing one or more grip records. Each grip record is a tuple
   grip_record[2] = location of the grip
 None on error
         
-
-

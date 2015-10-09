@@ -5,7 +5,7 @@ layout: bootstrap
 # MirrorObjects
 
 Mirrors a list of objects
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ end_point: end of the mirror plane
 
 List of identifiers of the mirrored objects if successful
         
-
-

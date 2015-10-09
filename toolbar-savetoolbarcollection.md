@@ -5,7 +5,7 @@ layout: bootstrap
 # SaveToolbarCollection
 
 Saves an open toolbar collection to disk
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Saves an open toolbar collection to disk
 
 True or False indicating success or failure
         
-
-

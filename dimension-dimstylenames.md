@@ -4,12 +4,6 @@ layout: bootstrap
 
 # DimStyleNames
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns the names of all dimension styles in the document
 
 

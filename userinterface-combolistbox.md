@@ -5,7 +5,7 @@ layout: bootstrap
 # ComboListBox
 
 Displays a list of items in a combo-style list box dialog.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Displays a list of items in a combo-style list box dialog.
 The selected item if successful
 None if not successful or on error
         
-
-

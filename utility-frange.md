@@ -4,12 +4,6 @@ layout: bootstrap
 
 # frange
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+float version of the range function
 
 

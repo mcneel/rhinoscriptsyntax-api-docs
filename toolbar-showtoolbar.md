@@ -5,7 +5,7 @@ layout: bootstrap
 # ShowToolbar
 
 Shows a previously hidden toolbar group in an open toolbar collection
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Shows a previously hidden toolbar group in an open toolbar collection
 
 True or False indicating success or failure
         
-
-

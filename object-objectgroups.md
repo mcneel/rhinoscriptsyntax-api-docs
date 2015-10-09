@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectGroups
 
 Returns all of the group names that an object is assigned to
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns all of the group names that an object is assigned to
 
 list of group names on success
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # MaterialColor
 
 Returns or modifies a material's diffuse color.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if color is not specified, the current material color
 if color is specified, the previous material color
 None on error
         
-
-

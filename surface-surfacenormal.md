@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceNormal
 
 Returns 3D vector that is the normal to a surface at a parameter
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Returns 3D vector that is the normal to a surface at a parameter
 
 Normal vector on success
         
-
-

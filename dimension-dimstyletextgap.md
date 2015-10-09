@@ -5,7 +5,7 @@ layout: bootstrap
 # DimStyleTextGap
 
 Returns or changes the text gap used by a dimension style
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if gap is not specified, the current text gap
 if gap is specified, the previous text gap
 None on error
         
-
-

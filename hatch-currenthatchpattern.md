@@ -5,7 +5,7 @@ layout: bootstrap
 # CurrentHatchPattern
 
 Returns or sets the current hatch pattern file
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ if hatch_pattern is not specified, the current hatch pattern
 if hatch_pattern is specified, the previous hatch pattern
 None on error
         
-
-

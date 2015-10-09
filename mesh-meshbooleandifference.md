@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshBooleanDifference
 
 Performs boolean difference operation on two sets of input meshes
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ input0, input1 = identifiers of meshes
 
 list of identifiers of new meshes
         
-
-

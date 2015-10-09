@@ -4,12 +4,10 @@ layout: bootstrap
 
 # IntersectPlanes
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Calculates the intersection of three planes
+        Returns:
+          Point3d on success
+          None on error
+        
 
 

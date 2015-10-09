@@ -5,7 +5,7 @@ layout: bootstrap
 # AllObjects
 
 Returns identifiers of all objects in the document.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns identifiers of all objects in the document.
 
 List of Guids identifying the objects
         
-
-

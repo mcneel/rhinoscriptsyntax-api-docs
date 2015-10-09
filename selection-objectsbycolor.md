@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectsByColor
 
 Returns identifiers of all objects based on color
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns identifiers of all objects based on color
 
 list of identifiers
         
-
-

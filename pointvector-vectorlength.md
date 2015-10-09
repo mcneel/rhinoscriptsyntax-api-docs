@@ -4,12 +4,6 @@ layout: bootstrap
 
 # VectorLength
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns the length of a 3D vector
 
 

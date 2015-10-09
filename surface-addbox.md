@@ -5,7 +5,7 @@ layout: bootstrap
 # AddBox
 
 Adds a box shaped polysurface to the document
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Adds a box shaped polysurface to the document
 
 identifier of the new object on success
         
-
-

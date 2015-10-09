@@ -5,7 +5,7 @@ layout: bootstrap
 # RenameBlock
 
 Renames an existing block definition
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Renames an existing block definition
 
 True or False indicating success or failure
         
-
-

@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or changes the normal direction of a surface. This feature can
         also be found in Rhino's Dir command
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ if flipped is not specified, the current normal orientation
 if flipped is specified, the previous normal orientation
 None on error
         
-
-

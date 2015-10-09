@@ -5,7 +5,7 @@ layout: bootstrap
 # XformRotation2
 
 Returns a rotation transformation around an axis
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns a rotation transformation around an axis
 The 4x4 transformation matrix.
 None on error.
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddPolyline
 
 Adds a polyline curve to the current model
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Adds a polyline curve to the current model
 
 id of the new curve object if successful
         
-
-

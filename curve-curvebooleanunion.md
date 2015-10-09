@@ -6,7 +6,7 @@ layout: bootstrap
 
 Calculate the union of two or more closed, planar curves and
         add the results to the document. Note, curves must be coplanar.
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Calculate the union of two or more closed, planar curves and
 
 The identifiers of the new objects.
         
-
-

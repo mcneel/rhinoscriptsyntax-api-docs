@@ -6,7 +6,7 @@ layout: bootstrap
 
 Displays file open dialog box allowing the user to enter a file name.
         Note, this function does not open the file.
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ Displays file open dialog box allowing the user to enter a file name.
 the file name is successful
 None if not successful, or on error
         
-
-

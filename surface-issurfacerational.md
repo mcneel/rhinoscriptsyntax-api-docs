@@ -4,12 +4,12 @@ layout: bootstrap
 
 # IsSurfaceRational
 
-  
+Verifies a surface object is rational
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***surface_id*** = the surface's identifier
+        
 
 

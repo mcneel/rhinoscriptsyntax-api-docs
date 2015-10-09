@@ -5,7 +5,7 @@ layout: bootstrap
 # LinePlaneIntersection
 
 Calculates the intersection of a line and a plane.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Calculates the intersection of a line and a plane.
 The 3D point of intersection is successful.
 None if not successful, or on error.
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectsByGroup
 
 Returns identifiers of all objects based on the objects' group name
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ select [opt] = select the objects
 
 list of identifiers on success
         
-
-

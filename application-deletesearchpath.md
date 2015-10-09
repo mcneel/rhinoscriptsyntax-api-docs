@@ -7,7 +7,7 @@ layout: bootstrap
 Removes existing path from Rhino's search path list. Search path items
         can be removed manually by using Rhino's options command and modifying the
         contents of the files tab
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Removes existing path from Rhino's search path list. Search path items
 
 True or False indicating success
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # GetInteger
 
 Pauses for user input of a whole number.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ maximum [optional] = A maximum allowable value.
 The whole number input by the user if successful.
 None if not successful, or on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # DimStyleAnglePrecision
 
 Returns or changes the angle display precision of a dimension style
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns or changes the angle display precision of a dimension style
 If a precision is not specified, the current angle precision
 If a precision is specified, the previous angle precision
         
-
-

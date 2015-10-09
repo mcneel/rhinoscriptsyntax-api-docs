@@ -5,7 +5,7 @@ layout: bootstrap
 # UnselectObjects
 
 Unselects one or more selected objects.
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Unselects one or more selected objects.
 
 The number of objects unselected
         
-
-

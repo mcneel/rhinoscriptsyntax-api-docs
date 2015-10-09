@@ -7,7 +7,7 @@ layout: bootstrap
 Verifies a material is a copy of Rhino's built-in "default" material.
         The default material is used by objects and layers that have not been
         assigned a material.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Verifies a material is a copy of Rhino's built-in "default" material.
 
 True or False indicating success or failure
         
-
-

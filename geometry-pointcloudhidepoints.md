@@ -5,7 +5,7 @@ layout: bootstrap
 # PointCloudHidePoints
 
 Returns or modifies the hidden points of a point cloud object
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ hidden: list of hidden values if you want to hide certain points
 
 List of point cloud hidden states
         
-
-

@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns a rotation transformation that maps initial_plane to final_plane.
         The planes should be right hand orthonormal planes.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns a rotation transformation that maps initial_plane to final_plane.
 The 4x4 transformation matrix.
 None on error.
         
-
-

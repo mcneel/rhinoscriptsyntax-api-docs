@@ -5,7 +5,7 @@ layout: bootstrap
 # SetDocumentData
 
 Adds or sets a user data string to the current document
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ value  = the string value
 
 The previous value
         
-
-

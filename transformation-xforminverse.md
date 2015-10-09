@@ -4,12 +4,8 @@ layout: bootstrap
 
 # XformInverse
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns the inverse of a non-singular transformation matrix
+        Returns None on error
+        
 
 

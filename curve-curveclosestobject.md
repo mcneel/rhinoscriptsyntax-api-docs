@@ -7,7 +7,7 @@ layout: bootstrap
 Returns the 3D point locations on two objects where they are closest to
         each other. Note, this function provides similar functionality to that of
         Rhino's ClosestPt command.
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ The elements are as follows:
   1    The 3-D point that is closest to the closest object. 
   2    The 3-D point that is closest to the test curve.
         
-
-

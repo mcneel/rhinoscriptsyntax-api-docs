@@ -5,7 +5,7 @@ layout: bootstrap
 # XformCPlaneToWorld
 
 Transform point from construction plane coordinates to world coordinates
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Transform point from construction plane coordinates to world coordinates
 
 A 3D point in world coordinates
         
-
-

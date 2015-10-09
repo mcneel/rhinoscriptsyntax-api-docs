@@ -6,7 +6,7 @@ layout: bootstrap
 
 Pauses for user input of a point constrained to a surface or polysurface
         object
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ message [opt] = a prompt or message
 3d point if successful
 None on error
         
-
-

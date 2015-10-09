@@ -5,7 +5,7 @@ layout: bootstrap
 # RotateObjects
 
 Rotates multiple objects
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ rotation_angle: in degrees
 
 List of identifiers of the rotated objects if successful
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # SelectedObjectGrips
 
 Returns a list of grip indices indentifying an object's selected grips
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Returns a list of grip indices indentifying an object's selected grips
 list of indices on success
 None on failure or if no grips are selected
         
-
-

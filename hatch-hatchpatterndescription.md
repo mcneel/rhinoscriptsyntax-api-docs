@@ -4,12 +4,13 @@ layout: bootstrap
 
 # HatchPatternDescription
 
-  
+Returns the description of a hatch pattern. Note, not all hatch patterns
+        have descriptions
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***hatch_pattern*** = name of an existing hatch pattern
+        
 
 

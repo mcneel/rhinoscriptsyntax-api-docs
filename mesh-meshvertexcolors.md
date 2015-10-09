@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshVertexColors
 
 Returns of modifies vertex colors of a mesh
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Returns of modifies vertex colors of a mesh
 if colors is not specified, the current vertex colors
 if colors is specified, the previous vertex colors
         
-
-

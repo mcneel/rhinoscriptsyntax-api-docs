@@ -5,7 +5,7 @@ layout: bootstrap
 # AddNamedView
 
 Adds a new named view to the document
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ view: [opt] the title or identifier of the view to save. If omitted, the current
 name fo the newly created named view if successful
 None on error
         
-
-

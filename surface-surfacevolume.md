@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceVolume
 
 Calculates volume of a closed surface or polysurface
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Calculates volume of a closed surface or polysurface
 (Volume, Error bound) on success
 None on error
         
-
-

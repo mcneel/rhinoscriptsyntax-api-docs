@@ -5,7 +5,7 @@ layout: bootstrap
 # BlockObjects
 
 Returns identifiers of the objects that make up a block definition
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns identifiers of the objects that make up a block definition
 
 list of identifiers on success
         
-
-

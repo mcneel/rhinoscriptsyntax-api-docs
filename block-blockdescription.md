@@ -5,7 +5,7 @@ layout: bootstrap
 # BlockDescription
 
 Returns or sets the description of a block definition
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or sets the description of a block definition
 if description is not specified, the current description
 if description is specified, the previous description
         
-
-

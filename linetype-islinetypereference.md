@@ -4,12 +4,8 @@ layout: bootstrap
 
 # IsLinetypeReference
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies that an existing linetype is from a reference file
+        Returns: True or False
+        
 
 

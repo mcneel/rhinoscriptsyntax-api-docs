@@ -5,7 +5,7 @@ layout: bootstrap
 # ArcCenterPoint
 
 Returns the center point of an arc curve object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ curve_id identifies a polycurve
 
 The 3D center point of the arc if successful.
         
-
-

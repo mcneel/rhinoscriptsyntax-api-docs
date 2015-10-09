@@ -5,7 +5,7 @@ layout: bootstrap
 # AddNurbsSurface
 
 Adds a NURBS surface object to the document
-          
+        
 
 ### Parameters:
 
@@ -27,5 +27,3 @@ Adds a NURBS surface object to the document
 identifier of new object if successful
 None on error
         
-
-

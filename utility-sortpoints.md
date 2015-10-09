@@ -4,12 +4,6 @@ layout: bootstrap
 
 # SortPoints
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Sorts an array of 3D points
 
 

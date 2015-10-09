@@ -5,7 +5,7 @@ layout: bootstrap
 # ViewTarget
 
 Returns or sets the target location of the specified view
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ is target is not specified, then the current target location
 is target is specified, then the previous target location
 None on error
         
-
-

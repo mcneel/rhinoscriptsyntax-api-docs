@@ -5,7 +5,7 @@ layout: bootstrap
 # PullCurve
 
 Pulls a curve object to a surface object
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Pulls a curve object to a surface object
 list of new curves if successful
 None on error
         
-
-

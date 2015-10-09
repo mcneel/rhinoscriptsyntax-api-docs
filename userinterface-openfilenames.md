@@ -6,7 +6,7 @@ layout: bootstrap
 
 Displays file open dialog box allowing the user to select one or more file names.
         Note, this function does not open the file.
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ Displays file open dialog box allowing the user to select one or more file names
 
 list of selected file names
         
-
-

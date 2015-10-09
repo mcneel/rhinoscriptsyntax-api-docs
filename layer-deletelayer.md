@@ -9,7 +9,7 @@ Removes an existing layer from the document. The layer to be removed
         be empty, or contain no objects, before it can be removed. Any layers that
         are children of the specified layer will also be removed if they are also
         empty.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Removes an existing layer from the document. The layer to be removed
 
 True or False indicating success or failure
         
-
-

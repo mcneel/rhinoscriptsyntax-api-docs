@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or sets Rhino's default template file. This is the file used
         when Rhino starts.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or sets Rhino's default template file. This is the file used
 if filename is not specified, then the current default template file
 if filename is specified, then the previous default template file
         
-
-

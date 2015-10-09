@@ -5,7 +5,7 @@ layout: bootstrap
 # MoveObjects
 
 Moves one or more objects
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ translation: list of 3 numbers or Vector3d
 
 List of identifiers of the moved objects if successful
         
-
-

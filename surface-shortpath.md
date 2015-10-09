@@ -6,7 +6,7 @@ layout: bootstrap
 
 Creates the shortest possible curve(geodesic) between two points on a
         surface. For more details, see the ShortPath command in Rhino help
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ start_point, end_point = start/end points of the short curve
 identifier of the new surface on success
 None on error
         
-
-

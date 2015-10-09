@@ -5,7 +5,7 @@ layout: bootstrap
 # Planar
 
 Enables or disables Rhino's planar modeling aid
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Enables or disables Rhino's planar modeling aid
 if enable is not specified, then the current planar status
 if enable is secified, then the previous planar status
         
-
-

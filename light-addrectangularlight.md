@@ -5,7 +5,7 @@ layout: bootstrap
 # AddRectangularLight
 
 Adds a new rectangular light object to the document
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Adds a new rectangular light object to the document
 
 identifier of the new object if successful
         
-
-

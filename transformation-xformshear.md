@@ -5,7 +5,7 @@ layout: bootstrap
 # XformShear
 
 Returns a shear transformation matrix
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Returns a shear transformation matrix
 
 The 4x4 transformation matrix on success
         
-
-

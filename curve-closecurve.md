@@ -6,7 +6,7 @@ layout: bootstrap
 
 Closes an open curve object by making adjustments to the end points so
         they meet at a point
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Closes an open curve object by making adjustments to the end points so
 
 id of the new curve object if successful
         
-
-

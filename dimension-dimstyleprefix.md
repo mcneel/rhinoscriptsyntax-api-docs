@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or changes the prefix of a dimension style - the text to
         prefix to the dimension text.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ if prefix is not specified, the current prefix
 if prefix is specified, the previous prefix
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # TrimBrep
 
 Trims a surface using an oriented cutter
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Trims a surface using an oriented cutter
 
 identifiers of retained components on success
         
-
-

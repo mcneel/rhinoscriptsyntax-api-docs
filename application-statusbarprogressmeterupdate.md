@@ -5,7 +5,7 @@ layout: bootstrap
 # StatusBarProgressMeterUpdate
 
 Set the current position of the progress meter
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Set the current position of the progress meter
 
 previous position setting
         
-
-

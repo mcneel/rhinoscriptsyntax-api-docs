@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or modifies the rotation applied to the hatch pattern when
         it is mapped to the hatch's plane
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ if rotation is not defined, the current rotation angle
 if rotation is specified, the previous rotation angle
 None on error
         
-
-

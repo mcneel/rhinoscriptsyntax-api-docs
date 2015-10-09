@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsOrdinateDimension
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies an object is an ordinate dimension object
 
 

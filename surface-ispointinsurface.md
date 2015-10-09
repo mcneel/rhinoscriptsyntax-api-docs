@@ -5,7 +5,7 @@ layout: bootstrap
 # IsPointInSurface
 
 Verifies that a point is inside a closed surface or polysurface
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ tolerance[opt]: distance tolerance used for intersection and determining
 
 True if successful, otherwise False
         
-
-

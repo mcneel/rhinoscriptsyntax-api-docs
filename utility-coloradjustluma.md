@@ -6,7 +6,7 @@ layout: bootstrap
 
 Change the luminance of a red-green-blue value. Hue and saturation are
         not affected
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Change the luminance of a red-green-blue value. Hue and saturation are
 
 modified rgb value if successful
         
-
-

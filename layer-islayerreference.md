@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsLayerReference
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies that a layer is from a reference file.
 
 

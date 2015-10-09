@@ -5,7 +5,7 @@ layout: bootstrap
 # EllipseQuadPoints
 
 Returns the quadrant points of an elliptical-shaped curve object.
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns the quadrant points of an elliptical-shaped curve object.
 
 Four 3D points identifying the quadrants of the ellipse
         
-
-

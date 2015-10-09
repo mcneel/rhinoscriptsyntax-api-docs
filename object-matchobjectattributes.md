@@ -5,7 +5,7 @@ layout: bootstrap
 # MatchObjectAttributes
 
 Matches, or copies the attributes of a source object to a target object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Matches, or copies the attributes of a source object to a target object
 
 number of objects modified
         
-
-

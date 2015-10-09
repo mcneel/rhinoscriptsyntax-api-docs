@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsPlugIn
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies that a plug-in is registered
 
 

@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsLayerCurrent
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies that a layer is the current layer
 
 

@@ -5,7 +5,7 @@ layout: bootstrap
 # DeleteDocumentData
 
 Removes user data strings from the current document
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Removes user data strings from the current document
 
 True or False indicating success or failure
         
-
-

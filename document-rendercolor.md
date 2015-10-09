@@ -5,7 +5,7 @@ layout: bootstrap
 # RenderColor
 
 Returns or sets the render ambient light or background color
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or sets the render ambient light or background color
 if color is not specified, the current item color
 if color is specified, the previous item color
         
-
-

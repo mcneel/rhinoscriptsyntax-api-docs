@@ -5,7 +5,7 @@ layout: bootstrap
 # PlaneClosestPoint
 
 Returns the point on a plane that is closest to a test point.
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ If return_point is False, then an array containing the U,V parameters
 of the point
 None if not successful, or on error.
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # ChangeSurfaceDegree
 
 Changes the degree of a surface object.  For more information see the Rhino help file for the ChangeDegree command.
-        
+      
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Changes the degree of a surface object.  For more information see the Rhino help
 True of False indicating success or failure.
 None on failure.
       
-
-

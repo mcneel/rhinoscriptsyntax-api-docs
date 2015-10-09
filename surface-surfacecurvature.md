@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the curvature of a surface at a U,V parameter. See Rhino help
         for details of surface curvature
-          
+        
 
 ### Parameters:
 
@@ -28,5 +28,3 @@ tuple of curvature information
   element 7 = mean curvature
 None if not successful, or on error
         
-
-

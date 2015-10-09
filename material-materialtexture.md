@@ -5,7 +5,7 @@ layout: bootstrap
 # MaterialTexture
 
 Returns or modifies a material's texture bitmap filename
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if filename is not specified, the current texture bitmap filename
 if filename is specified, the previous texture bitmap filename
 None if not successful or on error
         
-
-

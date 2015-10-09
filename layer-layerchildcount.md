@@ -4,12 +4,6 @@ layout: bootstrap
 
 # LayerChildCount
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns the number of immediate child layers of a layer
 
 

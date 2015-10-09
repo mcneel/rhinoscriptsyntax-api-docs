@@ -5,7 +5,7 @@ layout: bootstrap
 # DimStyleArrowSize
 
 Returns or changes the arrow size of a dimension style
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ If size is not specified, the current arrow size
 If size is specified, the previous arrow size
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # ShootRay
 
 Shoots a ray at a collection of surfaces
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Shoots a ray at a collection of surfaces
 list of reflection points on success
 None on error
         
-
-

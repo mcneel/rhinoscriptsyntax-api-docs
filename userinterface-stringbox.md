@@ -4,12 +4,6 @@ layout: bootstrap
 
 # StringBox
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Display a dialog box prompting the user to enter a string value.
 
 

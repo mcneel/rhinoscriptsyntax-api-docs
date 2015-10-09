@@ -5,7 +5,7 @@ layout: bootstrap
 # IsHatchPattern
 
 Verifies the existence of a hatch pattern in the document
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies the existence of a hatch pattern in the document
 
 True or False
         
-
-

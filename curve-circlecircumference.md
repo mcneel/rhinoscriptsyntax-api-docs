@@ -5,7 +5,7 @@ layout: bootstrap
 # CircleCircumference
 
 Returns the circumference of a circle curve object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ curve_id identifies a polycurve
 
 The circumference of the circle if successful.
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # GetLayers
 
 Displays a dialog box prompting the user to select one or more layers
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Displays a dialog box prompting the user to select one or more layers
 
 The names of selected layers if successful
         
-
-

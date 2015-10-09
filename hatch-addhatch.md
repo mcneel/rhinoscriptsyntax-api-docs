@@ -5,7 +5,7 @@ layout: bootstrap
 # AddHatch
 
 Creates a new hatch object from a closed planar curve object
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ Creates a new hatch object from a closed planar curve object
 identifier of the newly created hatch on success
 None on error
         
-
-

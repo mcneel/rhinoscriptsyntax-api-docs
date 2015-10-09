@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsDiameterDimension
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies an object is a diameter dimension object
 
 

@@ -4,12 +4,6 @@ layout: bootstrap
 
 # Angle2
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Measures the angle between two lines
 
 

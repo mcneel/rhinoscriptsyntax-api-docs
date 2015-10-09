@@ -5,7 +5,7 @@ layout: bootstrap
 # ViewCamera
 
 Returns or sets the camera location of the specified view
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ If camera_location is not specified, the current camera location
 If camera_location is specified, the previous camera location
 None on error    
         
-
-

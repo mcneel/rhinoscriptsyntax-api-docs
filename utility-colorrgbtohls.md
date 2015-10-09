@@ -4,12 +4,6 @@ layout: bootstrap
 
 # ColorRGBToHLS
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Convert colors from RGB to HLS
 
 

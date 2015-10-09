@@ -5,7 +5,7 @@ layout: bootstrap
 # PointCloudPoints
 
 Returns the points of a point cloud object
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ object_id: the point cloud object's identifier
 
 list of points if successful
         
-
-

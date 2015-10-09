@@ -5,7 +5,7 @@ layout: bootstrap
 # AddNamedCPlane
 
 Adds new named construction plane to the document
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ view:[opt] string or Guid. Title or identifier of the view from which to save
 name of the newly created construction plane if successful
 None on error
         
-
-

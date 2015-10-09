@@ -5,7 +5,7 @@ layout: bootstrap
 # PointCloudPointColors
 
 Returns or modifies the point colors of a point cloud object
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ colors: list of color values if you want to adjust colors
 
 List of point cloud colors
         
-
-

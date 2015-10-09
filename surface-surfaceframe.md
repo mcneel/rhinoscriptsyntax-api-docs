@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns a plane based on the normal, u, and v directions at a surface
         U,V parameter
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns a plane based on the normal, u, and v directions at a surface
 plane on success
 None on error
         
-
-

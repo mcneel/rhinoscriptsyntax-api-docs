@@ -5,7 +5,7 @@ layout: bootstrap
 # PointArrayClosestPoint
 
 Finds the point in a list of 3D points that is closest to a test point
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Finds the point in a list of 3D points that is closest to a test point
 
 index of the element in the point list that is closest to the test point
         
-
-

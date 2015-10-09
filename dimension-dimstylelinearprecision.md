@@ -5,7 +5,7 @@ layout: bootstrap
 # DimStyleLinearPrecision
 
 Returns or changes the linear display precision of a dimension style
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if precision is not specified, the current linear precision value
 if precision is specified, the previous linear precision value
 None on error
         
-
-

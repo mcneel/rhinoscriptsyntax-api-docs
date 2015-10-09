@@ -5,7 +5,7 @@ layout: bootstrap
 # AddDetail
 
 Add new detail view to an existing layout view
-          
+        
 
 ### Parameters:
 
@@ -28,5 +28,3 @@ corner1, corner2 = 2d corners of the detail in the layout's unit system
 identifier of the newly created detial on success
 None on error
         
-
-

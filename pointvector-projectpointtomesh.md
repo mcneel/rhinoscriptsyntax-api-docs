@@ -5,7 +5,7 @@ layout: bootstrap
 # ProjectPointToMesh
 
 Projects one or more points onto one or more meshes
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Projects one or more points onto one or more meshes
 
 list of projected points on success
         
-
-

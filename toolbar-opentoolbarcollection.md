@@ -5,7 +5,7 @@ layout: bootstrap
 # OpenToolbarCollection
 
 Opens a toolbar collection file
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Opens a toolbar collection file
 Rhino-assigned name of the toolbar collection if successful
 None if not successful
         
-
-

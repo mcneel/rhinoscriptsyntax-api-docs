@@ -5,7 +5,7 @@ layout: bootstrap
 # AddPointCloud
 
 Adds point cloud object to the document
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Adds point cloud object to the document
 
 identifier of point cloud on success
         
-
-

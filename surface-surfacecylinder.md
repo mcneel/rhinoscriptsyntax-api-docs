@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceCylinder
 
 Returns the definition of a cylinder surface
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Returns the definition of a cylinder surface
 tuple of the cylinder plane, height, radius on success
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # TextObjectPoint
 
 Returns or modifies the location of a text object
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if point is not specified, the 3D point identifying the current location
 if point is specified, the 3D point identifying the previous location
 None if not successful, or on Error
         
-
-

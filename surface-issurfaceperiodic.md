@@ -5,7 +5,7 @@ layout: bootstrap
 # IsSurfacePeriodic
 
 Verifies a surface object is periodic in the specified direction.
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Verifies a surface object is periodic in the specified direction.
 
 True or False
         
-
-

@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsLayerSelectable
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies that an existing layer is selectable (normal and reference)
 
 

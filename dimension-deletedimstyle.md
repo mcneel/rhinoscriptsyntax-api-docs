@@ -6,7 +6,7 @@ layout: bootstrap
 
 Removes an existing dimension style from the document. The dimension style
         to be removed cannot be referenced by any dimension objects.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Removes an existing dimension style from the document. The dimension style
 The name of the deleted dimension style if successful
 None on error
         
-
-

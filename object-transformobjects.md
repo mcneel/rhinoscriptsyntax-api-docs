@@ -6,7 +6,7 @@ layout: bootstrap
 
 Moves, scales, or rotates a list of objects given a 4x4 transformation
         matrix. The matrix acts on the left.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Moves, scales, or rotates a list of objects given a 4x4 transformation
 
 List of ids identifying the newly transformed objects
         
-
-

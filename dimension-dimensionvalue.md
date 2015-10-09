@@ -5,7 +5,7 @@ layout: bootstrap
 # DimensionValue
 
 Returns the value of a dimension object
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns the value of a dimension object
 
 numeric value of the dimension if successful
         
-
-

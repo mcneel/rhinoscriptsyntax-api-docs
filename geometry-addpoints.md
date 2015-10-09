@@ -5,7 +5,7 @@ layout: bootstrap
 # AddPoints
 
 Adds one or more point objects to the document
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Adds one or more point objects to the document
 
 list of Guid identifiers of the new objects on success
         
-
-

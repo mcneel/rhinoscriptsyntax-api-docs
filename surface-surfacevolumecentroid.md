@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceVolumeCentroid
 
 Calculates volume centroid of a closed surface or polysurface
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Calculates volume centroid of a closed surface or polysurface
 (Volume Centriod, Error bound) on success
 None on error
         
-
-

@@ -6,7 +6,7 @@ layout: bootstrap
 
 Extends a non-closed curve by a line, arc, or smooth extension for a
         specified distance
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ length: distance to extend
 The identifier of the new object
 None if not successful
         
-
-

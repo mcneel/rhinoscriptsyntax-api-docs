@@ -5,7 +5,7 @@ layout: bootstrap
 # AddCone
 
 Adds a cone shaped polysurface to the document
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ cap [opt] = cap base of the cone
 
 identifier of the new object on success
         
-
-

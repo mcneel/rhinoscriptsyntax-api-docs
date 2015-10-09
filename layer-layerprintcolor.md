@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or changes the print color of a layer. Layer print colors are
         represented as RGB colors.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ if color is not specified, the current layer print color
 if color is specified, the previous layer print color
 None on error
         
-
-

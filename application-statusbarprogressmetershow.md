@@ -5,7 +5,7 @@ layout: bootstrap
 # StatusBarProgressMeterShow
 
 Start the Rhino status bar progress meter
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Start the Rhino status bar progress meter
 
 True or False indicating success or failure
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddEdgeSrf
 
 Creates a surface from 2, 3, or 4 edge curves
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Creates a surface from 2, 3, or 4 edge curves
 identifier of new object if successful
 None on error
         
-
-

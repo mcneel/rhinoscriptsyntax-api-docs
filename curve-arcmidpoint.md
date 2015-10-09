@@ -5,7 +5,7 @@ layout: bootstrap
 # ArcMidPoint
 
 Returns the mid point of an arc curve object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ curve_id identifies a polycurve
 
 The 3D mid point of the arc if successful.
         
-
-

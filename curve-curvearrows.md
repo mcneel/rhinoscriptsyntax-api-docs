@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveArrows
 
 Enables or disables a curve object's annotation arrows
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ Enables or disables a curve object's annotation arrows
 if arrow_style is not specified, the current annotation arrow style
 if arrow_style is specified, the previos arrow style
         
-
-

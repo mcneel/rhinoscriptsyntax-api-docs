@@ -6,7 +6,7 @@ layout: bootstrap
 
 Add new command alias to Rhino. Command aliases can be added manually by
         using Rhino's Options command and modifying the contents of the Aliases tab.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Add new command alias to Rhino. Command aliases can be added manually by
 
 True or False indicating success or failure.
         
-
-

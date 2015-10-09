@@ -5,7 +5,7 @@ layout: bootstrap
 # IsCurveRational
 
 Verifies an object is a rational NURBS curve
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ segment_index [opt] = the curve segment if curve_id identifies a polycurve
 
 True or False indicating success or failure
         
-
-

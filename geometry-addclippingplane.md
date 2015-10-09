@@ -6,7 +6,7 @@ layout: bootstrap
 
 Create a clipping plane for visibly clipping away geometry in a specific
         view. Note, clipping planes are infinite
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ views[opt]= Titles or ids the the view(s) to clip. If omitted, the active
 object identifier on success
 None on failure  
         
-
-

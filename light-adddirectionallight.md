@@ -5,7 +5,7 @@ layout: bootstrap
 # AddDirectionalLight
 
 Adds a new directional light object to the document
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ end_point: ending point and direction of the light
 
 identifier of the new object if successful
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # IntersectSpheres
 
 Calculates intersections of two spheres
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ List of intersection results
   element 2 = radius of circle if circle intersection
 None on error
         
-
-

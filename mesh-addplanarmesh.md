@@ -5,7 +5,7 @@ layout: bootstrap
 # AddPlanarMesh
 
 Creates a planar mesh from a closed, planar curve
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Creates a planar mesh from a closed, planar curve
 id of the new mesh on success
 None on error
         
-
-

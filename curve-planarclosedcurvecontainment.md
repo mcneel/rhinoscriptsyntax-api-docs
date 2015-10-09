@@ -6,7 +6,7 @@ layout: bootstrap
 
 Determines the relationship between the regions bounded by two coplanar
         simple closed curves
-          
+        
 
 ### Parameters:
 
@@ -26,5 +26,3 @@ a number identifying the relationship if successful
   3 = the region bounded by curve_b is inside of curve_a
 None if not successful
         
-
-

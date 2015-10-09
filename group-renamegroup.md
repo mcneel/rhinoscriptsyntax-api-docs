@@ -5,7 +5,7 @@ layout: bootstrap
 # RenameGroup
 
 Renames an existing group
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Renames an existing group
 the new group name if successful
 None on error
         
-
-

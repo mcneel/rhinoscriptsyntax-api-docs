@@ -5,7 +5,7 @@ layout: bootstrap
 # EvaluatePlane
 
 Evaluates a plane at a U,V parameter
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Evaluates a plane at a U,V parameter
 
 Point3d on success
         
-
-

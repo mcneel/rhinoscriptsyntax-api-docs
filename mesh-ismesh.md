@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsMesh
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies if an object is a mesh
 
 

@@ -5,7 +5,7 @@ layout: bootstrap
 # ViewCameraTarget
 
 Returns or sets the camera and target positions of the specified view
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ if both camera and target are not specified, then the 3d points containing
 if either camera or target are specified, then the 3d points containing the
   previous camera and target locations is returned
         
-
-

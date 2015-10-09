@@ -6,7 +6,7 @@ layout: bootstrap
 
 Determines if a point is inside of a closed curve, on a closed curve, or
         outside of a closed curve
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ number identifying the result if successful
     1 = point is inside of the curve
     2 = point in on the curve
         
-
-

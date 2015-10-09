@@ -5,7 +5,7 @@ layout: bootstrap
 # IsGroupEmpty
 
 Verifies that an existing group is empty, or contains no object members
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Verifies that an existing group is empty, or contains no object members
 True or False if group_name exists
 None if group_name does not exist
         
-
-

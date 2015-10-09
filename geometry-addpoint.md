@@ -5,7 +5,7 @@ layout: bootstrap
 # AddPoint
 
 Adds point object to the document
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Adds point object to the document
 
 Guid for the object that was added to the doc
         
-
-

@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the names of all toolbars (or toolbar groups) found in a
         currently open toolbar file
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns the names of all toolbars (or toolbar groups) found in a
 
 names of all toolbars (or toolbar groups) on success, None on error
         
-
-

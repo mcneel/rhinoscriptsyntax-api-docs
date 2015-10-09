@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsVisibleInView
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies an object is visible in a view
 
 

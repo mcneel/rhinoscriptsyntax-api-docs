@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfacePoints
 
 Returns the control points, or control vertices, of a surface object
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Returns the control points, or control vertices, of a surface object
 the control points if successful
 None on error
         
-
-

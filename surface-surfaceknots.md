@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceKnots
 
 Returns the knots, or knot vector, of a surface object.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Element     Description
   1         Knot vector in V direction
 None if not successful, or on error.
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # ResetMaterial
 
 Resets a material to Rhino's default material
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Resets a material to Rhino's default material
 
 True or False indicating success or failure
         
-
-

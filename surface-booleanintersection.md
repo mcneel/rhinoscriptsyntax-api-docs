@@ -7,7 +7,7 @@ layout: bootstrap
 Performs a boolean intersection operation on two sets of input surfaces
         and polysurfaces. For more details, see the BooleanIntersection command in
         the Rhino help file
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Performs a boolean intersection operation on two sets of input surfaces
 list of identifiers of newly created objects on success
 None on error
         
-
-

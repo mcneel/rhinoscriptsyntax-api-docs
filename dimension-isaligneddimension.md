@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsAlignedDimension
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies an object is an aligned dimension object
 
 

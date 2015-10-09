@@ -6,7 +6,7 @@ layout: bootstrap
 
 Hides a group of objects. Hidden objects are not visible, cannot be
         snapped to, and cannot be selected
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Hides a group of objects. Hidden objects are not visible, cannot be
 
 The number of objects that were hidden
         
-
-

@@ -4,12 +4,8 @@ layout: bootstrap
 
 # LineMinDistanceTo
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Finds the shortest distance between a line as a finite chord, and a point
+        or another line
+        
 
 

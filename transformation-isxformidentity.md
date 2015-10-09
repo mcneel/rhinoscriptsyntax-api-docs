@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsXformIdentity
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies a matrix is the identity matrix
 
 

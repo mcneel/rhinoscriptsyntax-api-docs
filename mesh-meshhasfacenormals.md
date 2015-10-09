@@ -4,12 +4,12 @@ layout: bootstrap
 
 # MeshHasFaceNormals
 
-  
+Verifies a mesh object has face normals
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***object_id*** = identifier of a mesh object
+        
 
 

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddBlendCurve
 
 Makes a curve blend between two curves
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Makes a curve blend between two curves
 
 identifier of new curve on success
         
-
-

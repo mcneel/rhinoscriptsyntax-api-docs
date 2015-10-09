@@ -5,7 +5,7 @@ layout: bootstrap
 # DivideCurveEquidistant
 
 Divides a curve such that the linear distance between the points is equal.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Divides a curve such that the linear distance between the points is equal.
 A list of points or curve parameters based on the value of return_points
 None on error
         
-
-

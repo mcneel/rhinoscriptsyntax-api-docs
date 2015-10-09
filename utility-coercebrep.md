@@ -4,12 +4,6 @@ layout: bootstrap
 
 # coercebrep
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+attempt to get polysurface geometry from the document with a given id
 
 

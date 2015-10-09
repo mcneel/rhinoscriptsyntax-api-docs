@@ -5,7 +5,7 @@ layout: bootstrap
 # PointsAreCoplanar
 
 Verifies that a list of 3D points are coplanar
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Verifies that a list of 3D points are coplanar
 
 True or False
         
-
-

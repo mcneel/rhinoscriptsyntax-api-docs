@@ -5,7 +5,7 @@ layout: bootstrap
 # AddEllipse
 
 Adds an elliptical curve to the document
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ radiusX, radiusY = radius in the X and Y axis directions
 
 id of the new curve object if successful
         
-
-

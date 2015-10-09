@@ -5,7 +5,7 @@ layout: bootstrap
 # BlockInstanceInsertPoint
 
 Returns the insertion point of a block instance.
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns the insertion point of a block instance.
 
 list representing 3D point if successful
         
-
-

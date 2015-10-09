@@ -5,7 +5,7 @@ layout: bootstrap
 # AddLayer
 
 Add a new layer to the document
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ parent[opt]: name of the new layer's parent layer. If omitted, the new
 
 The full name of the new layer if successful.
         
-
-

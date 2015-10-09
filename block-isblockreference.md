@@ -5,7 +5,7 @@ layout: bootstrap
 # IsBlockReference
 
 Verifies that a block definition is from a reference file.
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies that a block definition is from a reference file.
 
 True or False
         
-
-

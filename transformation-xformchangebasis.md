@@ -4,12 +4,6 @@ layout: bootstrap
 
 # XformChangeBasis
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns a change of basis transformation matrix or None on error
 
 

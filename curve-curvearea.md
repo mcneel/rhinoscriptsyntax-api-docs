@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns area of closed planar curves. The results are based on the
         current drawing units.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ List of area information. The list will contain the following information:
            value will be the cumulative area.
   1        The absolute (+/-) error bound for the area.
         
-
-

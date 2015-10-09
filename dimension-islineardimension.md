@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsLinearDimension
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies an object is a linear dimension object
 
 

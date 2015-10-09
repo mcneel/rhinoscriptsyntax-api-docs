@@ -5,7 +5,7 @@ layout: bootstrap
 # TextObjectStyle
 
 Returns or modifies the font style of a text object
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ if style is not specified, the current font style
 if style is specified, the previous font style
 None if not successful, or on Error
         
-
-

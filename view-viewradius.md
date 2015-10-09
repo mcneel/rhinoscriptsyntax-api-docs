@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or sets the radius of a parallel-projected view. Useful
         when you need an absolute zoom factor for a parallel-projected view
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ mode: [opt] perform a "dolly" magnification by moving the camera
 if radius is not specified, the current view radius for the specified view
 if radius is specified, the previous view radius for the specified view
         
-
-

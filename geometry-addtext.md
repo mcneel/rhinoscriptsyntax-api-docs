@@ -5,7 +5,7 @@ layout: bootstrap
 # AddText
 
 Adds a text string to the document
-          
+        
 
 ### Parameters:
 
@@ -28,5 +28,3 @@ font [opt] = the text font
 Guid for the object that was added to the doc on success
 None on failure
         
-
-

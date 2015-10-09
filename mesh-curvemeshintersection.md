@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveMeshIntersection
 
 Calculates the intersection of a curve object and a mesh object
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ if return_false is True, the a one-dimensional list containing information
   (point of intersection, mesh face index where intersection lies)
 None on error
         
-
-

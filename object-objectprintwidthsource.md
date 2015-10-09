@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectPrintWidthSource
 
 Returns or modifies the print width source of an object
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ If source is not specified, the object's current print width source
 If source is specified, the object's previous print width source
 If object_ids is a list or tuple, the number of objects modified
         
-
-

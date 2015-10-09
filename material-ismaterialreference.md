@@ -5,7 +5,7 @@ layout: bootstrap
 # IsMaterialReference
 
 Verifies a material is referenced from another file
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies a material is referenced from another file
 
 True or False indicating success or failure
         
-
-

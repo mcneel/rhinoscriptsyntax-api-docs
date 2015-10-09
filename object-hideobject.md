@@ -5,7 +5,7 @@ layout: bootstrap
 # HideObject
 
 Hides a single object
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ object_id: String or Guid representing id of object to hide
 
 True of False indicating success or failure
         
-
-

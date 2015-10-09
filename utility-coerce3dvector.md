@@ -4,12 +4,6 @@ layout: bootstrap
 
 # coerce3dvector
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Convert input into a Rhino.Geometry.Vector3d if possible.
 
 

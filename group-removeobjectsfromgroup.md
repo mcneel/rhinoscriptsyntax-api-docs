@@ -5,7 +5,7 @@ layout: bootstrap
 # RemoveObjectsFromGroup
 
 Removes one or more objects from an existing group
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Removes one or more objects from an existing group
 The number of objects removed from the group is successful
 None on error
         
-
-

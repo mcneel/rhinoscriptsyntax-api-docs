@@ -4,12 +4,6 @@ layout: bootstrap
 
 # EvaluateSurface
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Evaluates a surface at a U,V parameter
 
 

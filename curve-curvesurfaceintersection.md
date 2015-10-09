@@ -6,7 +6,7 @@ layout: bootstrap
 
 Calculates intersection of a curve object with a surface object.
         Note, this function works on the untrimmed portion of the surface.
-          
+        
 
 ### Parameters:
 
@@ -58,5 +58,3 @@ The list will contain one or more of the following elements:
                    If the event type is Overlap(2), then the V surface parameter
                    for curve at (n, 6).
         
-
-

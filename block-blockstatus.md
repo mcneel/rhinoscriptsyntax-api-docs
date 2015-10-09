@@ -4,12 +4,6 @@ layout: bootstrap
 
 # BlockStatus
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns the status of a linked block. See help for status codes
 
 

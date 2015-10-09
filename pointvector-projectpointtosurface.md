@@ -5,7 +5,7 @@ layout: bootstrap
 # ProjectPointToSurface
 
 Projects one or more points onto one or more surfaces or polysurfaces
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Projects one or more points onto one or more surfaces or polysurfaces
 
 list of projected points on success
         
-
-

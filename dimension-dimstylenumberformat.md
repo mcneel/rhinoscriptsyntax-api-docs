@@ -5,7 +5,7 @@ layout: bootstrap
 # DimStyleNumberFormat
 
 Returns or changes the number display format of a dimension style
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ if format is not specified, the current display format
 if format is specified, the previous display format
 None on error
         
-
-

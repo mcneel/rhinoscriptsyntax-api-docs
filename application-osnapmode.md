@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or sets the object snap mode. Object snaps are tools for
         specifying points on existing objects
-          
+        
 
 ### Parameters:
 
@@ -33,5 +33,3 @@ mode [opt] = The object snap mode or modes to set. Object snap modes
 if mode is not specified, then the current object snap mode(s)
 if mode is specified, then the previous object snap mode(s) 
         
-
-

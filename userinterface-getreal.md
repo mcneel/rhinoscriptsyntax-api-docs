@@ -5,7 +5,7 @@ layout: bootstrap
 # GetReal
 
 Pauses for user input of a number.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ maximum [optional] = A maximum allowable value.
 The number input by the user if successful.
 None if not successful, or on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddMesh
 
 Add a mesh object to the document
-          
+        
 
 ### Parameters:
 
@@ -28,5 +28,3 @@ face_- ***vertices*** = list containing lists of 3 or 4 numbers that define the
 Identifier of the new object if successful
 None on error
         
-
-

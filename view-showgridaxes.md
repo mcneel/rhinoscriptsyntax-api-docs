@@ -5,7 +5,7 @@ layout: bootstrap
 # ShowGridAxes
 
 Shows or hides a view's construction plane grid axes.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ show:[opt] The state to set. If omitted, the current grid axes display
 If show is not specified, then the grid axes display state
 If show is specified, then the previous grid axes display state
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddSpiral
 
 Adds a spiral or helical curve to the document
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ radius0, radius1 = starting and ending radius
 
 id of new curve on success
         
-
-

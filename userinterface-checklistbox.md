@@ -5,7 +5,7 @@ layout: bootstrap
 # CheckListBox
 
 Displays a list of items in a checkable-style list dialog box
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ A list of tuples containing the input string in items along with their
 new boolean check value
 None on error      
         
-
-

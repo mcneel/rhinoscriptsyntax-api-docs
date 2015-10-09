@@ -5,7 +5,7 @@ layout: bootstrap
 # IsSpotLight
 
 Verifies a light object is a spot light
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies a light object is a spot light
 
 True or False
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # XformScale
 
 Creates a scale transformation
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Creates a scale transformation
 The 4x4 transformation matrix on success
 None on error
         
-
-

@@ -7,7 +7,7 @@ layout: bootstrap
 Determines if Rhino is currently running a command. Because Rhino allows
         for transparent commands (commands run from inside of other commands), this
         method returns the total number of active commands.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ ignore_runners [opt] = If true, script running commands, such as
 
 the number of active commands
         
-
-

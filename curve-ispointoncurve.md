@@ -5,7 +5,7 @@ layout: bootstrap
 # IsPointOnCurve
 
 Verifies that a point is on a curve
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ segment_index [opt] = the curve segment if curve_id identifies a polycurve
 
 True or False indicating success or failure
         
-
-

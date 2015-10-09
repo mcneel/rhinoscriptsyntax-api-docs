@@ -5,7 +5,7 @@ layout: bootstrap
 # UnrollSurface
 
 Flattens a developable surface or polysurface
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ if following_geometry is not None, a tuple where item 1
   is the list of unrolled surface ids and item 2 is the
   list of unrolled following geometry
         
-
-

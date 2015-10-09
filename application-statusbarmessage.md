@@ -4,12 +4,6 @@ layout: bootstrap
 
 # StatusBarMessage
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Sets Rhino's status bar message pane
 
 

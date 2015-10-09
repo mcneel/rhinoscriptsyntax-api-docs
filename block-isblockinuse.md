@@ -5,7 +5,7 @@ layout: bootstrap
 # IsBlockInUse
 
 Verifies that a block definition is being used by an inserted instance
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ where_to_look [opt] = One of the following values
 
 True or False
         
-
-

@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the curvature of a curve at a parameter. See the Rhino help for
         details on curve curvature
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ Tuple of curvature information on success
   element 4 = curvature vector
 None on failure
         
-
-

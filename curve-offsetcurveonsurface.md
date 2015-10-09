@@ -6,7 +6,7 @@ layout: bootstrap
 
 Offset a curve on a surface. The source curve must lie on the surface.
         The offset curve or curves will be added to Rhino
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ curve_id, surface_id = curve and surface identifiers
 Identifiers of the new curves if successful
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AppearanceColor
 
 Returns or modifies an application interface item's color.
-          
+        
 
 ### Parameters:
 
@@ -33,5 +33,3 @@ Returns or modifies an application interface item's color.
 if color is not specified, the current item color
 if color is specified, the previous item color
         
-
-

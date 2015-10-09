@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsTorus
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Determines if a surface is a portion of a torus
 
 

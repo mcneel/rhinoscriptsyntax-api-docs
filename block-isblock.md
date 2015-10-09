@@ -5,7 +5,7 @@ layout: bootstrap
 # IsBlock
 
 Verifies the existence of a block definition in the document.
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies the existence of a block definition in the document.
 
 True or False
         
-
-

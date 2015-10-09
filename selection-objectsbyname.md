@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectsByName
 
 Returns identifiers of all objects based on user-assigned name
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns identifiers of all objects based on user-assigned name
 
 list of identifiers
         
-
-

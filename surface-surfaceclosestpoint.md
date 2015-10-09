@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceClosestPoint
 
 Returns U,V parameters of point on a surface that is closest to a test point
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns U,V parameters of point on a surface that is closest to a test point
 The U,V parameters of the closest point on the surface if successful.
 None on error.
         
-
-

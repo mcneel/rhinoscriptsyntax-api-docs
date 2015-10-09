@@ -4,12 +4,8 @@ layout: bootstrap
 
 # RenameLayer
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Renames an existing layer
+        Returns: The new layer name if successful
+        
 
 

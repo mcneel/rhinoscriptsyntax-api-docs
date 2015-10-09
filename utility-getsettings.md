@@ -5,7 +5,7 @@ layout: bootstrap
 # GetSettings
 
 Returns string from a specified section in a initialization file.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ If entry is not specified, a list containing all entry names for a given section
 If section and entry are specied, a value for entry
 None if not successful
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # EnableAutosave
 
 Enables or disables Rhino's automatic file saving mechanism
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Enables or disables Rhino's automatic file saving mechanism
 
 the previous autosave state
         
-
-

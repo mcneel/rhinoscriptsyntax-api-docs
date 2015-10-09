@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshVertexFaces
 
 Returns the mesh faces that share a specified mesh vertex
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns the mesh faces that share a specified mesh vertex
 list of face indices on success
 None on error
         
-
-

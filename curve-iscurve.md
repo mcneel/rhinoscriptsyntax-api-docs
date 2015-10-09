@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsCurve
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies an object is a curve
 
 

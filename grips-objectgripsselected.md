@@ -6,7 +6,7 @@ layout: bootstrap
 
 Verifies that an object's grips are turned on and at least one grip
         is selected
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Verifies that an object's grips are turned on and at least one grip
 
 True or False indicating success or failure
         
-
-

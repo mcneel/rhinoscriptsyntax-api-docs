@@ -4,12 +4,6 @@ layout: bootstrap
 
 # Str2Pt
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+convert a formatted string value into a 3D point value
 
 

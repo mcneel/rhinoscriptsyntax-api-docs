@@ -4,12 +4,6 @@ layout: bootstrap
 
 # EnablePlugIn
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Enables or disables a Rhino plug-in
 
 

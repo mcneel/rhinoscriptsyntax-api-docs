@@ -6,7 +6,7 @@ layout: bootstrap
 
 Pulls an array of points to a surface or mesh object. For more
         information, see the Rhino help file Pull command
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Pulls an array of points to a surface or mesh object. For more
 
 list of 3D points
         
-
-

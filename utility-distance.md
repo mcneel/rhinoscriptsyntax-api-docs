@@ -6,7 +6,7 @@ layout: bootstrap
 
 Measures distance between two 3D points, or between a 3D point and
         an array of 3D points.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ If point2 is a 3D point then the distance if successful.
 If point2 is a list of points, then an list of distances if successful.
 None if not successful
         
-
-

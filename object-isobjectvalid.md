@@ -5,7 +5,7 @@ layout: bootstrap
 # IsObjectValid
 
 Verifies an object's geometry is valid and without error
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ object_id: The identifier of an object
 
 True if the object is valid
         
-
-

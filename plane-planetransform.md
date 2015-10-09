@@ -4,12 +4,13 @@ layout: bootstrap
 
 # PlaneTransform
 
-  
+Transforms a plane
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***plane*** = Plane to transform
+- ***xform*** = Transformation to apply
+        
 
 

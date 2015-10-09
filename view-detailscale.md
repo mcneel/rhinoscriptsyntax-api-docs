@@ -5,7 +5,7 @@ layout: bootstrap
 # DetailScale
 
 Returns or modifies the scale of a detail object
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ current page to model scale ratio if model_length and page_length are both None
 previous page to model scale ratio if model_length and page_length are values
 None on error
         
-
-

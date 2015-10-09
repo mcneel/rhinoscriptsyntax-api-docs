@@ -5,7 +5,7 @@ layout: bootstrap
 # LayerLocked
 
 Returns or changes the locked mode of a layer
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or changes the locked mode of a layer
 If locked is not specified, the current layer locked mode
 If locked is specified, the previous layer locked mode
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # IsBlockInstance
 
 Verifies an object is a block instance
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies an object is a block instance
 
 True or False
         
-
-

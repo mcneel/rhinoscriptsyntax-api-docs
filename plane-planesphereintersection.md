@@ -5,7 +5,7 @@ layout: bootstrap
 # PlaneSphereIntersection
 
 Calculates the intersection of a plane and a sphere
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ sphere_- ***plane*** = equitorial plane of the sphere. origin of the plane is
 list of intersection results - see help
 None on error
         
-
-

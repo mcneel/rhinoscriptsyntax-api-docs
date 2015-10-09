@@ -5,7 +5,7 @@ layout: bootstrap
 # IsCircle
 
 Verifies an object is a circle curve
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ tolerance [opt] = If the curve is not a circle, then the tolerance used
 
 True or False
         
-
-

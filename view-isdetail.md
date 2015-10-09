@@ -5,7 +5,7 @@ layout: bootstrap
 # IsDetail
 
 Verifies that a detail view exists on a page layout view
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ True if detail is a detail view
 False if detail is not a detail view
 None on error
         
-
-

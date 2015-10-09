@@ -5,7 +5,7 @@ layout: bootstrap
 # GetLine
 
 Prompts the user to pick points that define a line
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ message1, message2, message3 = optional prompts
 Tuple of two points on success
 None on error
         
-
-

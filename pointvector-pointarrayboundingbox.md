@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns either a world axis-aligned or a construction plane axis-aligned 
         bounding box of an array of 3-D point locations.
-          
+        
 
 ### Parameters:
 
@@ -27,5 +27,3 @@ Eight 3D points that define the bounding box. Points returned in counter-
 clockwise order starting with the bottom rectangle of the box.
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # ViewCameraUp
 
 Returns or sets the camera up direction of a specified
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ up_vector[opt]: 3D vector identifying the new camera up direction
 if up_vector is not specified, then the current camera up direction
 if up_vector is specified, then the previous camera up direction
         
-
-

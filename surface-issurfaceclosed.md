@@ -6,7 +6,7 @@ layout: bootstrap
 
 Verifies a surface object is closed in the specified direction.  If the
         surface fully encloses a volume, it is considered a solid
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Verifies a surface object is closed in the specified direction.  If the
 
 True or False
         
-
-

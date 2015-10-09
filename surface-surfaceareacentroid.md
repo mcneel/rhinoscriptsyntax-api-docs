@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceAreaCentroid
 
 Calculates the area centroid of a surface or polysurface
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Calculates the area centroid of a surface or polysurface
 (Area Centriod, Error bound) on success
 None on error
         
-
-

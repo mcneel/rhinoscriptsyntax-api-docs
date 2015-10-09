@@ -5,7 +5,7 @@ layout: bootstrap
 # MirrorObject
 
 Mirrors a single object
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ end_point: end of the mirror plane
 Identifier of the mirrored object if successful
 None on error
         
-
-

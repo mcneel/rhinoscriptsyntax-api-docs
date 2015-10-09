@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceDegree
 
 Returns the degree of a surface object in the specified direction
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Tuple of two values if direction = 2
 Single number if direction = 0 or 1
 None on error
         
-
-

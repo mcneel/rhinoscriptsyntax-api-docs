@@ -4,12 +4,6 @@ layout: bootstrap
 
 # coercesurface
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+attempt to get surface geometry from the document with a given id
 
 

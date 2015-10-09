@@ -5,7 +5,7 @@ layout: bootstrap
 # IsBlockEmbedded
 
 Verifies a block definition is embedded, or linked, from an external file.
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies a block definition is embedded, or linked, from an external file.
 
 True or False
         
-
-

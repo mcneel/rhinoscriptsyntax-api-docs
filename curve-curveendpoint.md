@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveEndPoint
 
 Returns the end point of a curve object
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ segment_index [opt] = the curve segment if curve_id identifies a polycurve
 
 The 3-D end point of the curve if successful.
         
-
-

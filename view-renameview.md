@@ -5,7 +5,7 @@ layout: bootstrap
 # RenameView
 
 Changes the title of the specified view
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ new_title: the new title of the view
 the view's previous title if successful
 None on error
         
-
-

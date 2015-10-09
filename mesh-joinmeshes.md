@@ -5,7 +5,7 @@ layout: bootstrap
 # JoinMeshes
 
 Joins two or or more mesh objects together
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Joins two or or more mesh objects together
 
 identifier of newly created mesh on success
         
-
-

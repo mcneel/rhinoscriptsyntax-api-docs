@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsLayerOn
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies that a layer is on.
 
 

@@ -6,7 +6,7 @@ layout: bootstrap
 
 Converts normalized surface parameter to a surface parameter; or
         within the surface's domain
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Converts normalized surface parameter to a surface parameter; or
 
 surface parameter as tuple on success
         
-
-

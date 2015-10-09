@@ -5,7 +5,7 @@ layout: bootstrap
 # MaterialReflectiveColor
 
 Returns or modifies a material's reflective color.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if color is not specified, the current material reflective color
 if color is specified, the previous material reflective color
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # VectorAdd
 
 Adds two 3D vectors
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ vector1, vector2 = the vectors to add
 
 the resulting 3D vector if successful
         
-
-

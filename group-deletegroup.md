@@ -6,7 +6,7 @@ layout: bootstrap
 
 Removes an existing group from the document. Reference groups cannot be
         removed. Deleting a group does not delete the member objects
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Removes an existing group from the document. Reference groups cannot be
 
 True or False representing success or failure
         
-
-

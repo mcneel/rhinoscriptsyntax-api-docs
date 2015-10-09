@@ -5,7 +5,7 @@ layout: bootstrap
 # PointScale
 
 Scales a 3D point by a value
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Scales a 3D point by a value
 
 resulting point on success
         
-
-

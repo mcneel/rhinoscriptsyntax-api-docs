@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsLayerEmpty
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies that an existing layer is empty, or contains no objects
 
 

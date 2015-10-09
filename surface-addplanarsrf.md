@@ -5,7 +5,7 @@ layout: bootstrap
 # AddPlanarSrf
 
 Creates one or more surfaces from planar curves
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Creates one or more surfaces from planar curves
 list of surfaces created on success
 None on error
         
-
-

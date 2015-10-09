@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or changes the suffix of a dimension style - the text to
         append to the dimension text.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ if suffix is not specified, the current suffix
 if suffix is specified, the previous suffix
 None on error
         
-
-

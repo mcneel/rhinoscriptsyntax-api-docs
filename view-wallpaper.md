@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or sets the wallpaper bitmap of the specified view. To remove a
         wallpaper bitmap, pass an empty string ""
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Returns or sets the wallpaper bitmap of the specified view. To remove a
 If filename is not specified, the current wallpaper bitmap filename
 If filename is specified, the previous wallpaper bitmap filename
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddRevSrf
 
 Create a surface by revolving a curve around an axis
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ start_angle[opt], end_angle[opt] = start and end angles of revolve
 identifier of new object if successful
 None on error
         
-
-

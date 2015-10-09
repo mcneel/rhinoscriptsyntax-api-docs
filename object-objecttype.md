@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectType
 
 Returns the object type
-          
+        
 
 ### Parameters:
 
@@ -177,5 +177,3 @@ A string that represents the current object.
    __subclasshook__(...)
            __subclasshook__(*args: Array[object]) -> NotImplementedType
             
-
-

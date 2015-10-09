@@ -8,7 +8,7 @@ Returns or sets the isocurve density of a surface or polysurface object.
         An isoparametric curve is a curve of constant U or V value on a surface.
         Rhino uses isocurves and surface edge curves to visualize the shape of a
         NURBS surface
-          
+        
 
 ### Parameters:
 
@@ -28,5 +28,3 @@ If density is not specified, then the current isocurve density if successful
 If density is specified, the the previous isocurve density if successful
 None on error
         
-
-

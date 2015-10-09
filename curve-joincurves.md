@@ -5,7 +5,7 @@ layout: bootstrap
 # JoinCurves
 
 Joins multiple curves together to form one or more curves or polycurves
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Joins multiple curves together to form one or more curves or polycurves
 
 List of Guids representing the new curves
         
-
-

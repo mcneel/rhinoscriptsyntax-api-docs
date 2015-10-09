@@ -4,12 +4,6 @@ layout: bootstrap
 
 # ColorBlueValue
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Retrieves intensity value for the blue component of an RGB color
 
 

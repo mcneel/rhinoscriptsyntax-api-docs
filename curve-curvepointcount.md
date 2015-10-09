@@ -5,7 +5,7 @@ layout: bootstrap
 # CurvePointCount
 
 Returns the control points count of a curve object.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ segment_index [opt] = the curve segment if curve_id identifies a polycurve
 Number of control points if successful.
 None if not successful
         
-
-

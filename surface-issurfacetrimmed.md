@@ -5,7 +5,7 @@ layout: bootstrap
 # IsSurfaceTrimmed
 
 Verifies a surface object has been trimmed
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Verifies a surface object has been trimmed
 
 True or False
         
-
-

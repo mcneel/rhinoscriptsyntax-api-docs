@@ -5,7 +5,7 @@ layout: bootstrap
 # SplitBrep
 
 Splits a brep
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Splits a brep
 identifiers of split pieces on success
 None on error
         
-
-

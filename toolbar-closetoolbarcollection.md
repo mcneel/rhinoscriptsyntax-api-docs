@@ -5,7 +5,7 @@ layout: bootstrap
 # CloseToolbarCollection
 
 Closes a currently open toolbar collection
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Closes a currently open toolbar collection
 
 True or False indicating success or failure
         
-
-

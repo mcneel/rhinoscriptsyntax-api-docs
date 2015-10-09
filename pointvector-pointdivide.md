@@ -5,7 +5,7 @@ layout: bootstrap
 # PointDivide
 
 Divides a 3D point by a value
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Divides a 3D point by a value
 
 resulting point
         
-
-

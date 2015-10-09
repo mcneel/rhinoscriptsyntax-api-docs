@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshFaces
 
 Returns face vertices of a mesh
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ face_type is True, then faces are returned as both quads and triangles
 identical. If face_type is False, then faces are returned as only
 triangles(3 3D points). Quads will be converted to triangles.
         
-
-

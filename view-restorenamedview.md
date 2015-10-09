@@ -5,7 +5,7 @@ layout: bootstrap
 # RestoreNamedView
 
 Restores a named view to the specified view
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ restore_bitmap: [opt] restore the named view's background bitmap
 name of the restored view if successful
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddLinearLight
 
 Adds a new linear light object to the document
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ width[opt]: width of the light
 identifier of the new object if successful
 None on error
         
-
-

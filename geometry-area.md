@@ -4,12 +4,6 @@ layout: bootstrap
 
 # Area
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Compute the area of a closed curve, hatch, surface, polysurface, or mesh
 
 

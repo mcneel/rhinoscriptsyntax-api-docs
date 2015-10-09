@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectsByType
 
 Returns identifiers of all objects based on the objects' geometry type.
-          
+        
 
 ### Parameters:
 
@@ -40,5 +40,3 @@ Returns identifiers of all objects based on the objects' geometry type.
 
 A list of Guids identifying the objects.
         
-
-

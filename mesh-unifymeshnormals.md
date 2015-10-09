@@ -5,7 +5,7 @@ layout: bootstrap
 # UnifyMeshNormals
 
 Fixes inconsistencies in the directions of faces of a mesh
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Fixes inconsistencies in the directions of faces of a mesh
 
 number of faces that were modified
         
-
-

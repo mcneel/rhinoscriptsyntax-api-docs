@@ -5,7 +5,7 @@ layout: bootstrap
 # CreatePreviewImage
 
 Create a bitmap preview image of the current model
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ Create a bitmap preview image of the current model
 
 True or False indicating success or failure
         
-
-

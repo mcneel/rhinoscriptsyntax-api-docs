@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the point on a surface or polysurface that is closest to a test
         point. This function works on both untrimmed and trimmed surfaces.
-          
+        
 
 ### Parameters:
 
@@ -32,5 +32,3 @@ Element     Type             Description
                              to the brep_edge.  
 None if not successful, or on error.
         
-
-

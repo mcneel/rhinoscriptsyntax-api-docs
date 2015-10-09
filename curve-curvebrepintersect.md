@@ -6,7 +6,7 @@ layout: bootstrap
 
 Intersects a curve object with a brep object. Note, unlike the
         CurveSurfaceIntersection function, this function works on trimmed surfaces.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ tolerance [opt] = distance tolerance at segment midpoints.
 List of identifiers for the newly created intersection curve and
 point objects if successful. None on error.            
         
-
-

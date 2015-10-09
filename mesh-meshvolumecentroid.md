@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshVolumeCentroid
 
 Calculates the volume centroid of a mesh
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Calculates the volume centroid of a mesh
 Point3d representing the volume centroid
 None on error
         
-
-

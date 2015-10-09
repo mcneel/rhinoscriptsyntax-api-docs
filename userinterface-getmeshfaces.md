@@ -5,7 +5,7 @@ layout: bootstrap
 # GetMeshFaces
 
 Prompts the user to pick one or more mesh faces
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ Prompts the user to pick one or more mesh faces
 list of mesh face indices on success
 None on error
         
-
-

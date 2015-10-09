@@ -5,7 +5,7 @@ layout: bootstrap
 # TextObjectText
 
 Returns or modifies the text string of a text object.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if text is not specified, the current string value if successful
 if text is specified, the previous string value if successful
 None if not successful, or on error
         
-
-

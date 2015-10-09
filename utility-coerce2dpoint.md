@@ -4,12 +4,6 @@ layout: bootstrap
 
 # coerce2dpoint
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Convert input into a Rhino.Geometry.Point2d if possible.
 
 

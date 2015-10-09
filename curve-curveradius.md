@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveRadius
 
 Returns the radius of curvature at a point on a curve.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns the radius of curvature at a point on a curve.
 The radius of curvature at the point on the curve if successful.
 None if not successful, or on error.
         
-
-

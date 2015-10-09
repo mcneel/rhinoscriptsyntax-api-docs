@@ -5,7 +5,7 @@ layout: bootstrap
 # ExtendCurvePoint
 
 Extends a non-closed curve by smooth extension to a point
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ point: point to extend to
 The identifier of the new object if successful.
 None if not successful, or on error.
         
-
-

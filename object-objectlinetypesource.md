@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectLinetypeSource
 
 Returns of modifies the linetype source of an object
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ If a source is not specified, the object's current linetype source
 If source is specified, the object's previous linetype source
 If object_ids is a list, the number of objects modified
         
-
-

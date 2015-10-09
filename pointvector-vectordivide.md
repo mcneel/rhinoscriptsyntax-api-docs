@@ -5,7 +5,7 @@ layout: bootstrap
 # VectorDivide
 
 Divides a 3D vector by a value
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Divides a 3D vector by a value
 
 resulting vector on success
         
-
-

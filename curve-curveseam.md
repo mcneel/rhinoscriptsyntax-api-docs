@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveSeam
 
 Adjusts the seam, or start/end, point of a closed curve.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Adjusts the seam, or start/end, point of a closed curve.
 
 True or False indicating success or failure.
         
-
-

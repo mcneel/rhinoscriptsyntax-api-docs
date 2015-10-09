@@ -4,12 +4,6 @@ layout: bootstrap
 
 # PolylineVertices
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns the vertices of a polyline curve on success
 
 

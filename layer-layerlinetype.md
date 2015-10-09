@@ -5,7 +5,7 @@ layout: bootstrap
 # LayerLinetype
 
 Returns or changes the linetype of a layer
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or changes the linetype of a layer
 If linetype is not specified, name of the current linetype
 If linetype is specified, name of the previous linetype
         
-
-

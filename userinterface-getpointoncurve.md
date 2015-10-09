@@ -5,7 +5,7 @@ layout: bootstrap
 # GetPointOnCurve
 
 Pauses for user input of a point constrainted to a curve object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ message [opt] = a prompt of message
 3d point if successful
 None on error
         
-
-

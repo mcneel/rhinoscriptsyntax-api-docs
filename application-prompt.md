@@ -4,12 +4,12 @@ layout: bootstrap
 
 # Prompt
 
-  
+Change Rhino's command window prompt
+        
 
 ### Parameters:
 
-
-### Returns:
-
+message [opt] = the new prompt
+        
 
 

@@ -6,7 +6,7 @@ layout: bootstrap
 
 Adds hatch patterns to the document by importing hatch pattern definitions
         from a pattern file.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Adds hatch patterns to the document by importing hatch pattern definitions
 Names of the newly added hatch patterns if successful
 None on error
         
-
-

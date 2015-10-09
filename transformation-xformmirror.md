@@ -5,7 +5,7 @@ layout: bootstrap
 # XformMirror
 
 Creates a mirror transformation matrix
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Creates a mirror transformation matrix
 
 mirror Transform
         
-
-

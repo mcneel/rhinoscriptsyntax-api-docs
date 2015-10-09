@@ -7,7 +7,7 @@ layout: bootstrap
 Adds an interpolated curve object to the document. Options exist to make
         a periodic curve or to specify the tangent at the endpoints. The resulting
         curve is a non-rational NURBS curve of the specified degree.
-          
+        
 
 ### Parameters:
 
@@ -35,5 +35,3 @@ end_tangent [opt] = 3d vector that specifies a tangency condition at the
 
 id of the new curve object if successful
         
-
-

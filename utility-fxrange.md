@@ -4,12 +4,6 @@ layout: bootstrap
 
 # fxrange
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+float version of the xrange function
 
 

@@ -5,7 +5,7 @@ layout: bootstrap
 # GetObjectsEx
 
 Prompts user to pick, or select one or more objects
-          
+        
 
 ### Parameters:
 
@@ -33,5 +33,3 @@ A list of tuples containing the following information
   element 3 = selection point
   element 4 = name of the view selection was made
         
-
-

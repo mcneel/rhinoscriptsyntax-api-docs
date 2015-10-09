@@ -5,7 +5,7 @@ layout: bootstrap
 # AddGroup
 
 Adds a new empty group to the document
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Adds a new empty group to the document
 name of the new group if successful
 None is not successful or on error
         
-
-

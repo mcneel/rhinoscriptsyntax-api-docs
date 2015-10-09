@@ -6,7 +6,7 @@ layout: bootstrap
 
 Verifies a surface object is singular in the specified direction.
         Surfaces are considered singular if a side collapses to a point.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ direction: 0=south, 1=east, 2=north, 3=west
 
 True or False
         
-
-

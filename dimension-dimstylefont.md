@@ -5,7 +5,7 @@ layout: bootstrap
 # DimStyleFont
 
 Returns or changes the font used by a dimension style
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if font is not specified, the current font if successful
 if font is specified, the previous font if successful
 None on error
         
-
-

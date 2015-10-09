@@ -6,7 +6,7 @@ layout: bootstrap
 
 Displays a message box. A message box contains a message and
         title, plus any combination of predefined icons and push buttons.
-          
+        
 
 ### Parameters:
 
@@ -46,5 +46,3 @@ A number indicating which button was clicked:
   6      Yes button was clicked.
   7      No button was clicked.
         
-
-

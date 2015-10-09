@@ -5,7 +5,7 @@ layout: bootstrap
 # ShowWorldAxes
 
 Shows or hides a view's world axis icon
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ show: [opt] The state to set.
 If show is not specified, then the world axes display state
 If show is specified, then the previous world axes display state
         
-
-

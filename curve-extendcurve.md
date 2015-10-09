@@ -6,7 +6,7 @@ layout: bootstrap
 
 Extends a non-closed curve object by a line, arc, or smooth extension
         until it intersects a collection of objects.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ boundary_object_ids: curve, surface, and polysurface objects to extend to
 The identifier of the new object if successful.
 None if not successful
         
-
-

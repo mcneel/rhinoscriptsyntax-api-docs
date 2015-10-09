@@ -5,7 +5,7 @@ layout: bootstrap
 # GetPointOnMesh
 
 Pauses for user input of a point constrained to a mesh object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ message [opt] = a prompt or message
 3d point if successful
 None on error
         
-
-

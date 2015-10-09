@@ -4,12 +4,6 @@ layout: bootstrap
 
 # DistanceToPlane
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns the distance from a 3D point to a plane
 
 

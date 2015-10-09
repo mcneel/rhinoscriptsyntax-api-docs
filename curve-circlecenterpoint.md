@@ -5,7 +5,7 @@ layout: bootstrap
 # CircleCenterPoint
 
 Returns the center point of a circle curve object
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ curve_id identifies a polycurve
 The 3D center point of the circle if successful.
 The plane of the circle if return_plane is True
         
-
-

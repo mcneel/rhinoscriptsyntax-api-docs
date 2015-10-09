@@ -4,12 +4,6 @@ layout: bootstrap
 
 # SimplifyCurve
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Replace a curve with a geometrically equivalent polycurve
 
 

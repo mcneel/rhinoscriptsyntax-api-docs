@@ -5,7 +5,7 @@ layout: bootstrap
 # GetObject
 
 Prompts user to pick, or select, a single object.
-          
+        
 
 ### Parameters:
 
@@ -27,5 +27,3 @@ Prompts user to pick, or select, a single object.
 Identifier of the picked object
 None if user did not pick an object
         
-
-

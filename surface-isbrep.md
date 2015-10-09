@@ -5,7 +5,7 @@ layout: bootstrap
 # IsBrep
 
 Verifies an object is a Brep, or a boundary representation model, object.
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Verifies an object is a Brep, or a boundary representation model, object.
 True if successful, otherwise False.
 None on error.
         
-
-

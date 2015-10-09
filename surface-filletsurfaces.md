@@ -6,7 +6,7 @@ layout: bootstrap
 
 Create constant radius rolling ball fillets between two surfaces. Note,
         this function does not trim the original surfaces of the fillets
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ surface0, surface1 = identifiers of first and second surface
 ids of surfaces created on success
 None on error
         
-
-

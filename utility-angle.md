@@ -5,7 +5,7 @@ layout: bootstrap
 # Angle
 
 Measures the angle between two points
-          
+        
 
 ### Parameters:
 
@@ -27,5 +27,3 @@ tuple containing the following elements if successful
   element 4 = delta in the Z direction
 None if not successful
         
-
-

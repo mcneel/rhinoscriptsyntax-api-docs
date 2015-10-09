@@ -6,7 +6,7 @@ layout: bootstrap
 
 Pauses for user input of one or more boolean values. Boolean values are
         displayed as click-able command line option toggles
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ Pauses for user input of one or more boolean values. Boolean values are
 a list of values that represent the boolean values if successful
 None on error
         
-
-

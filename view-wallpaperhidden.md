@@ -5,7 +5,7 @@ layout: bootstrap
 # WallpaperHidden
 
 Returns or sets the visibility of the wallpaper bitmap in a specified view
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns or sets the visibility of the wallpaper bitmap in a specified view
 If hidden is not specified, the current hidden state
 If hidden is specified, the previous hidden state
         
-
-

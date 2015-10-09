@@ -4,12 +4,6 @@ layout: bootstrap
 
 # ViewDisplayModeId
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Return id of a display mode given it's name
 
 

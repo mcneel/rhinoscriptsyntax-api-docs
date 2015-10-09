@@ -4,12 +4,6 @@ layout: bootstrap
 
 # StatusBarDistance
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Sets Rhino's status bar distance pane
 
 

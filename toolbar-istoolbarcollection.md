@@ -5,7 +5,7 @@ layout: bootstrap
 # IsToolbarCollection
 
 Verifies that a toolbar collection is open
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Verifies that a toolbar collection is open
 Rhino-assigned name of the toolbar collection if successful
 None if not successful
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # SetUserText
 
 Sets or removes user text stored on an object.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Sets or removes user text stored on an object.
 
 True or False indicating success or failure 
         
-
-

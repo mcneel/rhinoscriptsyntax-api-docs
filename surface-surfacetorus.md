@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceTorus
 
 Returns the definition of a surface torus
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ tuple containing the definition of the torus if successful
   element 2 = the minor radius of the torus
 None on error
         
-
-

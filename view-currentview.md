@@ -5,7 +5,7 @@ layout: bootstrap
 # CurrentView
 
 Returns or sets the currently active view
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ if the title is not specified, the title or id of the current view
 if the title is specified, the title or id of the previous current view
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # DimStyleTextHeight
 
 Returns or changes the text height used by a dimension style
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if height is not specified, the current text height
 if height is specified, the previous text height
 None on error
         
-
-

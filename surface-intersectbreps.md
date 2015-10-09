@@ -6,7 +6,7 @@ layout: bootstrap
 
 Intersects a brep object with another brep object. Note, unlike the
         SurfaceSurfaceIntersection function this function works on trimmed surfaces.
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ List of Guids identifying the newly created intersection curve and
 point objects if successful.
 None if not successful, or on error.
         
-
-

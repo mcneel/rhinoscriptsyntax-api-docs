@@ -5,7 +5,7 @@ layout: bootstrap
 # LineFitFromPoints
 
 Returns a line that was fit through an array of 3D points
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns a line that was fit through an array of 3D points
 
 line on success
         
-
-

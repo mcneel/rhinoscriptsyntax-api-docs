@@ -6,7 +6,7 @@ layout: bootstrap
 
 Creates a polygon mesh object based on a closed polyline curve object.
         The created mesh object is added to the document
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Creates a polygon mesh object based on a closed polyline curve object.
 identifier of the new mesh object
 None on error
         
-
-

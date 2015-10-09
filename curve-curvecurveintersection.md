@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveCurveIntersection
 
 Calculates intersection of two curve objects.
-          
+        
 
 ### Parameters:
 
@@ -48,5 +48,3 @@ The list will contain one or more of the following elements:
                    If the event type is Overlap (2), then the end value of the 
                    second curve parameter range.
         
-
-

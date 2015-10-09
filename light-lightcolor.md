@@ -5,7 +5,7 @@ layout: bootstrap
 # LightColor
 
 Returns or changes the color of a light
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or changes the color of a light
 if color is not specified, the current color 
 if color is specified, the previous color
         
-
-

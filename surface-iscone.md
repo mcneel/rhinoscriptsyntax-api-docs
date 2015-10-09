@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsCone
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Determines if a surface is a portion of a cone
 
 

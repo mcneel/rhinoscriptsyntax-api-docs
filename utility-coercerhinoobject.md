@@ -4,12 +4,6 @@ layout: bootstrap
 
 # coercerhinoobject
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+attempt to get RhinoObject from the document with a given id
 
 

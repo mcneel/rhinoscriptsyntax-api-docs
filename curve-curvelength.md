@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveLength
 
 Returns the length of a curve object.
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ sub_domain [opt] = list of two numbers identifing the sub-domain of the
 The length of the curve if successful.
 None if not successful, or on error.
         
-
-

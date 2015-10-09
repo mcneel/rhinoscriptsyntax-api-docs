@@ -6,7 +6,7 @@ layout: bootstrap
 
 Selects an object's grips. If the object's grips are not turned on,
         they will not be selected
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Selects an object's grips. If the object's grips are not turned on,
 Number of grips selected on success
 None on failure
         
-
-

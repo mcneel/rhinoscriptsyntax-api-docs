@@ -6,7 +6,7 @@ layout: bootstrap
 
 Adds a planar surface through objects at a designated location. For more
         information, see the Rhino help file for the CutPlane command
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ start_point, end_point = line that defines the cutting plane
 identifier of new object on success
 None on error
         
-
-

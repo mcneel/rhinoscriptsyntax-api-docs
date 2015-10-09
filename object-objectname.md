@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectName
 
 Returns or modifies the name of an object
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ If name is not specified, the current object name
 If name is specified, the previous object name
 If object_id is a list, the number of objects changed
         
-
-

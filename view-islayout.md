@@ -5,7 +5,7 @@ layout: bootstrap
 # IsLayout
 
 Verifies that a view is a page layout view
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ True if layout is a page layout view
 False is layout is a standard, model view
 None on error
         
-
-

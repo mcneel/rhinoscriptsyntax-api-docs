@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveStartPoint
 
 Returns the start point of a curve object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ point [opt] = new start point
 
 The 3D starting point of the curve if successful.
         
-
-

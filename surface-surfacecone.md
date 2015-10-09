@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceCone
 
 Returns the definition of a surface cone
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ tuple containing the definition of the cone if successful
   element 2 = the radius of the cone
 None on error
         
-
-

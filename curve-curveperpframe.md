@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the perpendicular plane at a parameter of a curve. The result
         is relatively parallel (zero-twisting) plane
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns the perpendicular plane at a parameter of a curve. The result
 Plane on success
 None on error
         
-
-

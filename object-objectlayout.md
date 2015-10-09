@@ -5,7 +5,7 @@ layout: bootstrap
 # ObjectLayout
 
 Returns or changes the layout or model space of an object
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ if layout is not specified, the object's current page layout view
 if layout is specfied, the object's previous page layout view
 None if not successful
         
-
-

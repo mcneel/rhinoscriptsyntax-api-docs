@@ -6,7 +6,7 @@ layout: bootstrap
 
 Shows a group of previously hidden objects. Hidden objects are not
         visible, cannot be snapped to, and cannot be selected
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Shows a group of previously hidden objects. Hidden objects are not
 The number of objects that were shown if successful
 None on error  
         
-
-

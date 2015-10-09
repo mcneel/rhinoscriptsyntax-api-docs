@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns or sets the grayscale display option of the wallpaper bitmap in a
         specified view
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Returns or sets the grayscale display option of the wallpaper bitmap in a
 If grayscale is not specified, the current grayscale display option
 If grayscale is specified, the previous grayscale display option
         
-
-

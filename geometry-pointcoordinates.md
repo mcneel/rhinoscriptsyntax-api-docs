@@ -5,7 +5,7 @@ layout: bootstrap
 # PointCoordinates
 
 Returns or modifies the X, Y, and Z coordinates of a point object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or modifies the X, Y, and Z coordinates of a point object
 If point is not specified, the current 3-D point location
 If point is specified, the previous 3-D point location
         
-
-

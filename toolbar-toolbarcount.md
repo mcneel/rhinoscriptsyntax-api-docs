@@ -5,7 +5,7 @@ layout: bootstrap
 # ToolbarCount
 
 Returns the number of toolbars or groups in a currently open toolbar file
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Returns the number of toolbars or groups in a currently open toolbar file
 
 number of toolbars on success, None on error
         
-
-

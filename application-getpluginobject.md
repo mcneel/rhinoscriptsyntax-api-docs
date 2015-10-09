@@ -7,7 +7,7 @@ layout: bootstrap
 Returns a scriptable object from a specified plug-in. Not all plug-ins
         contain scriptable objects. Check with the manufacturer of your plug-in
         to see if they support this capability.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Returns a scriptable object from a specified plug-in. Not all plug-ins
 scriptable object if successful
 None on error
         
-
-

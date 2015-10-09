@@ -6,7 +6,7 @@ layout: bootstrap
 
 Adds a surface created through profile curves that define the surface
         shape and two curves that defines a surface edge.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Adds a surface created through profile curves that define the surface
 List of new surface objects if successful
 None if not successfule, or on error
         
-
-

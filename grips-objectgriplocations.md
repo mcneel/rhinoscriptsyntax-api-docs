@@ -9,7 +9,7 @@ Returns or modifies the location of all grips owned by an object. The
         in the list corresponding to that grip's index. To modify the locations of
         the grips, you must provide a list of points that contain the same number
         of points at grips
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ if points is not specified, the current location of all grips
 if points is specified, the previous location of all grips
 None if not successful
         
-
-

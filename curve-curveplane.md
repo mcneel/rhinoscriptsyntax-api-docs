@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the plane in which a planar curve lies. Note, this function works
         only on planar curves.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns the plane in which a planar curve lies. Note, this function works
 The plane in which the curve lies if successful.
 None if not successful, or on error.
         
-
-

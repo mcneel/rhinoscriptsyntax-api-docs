@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsLayerVisible
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies that a layer is visible (normal, locked, and reference)
 
 

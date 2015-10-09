@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshOutline
 
 Creates polyline curve outlines of mesh objects
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Creates polyline curve outlines of mesh objects
 
 list of polyline curve id on success
         
-
-

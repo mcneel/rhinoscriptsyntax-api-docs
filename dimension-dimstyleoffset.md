@@ -5,7 +5,7 @@ layout: bootstrap
 # DimStyleOffset
 
 Returns or changes the extension line offset of a dimension style
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if offset is not specified, the current extension line offset
 if offset is specified, the previous extension line offset
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # ExtrudeCurve
 
 Creates a surface by extruding a curve along a path
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Creates a surface by extruding a curve along a path
 identifier of new surface on success
 None on error
         
-
-

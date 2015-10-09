@@ -7,7 +7,7 @@ layout: bootstrap
 Decide if it makes sense to close off the curve by moving the end point
         to the start point based on start-end gap size and length of curve as
         approximated by chord defined by 6 points
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Decide if it makes sense to close off the curve by moving the end point
 
 True or False
         
-
-

@@ -4,12 +4,6 @@ layout: bootstrap
 
 # coercexform
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Convert input into a Rhino.Transform if possible.
 
 

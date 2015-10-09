@@ -5,7 +5,7 @@ layout: bootstrap
 # LightName
 
 Returns or changes the name of a light object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or changes the name of a light object
 if name is not specified, the current name
 if name is specified, the previous name
         
-
-

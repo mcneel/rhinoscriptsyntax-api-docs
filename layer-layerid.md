@@ -5,7 +5,7 @@ layout: bootstrap
 # LayerId
 
 Returns the identifier of a layer given the layer's name.
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Returns the identifier of a layer given the layer's name.
 String - The layer's identifier if successful.
 Null - If not successful, or on error.
         
-
-

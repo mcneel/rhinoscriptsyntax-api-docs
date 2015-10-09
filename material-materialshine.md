@@ -5,7 +5,7 @@ layout: bootstrap
 # MaterialShine
 
 Returns or modifies a material's shine value
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ if shine is not specified, the current material shine value
 if shine is specified, the previous material shine value
 None on error
         
-
-

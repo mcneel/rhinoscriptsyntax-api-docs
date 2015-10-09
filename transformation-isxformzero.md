@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsXformZero
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+verifies that a matrix is a zero transformation matrix
 
 

@@ -5,7 +5,7 @@ layout: bootstrap
 # GetPoints
 
 Pauses for user input of one or more points
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ draw_lines [opt] = Draw lines between points
 list of 3d points if successful
 None if not successful or on error
         
-
-

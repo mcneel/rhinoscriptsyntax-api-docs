@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the edit, or Greville points of a surface object. For each
         surface control point, there is a corresponding edit point
-          
+        
 
 ### Parameters:
 
@@ -26,5 +26,3 @@ if return_parameters is False, a list of 3D points
 if return_parameters is True, a list of U,V parameters
 None on error
         
-
-

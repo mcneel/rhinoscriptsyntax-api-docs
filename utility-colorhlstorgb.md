@@ -4,12 +4,6 @@ layout: bootstrap
 
 # ColorHLSToRGB
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Converts colors from hue-lumanence-saturation to RGB
 
 

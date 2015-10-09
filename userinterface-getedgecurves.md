@@ -5,7 +5,7 @@ layout: bootstrap
 # GetEdgeCurves
 
 Prompt the user to pick one or more surface or polysurface edge curves
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ select [optional] = Select the duplicated edge curves.
 List of (curve id, parent id, selection point)
 None if not successful
         
-
-

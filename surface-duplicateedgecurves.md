@@ -7,7 +7,7 @@ layout: bootstrap
 Duplicates the edge curves of a surface or polysurface. For more
         information, see the Rhino help file for information on the DupEdge
         command.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ to select (False).
 A list of Guids identifying the newly created curve objects if successful.
 None if not successful, or on error.
         
-
-

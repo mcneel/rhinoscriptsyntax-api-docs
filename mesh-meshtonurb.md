@@ -6,7 +6,7 @@ layout: bootstrap
 
 Duplicates each polygon in a mesh with a NURBS surface. The resulting
         surfaces are then joined into a polysurface and added to the document
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Duplicates each polygon in a mesh with a NURBS surface. The resulting
 
 list of identifiers for the new breps on success
         
-
-

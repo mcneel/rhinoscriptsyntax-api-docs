@@ -5,7 +5,7 @@ layout: bootstrap
 # PointArrayTransform
 
 Transforms a list of 3D points
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Transforms a list of 3D points
 
 list of transformed points on success
         
-
-

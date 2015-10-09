@@ -5,7 +5,7 @@ layout: bootstrap
 # AddCircle
 
 Adds a circle curve to the document
-          
+        
 
 ### Parameters:
 
@@ -19,16 +19,13 @@ Adds a circle curve to the document
 
 
 id of the new curve object
-        
-
-### Example:
+        ### Example:
 
 ```python
 import rhinoscriptsyntax as rs
 plane = rs.WorldXYPlane()
 rs.AddCircle( plane, 5.0 )
-        
-```
+        ```
 
 ### See Also:
 

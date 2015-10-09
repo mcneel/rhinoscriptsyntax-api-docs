@@ -5,7 +5,7 @@ layout: bootstrap
 # IsCurveInPlane
 
 Test a curve to see if it lies in a specific plane
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Test a curve to see if it lies in a specific plane
 
 True or False
         
-
-

@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns the plane at a parameter of a curve. The plane is based on the
         tangent and curvature vectors at a parameter.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ segment_index [opt] = the curve segment if curve_id identifies a polycurve
 The plane at the specified parameter if successful. 
 None if not successful, or on error.
         
-
-

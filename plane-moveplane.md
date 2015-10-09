@@ -5,7 +5,7 @@ layout: bootstrap
 # MovePlane
 
 Moves the origin of a plane
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Moves the origin of a plane
 
 moved plane
         
-
-

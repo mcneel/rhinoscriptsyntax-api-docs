@@ -5,7 +5,7 @@ layout: bootstrap
 # CopyObjects
 
 Copies one or more objects from one location to another, or in-place.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ translation [opt]: list of three numbers or Vector3d representing
 
 list of identifiers for the copies if successful
         
-
-

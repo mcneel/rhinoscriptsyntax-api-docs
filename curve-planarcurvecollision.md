@@ -5,7 +5,7 @@ layout: bootstrap
 # PlanarCurveCollision
 
 Determines if two coplanar curves intersect
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ curve_a, curve_b = identifiers of two planar curves
 
 True if the curves intersect; otherwise False
         
-
-

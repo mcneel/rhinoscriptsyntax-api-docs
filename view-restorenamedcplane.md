@@ -5,7 +5,7 @@ layout: bootstrap
 # RestoreNamedCPlane
 
 Restores a named construction plane to the specified view.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ view: [opt] the title or identifier of the view. If omitted, the current
 name of the restored named construction plane if successful
 None on error
         
-
-

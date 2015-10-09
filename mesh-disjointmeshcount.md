@@ -5,7 +5,7 @@ layout: bootstrap
 # DisjointMeshCount
 
 Returns number of meshes that could be created by calling SplitDisjointMesh
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns number of meshes that could be created by calling SplitDisjointMesh
 
 The number of meshes that could be created
         
-
-

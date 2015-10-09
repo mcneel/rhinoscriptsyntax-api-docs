@@ -5,7 +5,7 @@ layout: bootstrap
 # CullDuplicatePoints
 
 Removes duplicates from a list of 3D points.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ tolerance [opt] = Minimum distance between points. Points within this
 list of 3D points with duplicates removed if successful.
 None if not successful
         
-
-

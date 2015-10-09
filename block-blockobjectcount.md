@@ -4,12 +4,12 @@ layout: bootstrap
 
 # BlockObjectCount
 
-  
+Returns number of objects that make up a block definition
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***block_name*** = name of an existing block definition
+        
 
 

@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveDegree
 
 Returns the degree of a curve object.
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ segment_index [opt] = the curve segment if curve_id identifies a polycurve.
 
 The degree of the curve if successful. None on error.
         
-
-

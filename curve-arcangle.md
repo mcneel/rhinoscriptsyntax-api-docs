@@ -5,7 +5,7 @@ layout: bootstrap
 # ArcAngle
 
 Returns the angle of an arc curve object.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ curve_id identifies a polycurve
 
 The angle in degrees if successful.
         
-
-

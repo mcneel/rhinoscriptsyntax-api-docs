@@ -4,12 +4,6 @@ layout: bootstrap
 
 # DisplayOleAlerts
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Enables/disables OLE Server Busy/Not Responding dialog boxes
 
 

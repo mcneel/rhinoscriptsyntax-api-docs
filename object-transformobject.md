@@ -6,7 +6,7 @@ layout: bootstrap
 
 Moves, scales, or rotates an object given a 4x4 transformation matrix.
         The matrix acts on the left.
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ copy [opt] = Copy the object.
 The identifier of the transformed object
 None if not successful, or on error
         
-
-

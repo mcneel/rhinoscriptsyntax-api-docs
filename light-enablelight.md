@@ -5,7 +5,7 @@ layout: bootstrap
 # EnableLight
 
 Enables or disables a light object
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if enable is not specified, the current enabled status
 if enable is specified, the previous enabled status
 None on error
         
-
-

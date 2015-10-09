@@ -5,7 +5,7 @@ layout: bootstrap
 # ExtrudeCurveStraight
 
 Create surface by extruding a curve along two points that define a line
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ start_point, end_point = 3D points
 identifier of new surface on success
 None on error
         
-
-

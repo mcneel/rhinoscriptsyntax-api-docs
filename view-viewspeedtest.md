@@ -4,12 +4,6 @@ layout: bootstrap
 
 # ViewSpeedTest
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Test's Rhino's display performance
 
 

@@ -5,7 +5,7 @@ layout: bootstrap
 # AddArc3Pt
 
 Adds a 3-point arc curve to the document
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ start, end = endpoints of the arc
 
 id of the new curve object
         
-
-

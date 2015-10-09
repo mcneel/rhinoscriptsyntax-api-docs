@@ -6,7 +6,7 @@ layout: bootstrap
 
 Scales one or more objects. Can be used to perform a uniform or non-
         uniform scale transformation. Scaling is based on the active construction plane.
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ scale: three numbers that identify the X, Y, and Z axis scale factors to apply
 List of identifiers of the scaled objects if successful
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # TextObjectPlane
 
 Returns or modifies the plane used by a text object
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if a plane is not specified, the current plane if successful
 if a plane is specified, the previous plane if successful
 None if not successful, or on Error
         
-
-

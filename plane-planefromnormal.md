@@ -5,7 +5,7 @@ layout: bootstrap
 # PlaneFromNormal
 
 Creates a plane from an origin point and a normal direction vector.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Creates a plane from an origin point and a normal direction vector.
 
 The plane if successful.
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # ShearObjects
 
 Shears one or more objects
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ origin, reference_point: origin/reference point of the shear transformation
 
 List of identifiers of the sheared objects if successful
         
-
-

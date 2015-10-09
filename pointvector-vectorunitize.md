@@ -5,7 +5,7 @@ layout: bootstrap
 # VectorUnitize
 
 Unitizes, or normalizes a 3D vector. Note, zero vectors cannot be unitized
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Unitizes, or normalizes a 3D vector. Note, zero vectors cannot be unitized
 unitized vector on success
 None on error
         
-
-

@@ -4,12 +4,6 @@ layout: bootstrap
 
 # DefaultRenderer
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Returns or changes the default render plug-in
 
 

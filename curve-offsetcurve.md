@@ -5,7 +5,7 @@ layout: bootstrap
 # OffsetCurve
 
 Offsets a curve by a distance. The offset curve will be added to Rhino
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ Offsets a curve by a distance. The offset curve will be added to Rhino
 List of ids for the new curves on success
 None on error
         
-
-

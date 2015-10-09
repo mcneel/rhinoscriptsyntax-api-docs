@@ -5,7 +5,7 @@ layout: bootstrap
 # DivideCurve
 
 Divides a curve object into a specified number of segments.
-          
+        
 
 ### Parameters:
 
@@ -26,5 +26,3 @@ If return_points is False, then an array containing division curve
 parameters.
 None if not successful, or on error.
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # IsHatchPatternReference
 
 Verifies that a hatch pattern is from a reference file
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Verifies that a hatch pattern is from a reference file
 True or False
 None on error
         
-
-

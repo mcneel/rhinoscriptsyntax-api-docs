@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsLayerLocked
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies that a layer is locked.
 
 

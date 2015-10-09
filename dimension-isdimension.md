@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsDimension
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies an object is a dimension object
 
 

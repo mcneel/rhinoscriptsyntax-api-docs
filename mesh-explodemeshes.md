@@ -9,7 +9,7 @@ Explodes a mesh object, or mesh objects int submeshes. A submesh is a
         unwelded mesh edges. Unwelded mesh edges are where the mesh faces that
         share the edge have unique mesh vertices (not mesh topology vertices)
         at both ends of the edge
-          
+        
 
 ### Parameters:
 
@@ -22,5 +22,3 @@ Explodes a mesh object, or mesh objects int submeshes. A submesh is a
 
 List of identifiers
         
-
-

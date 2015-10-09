@@ -6,7 +6,7 @@ layout: bootstrap
 
 Returns area centroid of closed, planar curves. The results are based
         on the current drawing units.
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ Tuple of area centroid information containing the following information:
   1        A 3d vector with the absolute (+/-) error bound for the area
            centroid.
         
-
-

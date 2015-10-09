@@ -5,7 +5,7 @@ layout: bootstrap
 # VectorRotate
 
 Rotates a 3D vector
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Rotates a 3D vector
 
 rotated vector on success
         
-
-

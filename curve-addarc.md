@@ -5,7 +5,7 @@ layout: bootstrap
 # AddArc
 
 Adds an arc curve to the document
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Adds an arc curve to the document
 
 id of the new curve object
         
-
-

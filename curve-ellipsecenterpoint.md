@@ -5,7 +5,7 @@ layout: bootstrap
 # EllipseCenterPoint
 
 Returns the center point of an elliptical-shaped curve object.
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns the center point of an elliptical-shaped curve object.
 
 The 3D center point of the ellipse if successful.
         
-
-

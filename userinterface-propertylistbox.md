@@ -5,7 +5,7 @@ layout: bootstrap
 # PropertyListBox
 
 Displays list of items and their values in a property-style list box dialog
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ title [opt] = a dialog box title
 a list of new values on success
 None on error
         
-
-

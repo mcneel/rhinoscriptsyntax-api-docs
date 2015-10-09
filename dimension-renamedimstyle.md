@@ -5,7 +5,7 @@ layout: bootstrap
 # RenameDimStyle
 
 Renames an existing dimension style
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Renames an existing dimension style
 the new dimension style name if successful
 None on error
         
-
-

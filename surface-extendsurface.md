@@ -5,7 +5,7 @@ layout: bootstrap
 # ExtendSurface
 
 Lengthens an untrimmed surface object
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ Lengthens an untrimmed surface object
 
 True or False indicating success or failure
         
-
-

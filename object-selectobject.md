@@ -5,7 +5,7 @@ layout: bootstrap
 # SelectObject
 
 Selects a single object
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Selects a single object
 
 True on success
         
-
-

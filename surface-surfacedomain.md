@@ -5,7 +5,7 @@ layout: bootstrap
 # SurfaceDomain
 
 Returns the domain of a surface object in the specified direction.
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns the domain of a surface object in the specified direction.
 list containing the domain interval in the specified direction
 None if not successful, or on error
         
-
-

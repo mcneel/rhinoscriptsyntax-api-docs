@@ -6,7 +6,7 @@ layout: bootstrap
 
 Calculates area moments of inertia of a surface or polysurface object.
         See the Rhino help for "Mass Properties calculation details"
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Calculates area moments of inertia of a surface or polysurface object.
 list of moments and error bounds - see help topic
 None on error
         
-
-

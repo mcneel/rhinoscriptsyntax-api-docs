@@ -4,12 +4,12 @@ layout: bootstrap
 
 # BlockNames
 
-  
+Returns the names of all block definitions in the document
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***sort*** = return a sorted list
+        
 
 

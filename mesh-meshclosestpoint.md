@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshClosestPoint
 
 Returns the point on a mesh that is closest to a test point
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ Tuple containing the results of the calculation where
   element[1] = the index of the mesh face on which the 3-D point lies
 None on error
         
-
-

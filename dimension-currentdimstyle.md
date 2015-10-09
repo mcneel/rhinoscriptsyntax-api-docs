@@ -6,7 +6,7 @@ layout: bootstrap
 
 
 Returns or changes the current default dimension style
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ if dimstyle_name is not specified, name of the current dimension style
 if dimstyle_name is specified, name of the previous dimension style
 None on error
         
-
-

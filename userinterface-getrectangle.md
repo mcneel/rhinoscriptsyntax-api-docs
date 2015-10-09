@@ -5,7 +5,7 @@ layout: bootstrap
 # GetRectangle
 
 Pauses for user input of a rectangle
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ prompt1, prompt2, prompt3 = optional prompts
 a tuple of four 3d points that define the corners of the rectangle
 None on error
         
-
-

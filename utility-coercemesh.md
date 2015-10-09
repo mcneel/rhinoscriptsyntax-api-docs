@@ -4,12 +4,6 @@ layout: bootstrap
 
 # coercemesh
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+attempt to get mesh geometry from the document with a given id
 
 

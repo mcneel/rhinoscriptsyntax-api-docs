@@ -6,7 +6,7 @@ layout: bootstrap
 
 Makes a new mesh with vertices offset at a distance in the opposite
         direction of the existing vertex normals
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Makes a new mesh with vertices offset at a distance in the opposite
 id of the new mesh object if successful
 None on error
         
-
-

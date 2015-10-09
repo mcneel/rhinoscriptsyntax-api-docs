@@ -4,12 +4,6 @@ layout: bootstrap
 
 # IsWallpaper
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Verifies that the specified view contains a wallpaper image
 
 

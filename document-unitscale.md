@@ -5,7 +5,7 @@ layout: bootstrap
 # UnitScale
 
 Return the scale factor for changing between unit systems.
-        
+      
 
 ### Parameters:
 
@@ -45,5 +45,3 @@ from_system [opt] = the unit system to convert from (see above). If omitted,
 
 scale factor for changing between unit systems
       
-
-

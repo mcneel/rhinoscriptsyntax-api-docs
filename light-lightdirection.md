@@ -5,7 +5,7 @@ layout: bootstrap
 # LightDirection
 
 Returns or changes the direction of a light object
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Returns or changes the direction of a light object
 if direction is not specified, the current direction
 if direction is specified, the previous direction
         
-
-

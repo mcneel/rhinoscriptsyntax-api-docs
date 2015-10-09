@@ -5,7 +5,7 @@ layout: bootstrap
 # DuplicateMeshBorder
 
 Creates curves that duplicates a mesh border
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Creates curves that duplicates a mesh border
 list of curve ids on success
 None on error
         
-
-

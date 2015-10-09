@@ -5,7 +5,7 @@ layout: bootstrap
 # GetObjectEx
 
 Prompts user to pick, or select a single object
-          
+        
 
 ### Parameters:
 
@@ -31,5 +31,3 @@ Tuple of information containing the following information
   element 4 = name of the view selection was made
 None if no object selected
         
-
-

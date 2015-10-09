@@ -8,7 +8,7 @@ Removes an existing layer from the document. The layer will be removed
         even if it contains geometry objects. The layer to be removed cannot be the
         current layer
         empty.
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Removes an existing layer from the document. The layer will be removed
 
 True or False indicating success or failure
         
-
-

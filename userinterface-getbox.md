@@ -5,7 +5,7 @@ layout: bootstrap
 # GetBox
 
 Pauses for user input of a box
-          
+        
 
 ### Parameters:
 
@@ -25,5 +25,3 @@ prompt1, prompt2, prompt3 [opt] = optional prompts to set
 list of eight Point3d that define the corners of the box on success
 None is not successful, or on error
         
-
-

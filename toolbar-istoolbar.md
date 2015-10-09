@@ -5,7 +5,7 @@ layout: bootstrap
 # IsToolbar
 
 Verifies a toolbar (or toolbar group) exists in an open collection file
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Verifies a toolbar (or toolbar group) exists in an open collection file
 
 True or False indicating success or failure
         
-
-

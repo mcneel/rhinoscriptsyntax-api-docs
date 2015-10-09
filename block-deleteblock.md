@@ -5,7 +5,7 @@ layout: bootstrap
 # DeleteBlock
 
 Deletes a block definition and all of it's inserted instances.
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Deletes a block definition and all of it's inserted instances.
 
 True or False indicating success or failure  
         
-
-

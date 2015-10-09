@@ -6,7 +6,7 @@ layout: bootstrap
 
 Return or set the document's unit system. See Rhino's DocumentProperties
         command (Units and Page Units Window) for details
-          
+        
 
 ### Parameters:
 
@@ -104,5 +104,3 @@ A shallow copy of the current System.Object.
            helper for pickle
    __str__(...)
            x.__str__() <==> str(x)
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # InsertBlock2
 
 Inserts a block whose definition already exists in the document
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Inserts a block whose definition already exists in the document
 
 id for the block that was added to the doc on success
         
-
-

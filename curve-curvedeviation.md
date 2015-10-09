@@ -5,7 +5,7 @@ layout: bootstrap
 # CurveDeviation
 
 Returns the minimum and maximum deviation between two curve objects
-          
+        
 
 ### Parameters:
 
@@ -24,5 +24,3 @@ tuple of deviation information on success
   element 5 = minimum distance between curves
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # MeshVertices
 
 Returns the vertices of a mesh
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns the vertices of a mesh
 
 list of 3D points
         
-
-

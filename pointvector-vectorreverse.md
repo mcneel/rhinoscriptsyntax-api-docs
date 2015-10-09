@@ -5,7 +5,7 @@ layout: bootstrap
 # VectorReverse
 
 Reverses the direction of a 3D vector
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Reverses the direction of a 3D vector
 
 reversed vector on success
         
-
-

@@ -4,12 +4,12 @@ layout: bootstrap
 
 # ObjectDescription
 
-  
+Returns a short text description of an object
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***object_id*** = identifier of an object
+        
 
 

@@ -5,7 +5,7 @@ layout: bootstrap
 # ToolbarCollectionPath
 
 Returns full path to a currently open toolbar collection file
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns full path to a currently open toolbar collection file
 
 full path on success, None on error
         
-
-

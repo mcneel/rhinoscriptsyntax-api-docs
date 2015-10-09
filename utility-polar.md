@@ -5,7 +5,7 @@ layout: bootstrap
 # Polar
 
 Returns 3D point that is a specified angle and distance from a 3D point
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Returns 3D point that is a specified angle and distance from a 3D point
 resulting point is successful
 None on error
         
-
-

@@ -5,7 +5,7 @@ layout: bootstrap
 # InsertCurveKnot
 
 Inserts a knot into a curve object
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Inserts a knot into a curve object
 
 True or False indicating success or failure
         
-
-

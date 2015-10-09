@@ -6,7 +6,7 @@ layout: bootstrap
 
 Search for a derivatitive, tangent, or curvature discontinuity in
         a curve object.
-          
+        
 
 ### Parameters:
 
@@ -26,5 +26,3 @@ Search for a derivatitive, tangent, or curvature discontinuity in
 
 List 3D points where the curve is discontinuous
         
-
-

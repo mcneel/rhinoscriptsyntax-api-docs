@@ -5,7 +5,7 @@ layout: bootstrap
 # AddFilletCurve
 
 Adds a fillet curve between two curve objects
-          
+        
 
 ### Parameters:
 
@@ -23,5 +23,3 @@ base_point1 [opt] = base point of the second curve. If omitted,
 
 id of the new curve object if successful
         
-
-

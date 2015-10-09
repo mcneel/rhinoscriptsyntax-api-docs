@@ -5,7 +5,7 @@ layout: bootstrap
 # AddSphere
 
 Add a spherical surface to the document
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Add a spherical surface to the document
 intentifier of the new object on success
 None on error
         
-
-

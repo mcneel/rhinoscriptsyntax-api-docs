@@ -5,7 +5,7 @@ layout: bootstrap
 # SortPointList
 
 Sorts list of points so they will be connected in a "reasonable" polyline order
-          
+        
 
 ### Parameters:
 
@@ -20,5 +20,3 @@ Sorts list of points so they will be connected in a "reasonable" polyline order
 a list of sorted 3D points if successful
 None on error
         
-
-

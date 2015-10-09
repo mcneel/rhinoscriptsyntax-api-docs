@@ -5,7 +5,7 @@ layout: bootstrap
 # TrimSurface
 
 Remove portions of the surface outside of the specified interval
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ delete_input [opt] = should the input surface be deleted
 
 new surface identifier on success
         
-
-

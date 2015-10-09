@@ -4,12 +4,6 @@ layout: bootstrap
 
 # Sleep
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Suspends execution of a running script for the specified interval
 
 

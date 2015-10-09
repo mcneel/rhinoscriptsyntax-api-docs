@@ -5,7 +5,7 @@ layout: bootstrap
 # AddLinearDimension
 
 Adds a linear dimension to the document
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ Adds a linear dimension to the document
 identifier of the new object on success
 None on error
         
-
-

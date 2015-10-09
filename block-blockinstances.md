@@ -5,7 +5,7 @@ layout: bootstrap
 # BlockInstances
 
 Returns the identifiers of the inserted instances of a block.
-          
+        
 
 ### Parameters:
 
@@ -17,5 +17,3 @@ Returns the identifiers of the inserted instances of a block.
 
 list of guids identifying the instances of a block
         
-
-

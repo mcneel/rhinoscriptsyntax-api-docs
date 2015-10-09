@@ -5,7 +5,7 @@ layout: bootstrap
 # AddLayout
 
 Adds a new page layout view
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Adds a new page layout view
 
 id of new layout
         
-
-

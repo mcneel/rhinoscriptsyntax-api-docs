@@ -4,12 +4,6 @@ layout: bootstrap
 
 # UnitDistanceDisplayPrecision
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Return or set the document's distance display precision
 
 

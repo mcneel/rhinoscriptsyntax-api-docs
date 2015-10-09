@@ -4,12 +4,6 @@ layout: bootstrap
 
 # PlaneCurveIntersection
 
-  
-
-### Parameters:
-
-
-### Returns:
-
+Intersect an infinite plane and a curve object
 
 

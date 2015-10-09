@@ -5,7 +5,7 @@ layout: bootstrap
 # IsSurfacePlanar
 
 Verifies a surface object is planar
-          
+        
 
 ### Parameters:
 
@@ -19,5 +19,3 @@ Verifies a surface object is planar
 
 True or False
         
-
-

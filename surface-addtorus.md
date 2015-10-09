@@ -5,7 +5,7 @@ layout: bootstrap
 # AddTorus
 
 Adds a torus shaped revolved surface to the document
-          
+        
 
 ### Parameters:
 
@@ -21,5 +21,3 @@ major_radius, minor_radius = the two radii of the torus
 The identifier of the new object if successful.
 None if not successful, or on error.
         
-
-

@@ -4,12 +4,12 @@ layout: bootstrap
 
 # IsDimStyle
 
-  
+Verifies the existance of a dimension style in the document
+        
 
 ### Parameters:
 
-
-### Returns:
-
+- ***dimstyle*** = the name of a dimstyle to test for
+        
 
 

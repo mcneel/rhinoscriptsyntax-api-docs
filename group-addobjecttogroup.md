@@ -5,7 +5,7 @@ layout: bootstrap
 # AddObjectToGroup
 
 Adds a single object to an existing group.
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Adds a single object to an existing group.
 
 True or False representing success or failure
         
-
-

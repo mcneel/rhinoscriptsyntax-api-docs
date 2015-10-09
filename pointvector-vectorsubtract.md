@@ -5,7 +5,7 @@ layout: bootstrap
 # VectorSubtract
 
 Subtracts two 3D vectors
-          
+        
 
 ### Parameters:
 
@@ -18,5 +18,3 @@ Subtracts two 3D vectors
 
 the resulting 3D vector
         
-
-

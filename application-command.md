@@ -7,7 +7,7 @@ layout: bootstrap
 Runs a Rhino command script. All Rhino commands can be used in command
         scripts. The command can be a built-in Rhino command or one provided by a
         3rd party plug-in.
-          
+        
 
 ### Parameters:
 
@@ -43,5 +43,3 @@ not valid.
 After the command script has run, you can obtain the identifiers of most
 recently created or changed object by calling LastCreatedObjects.
         
-
-

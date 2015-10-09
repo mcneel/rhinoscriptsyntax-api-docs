@@ -5,7 +5,7 @@ layout: bootstrap
 # GetSurfaceObject
 
 Prompts the user to select a single surface
-          
+        
 
 ### Parameters:
 
@@ -26,5 +26,3 @@ tuple of information on success
   element 5 = name of the view in which the selection was made
 None on error
         
-
-
